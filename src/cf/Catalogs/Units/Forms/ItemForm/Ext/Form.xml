@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.14">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="FormCommandBar" id="-1">
+		<ChildItems>
+			<Button name="FormUnlockAttributes" id="41">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.UnlockAttributes</CommandName>
+				<ExtendedTooltip name="FormUnlockAttributesExtendedTooltip" id="42"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">NotificationProcessing</Event>
+		<Event name="OnReadAtServer">OnReadAtServer</Event>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+		<Event name="BeforeWriteAtServer">BeforeWriteAtServer</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="GroupDescriptions" id="12">
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="GroupDescriptionsExtendedTooltip" id="13"/>
+			<ChildItems>
+				<InputField name="Code" id="17">
+					<DataPath>Object.Code</DataPath>
+					<ContextMenu name="CodeContextMenu" id="18"/>
+					<ExtendedTooltip name="CodeExtendedTooltip" id="19"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Item" id="3">
+			<DataPath>Object.Item</DataPath>
+			<ContextMenu name="ItemContextMenu" id="4"/>
+			<ExtendedTooltip name="ItemExtendedTooltip" id="5"/>
+		</InputField>
+		<InputField name="BasisUnit" id="6">
+			<DataPath>Object.BasisUnit</DataPath>
+			<ChoiceParameterLinks>
+				<xr:Link>
+					<xr:Name>Filter.Item</xr:Name>
+					<xr:DataPath xsi:type="xs:string">Object.Item</xr:DataPath>
+					<xr:ValueChange>Clear</xr:ValueChange>
+				</xr:Link>
+			</ChoiceParameterLinks>
+			<ContextMenu name="BasisUnitContextMenu" id="7"/>
+			<ExtendedTooltip name="BasisUnitExtendedTooltip" id="8"/>
+		</InputField>
+		<InputField name="UOM" id="14">
+			<DataPath>Object.UOM</DataPath>
+			<ContextMenu name="UOMContextMenu" id="15"/>
+			<ExtendedTooltip name="UOMExtendedTooltip" id="16"/>
+		</InputField>
+		<InputField name="Quantity" id="9">
+			<DataPath>Object.Quantity</DataPath>
+			<ContextMenu name="QuantityContextMenu" id="10"/>
+			<ExtendedTooltip name="QuantityExtendedTooltip" id="11"/>
+		</InputField>
+		<UsualGroup name="GroupDimensions" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Dimensions</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Boyutlar</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Измерения</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Collapsible</Behavior>
+			<CollapsedRepresentationTitle>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Dimensions</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Boyutlar</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Измерения</v8:content>
+				</v8:item>
+			</CollapsedRepresentationTitle>
+			<Collapsed>true</Collapsed>
+			<ExtendedTooltip name="GroupDimensionsExtendedTooltip" id="21"/>
+			<ChildItems>
+				<InputField name="Length" id="22">
+					<DataPath>Object.Length</DataPath>
+					<ContextMenu name="LengthContextMenu" id="23"/>
+					<ExtendedTooltip name="LengthExtendedTooltip" id="24"/>
+					<Events>
+						<Event name="OnChange">SizeOnChange</Event>
+					</Events>
+				</InputField>
+				<InputField name="Width" id="25">
+					<DataPath>Object.Width</DataPath>
+					<ContextMenu name="WidthContextMenu" id="26"/>
+					<ExtendedTooltip name="WidthExtendedTooltip" id="27"/>
+					<Events>
+						<Event name="OnChange">SizeOnChange</Event>
+					</Events>
+				</InputField>
+				<InputField name="Height" id="28">
+					<DataPath>Object.Height</DataPath>
+					<ContextMenu name="HeightContextMenu" id="29"/>
+					<ExtendedTooltip name="HeightExtendedTooltip" id="30"/>
+					<Events>
+						<Event name="OnChange">SizeOnChange</Event>
+					</Events>
+				</InputField>
+				<InputField name="Volume" id="36">
+					<DataPath>Object.Volume</DataPath>
+					<ContextMenu name="VolumeContextMenu" id="37"/>
+					<ExtendedTooltip name="VolumeExtendedTooltip" id="38"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="GroupWeightInformation" id="31">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Weight information</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Ağırlık bilgisi</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Информация о весе</v8:content>
+				</v8:item>
+			</Title>
+			<Behavior>Collapsible</Behavior>
+			<CollapsedRepresentationTitle>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Weight information</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Ağırlık bilgisi</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Информация о весе</v8:content>
+				</v8:item>
+			</CollapsedRepresentationTitle>
+			<Collapsed>true</Collapsed>
+			<ExtendedTooltip name="GroupWeightInformationExtendedTooltip" id="32"/>
+			<ChildItems>
+				<InputField name="Weight" id="33">
+					<DataPath>Object.Weight</DataPath>
+					<ContextMenu name="WeightContextMenu" id="34"/>
+					<ExtendedTooltip name="WeightExtendedTooltip" id="35"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Units</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>BasisUnit</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Object.Item</dcsset:left>
+						<dcsset:comparisonType>Filled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>MarkIncomplete</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="UnlockAttributes" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Unlock attributes</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Alan kilidi çöz</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разблокировать реквизиты</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>StdPicture.Change</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>UnlockAttribute</Action>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.14">
+	<DefinedType uuid="b682fd03-3c66-4898-9386-417265202b2a">
+		<InternalInfo>
+			<xr:GeneratedType name="DefinedType.typeObjectWithStatuses" category="DefinedType">
+				<xr:TypeId>379fbc67-094a-4059-8093-0e19ebfb6959</xr:TypeId>
+				<xr:ValueId>1a02c77b-3add-4518-9612-cd26900508f2</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>typeObjectWithStatuses</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Typ Objekt mit Status</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Tip statüye sahip siparişler</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Type object with statuses</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Type Objet avec les statuts</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип объект со статусом</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<Type>
+				<v8:Type>cfg:DocumentRef.IncomingPaymentOrder</v8:Type>
+				<v8:Type>cfg:DocumentRef.SalesReturnOrder</v8:Type>
+				<v8:Type>cfg:DocumentRef.PurchaseReturnOrder</v8:Type>
+				<v8:Type>cfg:DocumentRef.PurchaseOrder</v8:Type>
+				<v8:Type>cfg:DocumentRef.OutgoingPaymentOrder</v8:Type>
+				<v8:Type>cfg:DocumentRef.SalesOrder</v8:Type>
+				<v8:Type>cfg:DocumentRef.PhysicalCountByLocation</v8:Type>
+				<v8:Type>cfg:DocumentRef.InventoryTransferOrder</v8:Type>
+				<v8:Type>cfg:DocumentRef.ReconciliationStatement</v8:Type>
+				<v8:Type>cfg:DocumentRef.PhysicalInventory</v8:Type>
+			</Type>
+		</Properties>
+	</DefinedType>
+</MetaDataObject>

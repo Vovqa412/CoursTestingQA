@@ -1,0 +1,848 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.14">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="FormCommandBar" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="FormOk" id="53">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.Ok</CommandName>
+				<ExtendedTooltip name="FormOkExtendedTooltip" id="54"/>
+			</Button>
+			<Button name="FormCancel" id="55">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Cancel</CommandName>
+				<ExtendedTooltip name="FormCancelExtendedTooltip" id="56"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+	</Events>
+	<ChildItems>
+		<LabelField name="UserOrGroup" id="50">
+			<DataPath>UserOrGroup</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Benutzer/Benutzergruppe</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Kullanıcı/Kullanıcı grubu</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>User/User group</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Utilisateur/Groupe d'utilisateurs</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пользователь/Группа пользователей</v8:content>
+				</v8:item>
+			</Title>
+			<Hiperlink>true</Hiperlink>
+			<ContextMenu name="UserOrGroupContextMenu" id="51"/>
+			<ExtendedTooltip name="UserOrGroupExtendedTooltip" id="52"/>
+		</LabelField>
+		<Table name="MetadataTree" id="1">
+			<Representation>Tree</Representation>
+			<InitialTreeView>ExpandAllLevels</InitialTreeView>
+			<DataPath>MetadataTree</DataPath>
+			<SearchStringLocation>Top</SearchStringLocation>
+			<ContextMenu name="MetadataTreeContextMenu" id="3"/>
+			<AutoCommandBar name="MetadataTreeCommandBar" id="2">
+				<Autofill>false</Autofill>
+				<ChildItems>
+					<Button name="MetadataTreeFilterByAttributeName" id="59">
+						<Type>CommandBarButton</Type>
+						<Visible>false</Visible>
+						<CommandName>Form.Command.FilterByAttributeName</CommandName>
+						<ExtendedTooltip name="MetadataTreeFilterByAttributeNameExtendedTooltip" id="60"/>
+					</Button>
+					<Button name="MetadataTreeOnlyUsedRows" id="61">
+						<Type>CommandBarButton</Type>
+						<Visible>false</Visible>
+						<CommandName>Form.Command.OnlyUsedRows</CommandName>
+						<ExtendedTooltip name="MetadataTreeOnlyUsedRowsExtendedTooltip" id="62"/>
+					</Button>
+					<ButtonGroup name="MetadataTreeGroupManage" id="65">
+						<Title>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Metadata tree group manage</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>tr</v8:lang>
+								<v8:content>Üstveri ağaç grubu yönetme</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Группа дерева метаданных управление</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="MetadataTreeGroupManageExtendedTooltip" id="66"/>
+						<ChildItems>
+							<Button name="MetadataTreeMetadataTreeCollapseAll" id="67">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.MetadataTreeCollapseAll</CommandName>
+								<ExtendedTooltip name="MetadataTreeMetadataTreeCollapseAllExtendedTooltip" id="68"/>
+							</Button>
+							<Button name="MetadataTreeMetadataTreeExpandAll" id="69">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.MetadataTreeExpandAll</CommandName>
+								<ExtendedTooltip name="MetadataTreeMetadataTreeExpandAllExtendedTooltip" id="70"/>
+							</Button>
+						</ChildItems>
+					</ButtonGroup>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="MetadataTreeExtendedTooltip" id="4"/>
+			<SearchStringAddition name="MetadataTreeSearchString" id="5">
+				<AdditionSource>
+					<Item>MetadataTree</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="MetadataTreeSearchStringContextMenu" id="6"/>
+				<ExtendedTooltip name="MetadataTreeSearchStringExtendedTooltip" id="7"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="MetadataTreeViewStatus" id="11">
+				<AdditionSource>
+					<Item>MetadataTree</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<HorizontalLocation>Left</HorizontalLocation>
+				<ContextMenu name="MetadataTreeViewStatusContextMenu" id="12"/>
+				<ExtendedTooltip name="MetadataTreeViewStatusExtendedTooltip" id="13"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="MetadataTreeSearchControl" id="8">
+				<AdditionSource>
+					<Item>MetadataTree</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="MetadataTreeSearchControlContextMenu" id="9"/>
+				<ExtendedTooltip name="MetadataTreeSearchControlExtendedTooltip" id="10"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="OnActivateRow">MetadataTreeOnActivateRow</Event>
+			</Events>
+			<ChildItems>
+				<CheckBoxField name="MetadataTreeUse" id="35">
+					<DataPath>MetadataTree.Use</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="MetadataTreeUseContextMenu" id="36"/>
+					<ExtendedTooltip name="MetadataTreeUseExtendedTooltip" id="37"/>
+				</CheckBoxField>
+				<ColumnGroup name="MetadataTreeGroupNameColumns" id="57">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Metadata tree group name columns</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Üst veri ağaç grubu sütunlar adı</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа дерева метаданных наименование колонок</v8:content>
+						</v8:item>
+					</Title>
+					<Group>InCell</Group>
+					<ExtendedTooltip name="MetadataTreeGroupNameColumnsExtendedTooltip" id="58"/>
+					<ChildItems>
+						<PictureField name="MetadataTreePictureIndex" id="47">
+							<DataPath>MetadataTree.PictureIndex</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<ValuesPicture>
+								<xr:Ref>CommonPicture.IconCollection3</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</ValuesPicture>
+							<ContextMenu name="MetadataTreePictureIndexContextMenu" id="48"/>
+							<ExtendedTooltip name="MetadataTreePictureIndexExtendedTooltip" id="49"/>
+						</PictureField>
+						<InputField name="MetadataTreeGroupName" id="20">
+							<DataPath>MetadataTree.GroupName</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<TitleLocation>None</TitleLocation>
+							<ContextMenu name="MetadataTreeGroupNameContextMenu" id="21"/>
+							<ExtendedTooltip name="MetadataTreeGroupNameExtendedTooltip" id="22"/>
+						</InputField>
+						<InputField name="MetadataTreeSynonym" id="23">
+							<DataPath>MetadataTree.Synonym</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<TitleLocation>None</TitleLocation>
+							<ContextMenu name="MetadataTreeSynonymContextMenu" id="24"/>
+							<ExtendedTooltip name="MetadataTreeSynonymExtendedTooltip" id="25"/>
+						</InputField>
+					</ChildItems>
+				</ColumnGroup>
+				<InputField name="MetadataTreeValue" id="29">
+					<DataPath>MetadataTree.Value</DataPath>
+					<BackColor>#CCFFFF</BackColor>
+					<ContextMenu name="MetadataTreeValueContextMenu" id="30"/>
+					<ExtendedTooltip name="MetadataTreeValueExtendedTooltip" id="31"/>
+					<Events>
+						<Event name="OnChange">MetadataTreeValueOnChange</Event>
+					</Events>
+				</InputField>
+				<InputField name="MetadataTreeValueFromGroup" id="44">
+					<DataPath>MetadataTree.ValueFromGroup</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="MetadataTreeValueFromGroupContextMenu" id="45"/>
+					<ExtendedTooltip name="MetadataTreeValueFromGroupExtendedTooltip" id="46"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="UserOrGroup" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Benutzer oder Gruppe</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Kullanıcı veya grup</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>User or group</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Utilisateur ou groupe</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пользователь или группа пользователей</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.UserGroups</v8:Type>
+				<v8:Type>cfg:CatalogRef.Users</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="MetadataTree" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Metadatenbaum</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Üstveri ağacı</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Metadata tree</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Arborescence des métadonnées</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дерево метаданных</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Name" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Name</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Ad</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Name</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Nom</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="FullName" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Vollständiger Name</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Tam isim</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Full name</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Nom complet</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Полное наименование</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="GroupName" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Gruppenname</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Grup isim</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Group name</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Nom du groupe</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование группы</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Synonym" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Synonym</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Eşanlamlı</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Synonym</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Synonyme</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Синоним</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="KindOfAttribute" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Attributart</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Öznitellik türü</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Kind of attribute</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Genre d'attribut</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вид реквизита</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:EnumRef.KindsOfAttributes</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Value" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Wert</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Değer</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Value</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Valeur</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Значение</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+						<v8:NumberQualifiers>
+							<v8:Digits>12</v8:Digits>
+							<v8:FractionDigits>3</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+						<v8:StringQualifiers>
+							<v8:Length>200</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="TypeRestriction" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Einschränkung nach Typ</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Kısıtlama tipi</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Type restriction</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Restriction par le type</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ограничение по типу</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8:TypeDescription</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Use" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Verwenden</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Kullan</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Use</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Utiliser</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Использовать</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="SettingID" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Einstellungs-ID</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Ayarları ID'si</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Setting ID</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>ID du paramètre</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ID Настройки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8:UUID</v8:Type>
+					</Type>
+				</Column>
+				<Column name="AddAttributeRef" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Zusatzattributverweis</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Ek öznitelik bağlantısı</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Additional attribute ref</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Réf de l'attribut supplémentaire</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ссылка дополнительного реквизита</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:ChartOfCharacteristicTypesRef.AddAttributeAndProperty</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ValueFromGroup" id="13">
+					<Title>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Wert aus Gruppe</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Gruptan değer</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Value from group</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Valeur de groupe</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Значение группы пользовательских настроек</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+						<v8:NumberQualifiers>
+							<v8:Digits>12</v8:Digits>
+							<v8:FractionDigits>3</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+						<v8:StringQualifiers>
+							<v8:Length>200</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="PictureIndex" id="14">
+					<Title>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Bilderindex</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Resim indeksi</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Picture index</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Index de l'image</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Индекс картинки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="FilterByName" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Nach Namen filtern</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>İsime göre filtre</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Filter by name</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Filtre par le nom</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Фильтр по наименованию</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>MetadataTreeUse</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemGroup">
+						<dcsset:groupType>OrGroup</dcsset:groupType>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">MetadataTree.KindOfAttribute</dcsset:left>
+							<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">MetadataTree.KindOfAttribute</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="dcscor:DesignTimeValue">Enum.KindsOfAttributes.TabularSection</dcsset:right>
+						</dcsset:item>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Show</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="Ok" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>OK</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Tamam</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Ok</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>OK</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ок</v8:content>
+				</v8:item>
+			</Title>
+			<Action>Ok</Action>
+		</Command>
+		<Command name="Cancel" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Abbrechen</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>İptal</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Cancel</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Annuler</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отмена</v8:content>
+				</v8:item>
+			</Title>
+			<Action>Cancel</Action>
+		</Command>
+		<Command name="FilterByAttributeName" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Nach Attributnamen filtern</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Öznitellik ismine göre filtrele</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Filter by attribute name</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Filtre par le nom de l'attribut</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Фильтр по наименованию реквизита</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>StdPicture.CustomizeList</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>FilterByAttributeName</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="OnlyUsedRows" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Nur verwendete Zeilen</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Sadece kullanılan satırlar</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Only used rows</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Lignes utilisées uniquement</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Только используемые строки</v8:content>
+				</v8:item>
+			</Title>
+			<Action>OnlyUsedRows</Action>
+		</Command>
+		<Command name="MetadataTreeCollapseAll" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Collapse all</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Tümü daralt</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Свернуть все</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>StdPicture.CollapseAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>MetadataTreeCollapseAll</Action>
+		</Command>
+		<Command name="MetadataTreeExpandAll" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Expande all</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Tümü genişlet</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Развернуть все</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>StdPicture.ExpandAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>MetadataTreeExpandAll</Action>
+		</Command>
+	</Commands>
+</Form>

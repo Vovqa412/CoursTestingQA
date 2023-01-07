@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.14">
+	<Title>
+		<v8:item>
+			<v8:lang>de</v8:lang>
+			<v8:content>Zahlungsarten</v8:content>
+		</v8:item>
+		<v8:item>
+			<v8:lang>tr</v8:lang>
+			<v8:content>Ödeme tipleri</v8:content>
+		</v8:item>
+		<v8:item>
+			<v8:lang>en</v8:lang>
+			<v8:content>Payment types</v8:content>
+		</v8:item>
+		<v8:item>
+			<v8:lang>fr</v8:lang>
+			<v8:content>Types de paiement</v8:content>
+		</v8:item>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Виды оплаты</v8:content>
+		</v8:item>
+	</Title>
+	<AutoCommandBar name="FormCommandBar" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="GroupTitle" id="1">
+			<ToolTip>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Gruppentitel</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Grup tanımı</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Group title</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Titre de groupe</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Название группы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<HorizontalAlign>Right</HorizontalAlign>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="GroupTitleExtendedTooltip" id="2"/>
+			<ChildItems>
+				<Button name="FormCloseButton" id="8">
+					<Type>UsualButton</Type>
+					<Height>1</Height>
+					<CommandName>Form.Command.CloseButton</CommandName>
+					<Font ref="style:NormalTextFont" height="20" kind="StyleItem"/>
+					<ExtendedTooltip name="FormCloseButtonExtendedTooltip" id="9"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<PictureDecoration name="DecorationTop" id="12">
+			<Height>2</Height>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Dekoration oben</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Dekorasyon üst</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Decoration top</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Décoration en haut</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Верхняя декорация</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="DecorationTopContextMenu" id="13"/>
+			<ExtendedTooltip name="DecorationTopExtendedTooltip" id="14"/>
+		</PictureDecoration>
+		<UsualGroup name="GroupButtons" id="10">
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="GroupButtonsExtendedTooltip" id="11"/>
+		</UsualGroup>
+		<PictureDecoration name="DecorationBottom" id="15">
+			<Height>2</Height>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Dekoration unten</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Dekorasyon alt</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Decoration bottom</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Décoration en bas</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Нижняя декорация</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="DecorationBottomContextMenu" id="16"/>
+			<ExtendedTooltip name="DecorationBottomExtendedTooltip" id="17"/>
+		</PictureDecoration>
+	</ChildItems>
+	<Attributes/>
+	<Commands>
+		<Command name="CloseButton" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>X</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>X</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>X</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>X</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>X</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Schließen-Schaltfläche</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Kapat tuşu</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Close button</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Bouton Fermer</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закрыть</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>CloseButton</Action>
+		</Command>
+		<Command name="PayButtonPress" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Dienstbefehl</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Servis komutu</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Service command</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Commande service</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сервисная команда</v8:content>
+				</v8:item>
+			</Title>
+			<Action>PayButtonPress</Action>
+		</Command>
+	</Commands>
+</Form>

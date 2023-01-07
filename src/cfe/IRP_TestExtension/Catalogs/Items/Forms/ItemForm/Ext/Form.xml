@@ -1,0 +1,338 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.14">
+	<AutoCommandBar name="FormCommandBar" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer" callType="After">REP_OnCreateAtServerAfter</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="GroupTop" id="131">
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="GroupTopExtendedTooltip" id="132"/>
+			<ChildItems>
+				<HTMLDocumentField name="PictureViewHTML" id="54">
+					<TitleLocation>None</TitleLocation>
+					<Width>30</Width>
+					<MaxWidth>30</MaxWidth>
+					<Height>5</Height>
+					<MaxHeight>10</MaxHeight>
+					<BorderColor>style:FormBackColor</BorderColor>
+					<ContextMenu name="PictureViewHTMLContextMenu" id="55"/>
+					<ExtendedTooltip name="PictureViewHTMLExtendedTooltip" id="56"/>
+				</HTMLDocumentField>
+				<UsualGroup name="GroupMainAttributes" id="25">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Main</v8:content>
+						</v8:item>
+					</Title>
+					<HorizontalStretch>true</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<ThroughAlign>Use</ThroughAlign>
+					<ExtendedTooltip name="GroupMainAttributesExtendedTooltip" id="26"/>
+					<ChildItems>
+						<UsualGroup name="GroupMainLeft" id="32" DisplayImportance="VeryHigh">
+							<Group>Vertical</Group>
+							<Behavior>Collapsible</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ThroughAlign>Use</ThroughAlign>
+							<ExtendedTooltip name="GroupMainLeftExtendedTooltip" id="33"/>
+							<ChildItems>
+								<UsualGroup name="GroupDescriptions" id="52">
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="GroupDescriptionsExtendedTooltip" id="53"/>
+									<ChildItems>
+										<InputField name="Code" id="145">
+											<ContextMenu name="CodeContextMenu" id="146"/>
+											<ExtendedTooltip name="CodeExtendedTooltip" id="147"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<InputField name="ItemID" id="133">
+									<ContextMenu name="ContextMenu" id="134"/>
+									<ExtendedTooltip name="ExtendedTooltip" id="135"/>
+								</InputField>
+								<InputField name="ItemType" id="4">
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ItemTypeContextMenu" id="5"/>
+									<ExtendedTooltip name="ItemTypeExtendedTooltip" id="6"/>
+								</InputField>
+								<InputField name="Unit" id="9">
+									<ContextMenu name="UnitContextMenu" id="10"/>
+									<ExtendedTooltip name="UnitExtendedTooltip" id="11"/>
+								</InputField>
+								<LabelDecoration name="Decoration1" id="49">
+									<ContextMenu name="Decoration1ContextMenu" id="50"/>
+									<ExtendedTooltip name="Decoration1ExtendedTooltip" id="51"/>
+								</LabelDecoration>
+								<InputField name="Vendor" id="77">
+									<ContextMenu name="VendorContextMenu" id="78"/>
+									<ExtendedTooltip name="VendorExtendedTooltip" id="79"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<LabelDecoration name="Decoration2" id="136">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ContextMenu name="Decoration2ContextMenu" id="137"/>
+							<ExtendedTooltip name="Decoration2ExtendedTooltip" id="138"/>
+						</LabelDecoration>
+						<UsualGroup name="GroupMainRight" id="34" DisplayImportance="High">
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ThroughAlign>Use</ThroughAlign>
+							<ExtendedTooltip name="GroupMainRightExtendedTooltip" id="35"/>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="GroupBottom" id="36">
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ThroughAlign>Use</ThroughAlign>
+			<ExtendedTooltip name="GroupBottomExtendedTooltip" id="37"/>
+			<ChildItems>
+				<UsualGroup name="GroupAdditionalAttributes" id="27">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Additional</v8:content>
+						</v8:item>
+					</Title>
+					<HorizontalStretch>true</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<ShowTitle>false</ShowTitle>
+					<ThroughAlign>Use</ThroughAlign>
+					<ExtendedTooltip name="GroupAdditionalAttributesExtendedTooltip" id="28"/>
+					<ChildItems>
+						<UsualGroup name="GroupLeft" id="21">
+							<Title>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Group left</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ThroughAlign>Use</ThroughAlign>
+							<ExtendedTooltip name="GroupLeftExtendedTooltip" id="22"/>
+						</UsualGroup>
+						<LabelDecoration name="Decoration3" id="142">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ContextMenu name="Decoration3ContextMenu" id="143"/>
+							<ExtendedTooltip name="Decoration3ExtendedTooltip" id="144"/>
+						</LabelDecoration>
+						<UsualGroup name="GroupRight" id="23">
+							<Title>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Group right</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ThroughAlign>Use</ThroughAlign>
+							<ExtendedTooltip name="GroupRightExtendedTooltip" id="24"/>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<HTMLDocumentField name="AddAttributeViewHTML" id="128">
+					<TitleLocation>None</TitleLocation>
+					<Width>20</Width>
+					<MaxWidth>30</MaxWidth>
+					<Height>5</Height>
+					<MaxHeight>10</MaxHeight>
+					<BorderColor>style:FormBackColor</BorderColor>
+					<ContextMenu name="AddAttributeViewHTMLContextMenu" id="129"/>
+					<ExtendedTooltip name="AddAttributeViewHTMLExtendedTooltip" id="130"/>
+				</HTMLDocumentField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes/>
+	<BaseForm version="2.14">
+		<AutoCommandBar name="FormCommandBar" id="-1"/>
+		<ChildItems>
+			<UsualGroup name="GroupTop" id="131">
+				<Group>AlwaysHorizontal</Group>
+				<Behavior>Usual</Behavior>
+				<Representation>None</Representation>
+				<ShowTitle>false</ShowTitle>
+				<ExtendedTooltip name="GroupTopExtendedTooltip" id="132"/>
+				<ChildItems>
+					<HTMLDocumentField name="PictureViewHTML" id="54">
+						<TitleLocation>None</TitleLocation>
+						<Width>30</Width>
+						<MaxWidth>30</MaxWidth>
+						<Height>5</Height>
+						<MaxHeight>10</MaxHeight>
+						<BorderColor>style:FormBackColor</BorderColor>
+						<ContextMenu name="PictureViewHTMLContextMenu" id="55"/>
+						<ExtendedTooltip name="PictureViewHTMLExtendedTooltip" id="56"/>
+					</HTMLDocumentField>
+					<UsualGroup name="GroupMainAttributes" id="25">
+						<Title>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Main</v8:content>
+							</v8:item>
+						</Title>
+						<HorizontalStretch>true</HorizontalStretch>
+						<Group>Vertical</Group>
+						<Behavior>Usual</Behavior>
+						<ThroughAlign>Use</ThroughAlign>
+						<ExtendedTooltip name="GroupMainAttributesExtendedTooltip" id="26"/>
+						<ChildItems>
+							<UsualGroup name="GroupMainLeft" id="32" DisplayImportance="VeryHigh">
+								<Group>Vertical</Group>
+								<Behavior>Collapsible</Behavior>
+								<Representation>None</Representation>
+								<ShowTitle>false</ShowTitle>
+								<ThroughAlign>Use</ThroughAlign>
+								<ExtendedTooltip name="GroupMainLeftExtendedTooltip" id="33"/>
+								<ChildItems>
+									<UsualGroup name="GroupDescriptions" id="52">
+										<Behavior>Usual</Behavior>
+										<Representation>None</Representation>
+										<ShowTitle>false</ShowTitle>
+										<ExtendedTooltip name="GroupDescriptionsExtendedTooltip" id="53"/>
+										<ChildItems>
+											<InputField name="Code" id="145">
+												<ContextMenu name="CodeContextMenu" id="146"/>
+												<ExtendedTooltip name="CodeExtendedTooltip" id="147"/>
+											</InputField>
+										</ChildItems>
+									</UsualGroup>
+									<InputField name="ItemID" id="133">
+										<ContextMenu name="ContextMenu" id="134"/>
+										<ExtendedTooltip name="ExtendedTooltip" id="135"/>
+									</InputField>
+									<InputField name="ItemType" id="4">
+										<EditMode>EnterOnInput</EditMode>
+										<ContextMenu name="ItemTypeContextMenu" id="5"/>
+										<ExtendedTooltip name="ItemTypeExtendedTooltip" id="6"/>
+									</InputField>
+									<InputField name="Unit" id="9">
+										<ContextMenu name="UnitContextMenu" id="10"/>
+										<ExtendedTooltip name="UnitExtendedTooltip" id="11"/>
+									</InputField>
+									<LabelDecoration name="Decoration1" id="49">
+										<ContextMenu name="Decoration1ContextMenu" id="50"/>
+										<ExtendedTooltip name="Decoration1ExtendedTooltip" id="51"/>
+									</LabelDecoration>
+									<InputField name="Vendor" id="77">
+										<ContextMenu name="VendorContextMenu" id="78"/>
+										<ExtendedTooltip name="VendorExtendedTooltip" id="79"/>
+									</InputField>
+								</ChildItems>
+							</UsualGroup>
+							<LabelDecoration name="Decoration2" id="136">
+								<AutoMaxWidth>false</AutoMaxWidth>
+								<HorizontalStretch>true</HorizontalStretch>
+								<ContextMenu name="Decoration2ContextMenu" id="137"/>
+								<ExtendedTooltip name="Decoration2ExtendedTooltip" id="138"/>
+							</LabelDecoration>
+							<UsualGroup name="GroupMainRight" id="34" DisplayImportance="High">
+								<Group>Vertical</Group>
+								<Behavior>Usual</Behavior>
+								<Representation>None</Representation>
+								<ShowTitle>false</ShowTitle>
+								<ThroughAlign>Use</ThroughAlign>
+								<ExtendedTooltip name="GroupMainRightExtendedTooltip" id="35"/>
+							</UsualGroup>
+						</ChildItems>
+					</UsualGroup>
+				</ChildItems>
+			</UsualGroup>
+			<UsualGroup name="GroupBottom" id="36">
+				<Group>AlwaysHorizontal</Group>
+				<Behavior>Usual</Behavior>
+				<Representation>None</Representation>
+				<ShowTitle>false</ShowTitle>
+				<ThroughAlign>Use</ThroughAlign>
+				<ExtendedTooltip name="GroupBottomExtendedTooltip" id="37"/>
+				<ChildItems>
+					<UsualGroup name="GroupAdditionalAttributes" id="27">
+						<Title>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Additional</v8:content>
+							</v8:item>
+						</Title>
+						<HorizontalStretch>true</HorizontalStretch>
+						<Group>Vertical</Group>
+						<Behavior>Usual</Behavior>
+						<ShowTitle>false</ShowTitle>
+						<ThroughAlign>Use</ThroughAlign>
+						<ExtendedTooltip name="GroupAdditionalAttributesExtendedTooltip" id="28"/>
+						<ChildItems>
+							<UsualGroup name="GroupLeft" id="21">
+								<Title>
+									<v8:item>
+										<v8:lang>en</v8:lang>
+										<v8:content>Group left</v8:content>
+									</v8:item>
+								</Title>
+								<Group>Vertical</Group>
+								<Behavior>Usual</Behavior>
+								<Representation>None</Representation>
+								<ShowTitle>false</ShowTitle>
+								<ThroughAlign>Use</ThroughAlign>
+								<ExtendedTooltip name="GroupLeftExtendedTooltip" id="22"/>
+							</UsualGroup>
+							<LabelDecoration name="Decoration3" id="142">
+								<AutoMaxWidth>false</AutoMaxWidth>
+								<HorizontalStretch>true</HorizontalStretch>
+								<ContextMenu name="Decoration3ContextMenu" id="143"/>
+								<ExtendedTooltip name="Decoration3ExtendedTooltip" id="144"/>
+							</LabelDecoration>
+							<UsualGroup name="GroupRight" id="23">
+								<Title>
+									<v8:item>
+										<v8:lang>en</v8:lang>
+										<v8:content>Group right</v8:content>
+									</v8:item>
+								</Title>
+								<Group>Vertical</Group>
+								<Behavior>Usual</Behavior>
+								<Representation>None</Representation>
+								<ShowTitle>false</ShowTitle>
+								<ThroughAlign>Use</ThroughAlign>
+								<ExtendedTooltip name="GroupRightExtendedTooltip" id="24"/>
+							</UsualGroup>
+						</ChildItems>
+					</UsualGroup>
+					<HTMLDocumentField name="AddAttributeViewHTML" id="128">
+						<TitleLocation>None</TitleLocation>
+						<Width>20</Width>
+						<MaxWidth>30</MaxWidth>
+						<Height>5</Height>
+						<MaxHeight>10</MaxHeight>
+						<BorderColor>style:FormBackColor</BorderColor>
+						<ContextMenu name="AddAttributeViewHTMLContextMenu" id="129"/>
+						<ExtendedTooltip name="AddAttributeViewHTMLExtendedTooltip" id="130"/>
+					</HTMLDocumentField>
+				</ChildItems>
+			</UsualGroup>
+		</ChildItems>
+		<Attributes/>
+	</BaseForm>
+</Form>

@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.14">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="FormCommandBar" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="GroupDescriptions" id="23">
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="GroupDescriptionsExtendedTooltip" id="24"/>
+			<ChildItems>
+				<InputField name="Code" id="25">
+					<DataPath>Object.Code</DataPath>
+					<ContextMenu name="CodeContextMenu" id="26"/>
+					<ExtendedTooltip name="CodeExtendedTooltip" id="27"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="CurrencyMovements" id="4">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Object.CurrencyMovements</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="CurrencyMovementsContextMenu" id="5"/>
+			<AutoCommandBar name="CurrencyMovementsCommandBar" id="6"/>
+			<ExtendedTooltip name="CurrencyMovementsExtendedTooltip" id="7"/>
+			<SearchStringAddition name="CurrencyMovementsSearchString" id="8">
+				<AdditionSource>
+					<Item>CurrencyMovements</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="CurrencyMovementsSearchStringContextMenu" id="9"/>
+				<ExtendedTooltip name="CurrencyMovementsSearchStringExtendedTooltip" id="10"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="CurrencyMovementsViewStatus" id="11">
+				<AdditionSource>
+					<Item>CurrencyMovements</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<HorizontalLocation>Left</HorizontalLocation>
+				<ContextMenu name="CurrencyMovementsViewStatusContextMenu" id="12"/>
+				<ExtendedTooltip name="CurrencyMovementsViewStatusExtendedTooltip" id="13"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="CurrencyMovementsSearchControl" id="14">
+				<AdditionSource>
+					<Item>CurrencyMovements</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="CurrencyMovementsSearchControlContextMenu" id="15"/>
+				<ExtendedTooltip name="CurrencyMovementsSearchControlExtendedTooltip" id="16"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="CurrencyMovementsLineNumber" id="17">
+					<DataPath>Object.CurrencyMovements.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="CurrencyMovementsLineNumberContextMenu" id="18"/>
+					<ExtendedTooltip name="CurrencyMovementsLineNumberExtendedTooltip" id="19"/>
+				</LabelField>
+				<InputField name="CurrencyMovementsCurrencyMovementType" id="20">
+					<DataPath>Object.CurrencyMovements.CurrencyMovementType</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="CurrencyMovementsCurrencyMovementTypeContextMenu" id="21"/>
+					<ExtendedTooltip name="CurrencyMovementsCurrencyMovementTypeExtendedTooltip" id="22"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.CurrencyMovementSets</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

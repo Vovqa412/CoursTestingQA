@@ -1,0 +1,361 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.14">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="FormCommandBar" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="GroupDescriptions" id="70">
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="GroupDescriptionsExtendedTooltip" id="71"/>
+		</UsualGroup>
+		<InputField name="ValueType" id="1">
+			<DataPath>Object.ValueType</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ValueTypeContextMenu" id="2"/>
+			<ExtendedTooltip name="ValueTypeExtendedTooltip" id="3"/>
+		</InputField>
+		<InputField name="UniqueID" id="59">
+			<DataPath>Object.UniqueID</DataPath>
+			<ContextMenu name="UniqueIDContextMenu" id="60"/>
+			<ExtendedTooltip name="UniqueIDExtendedTooltip" id="61"/>
+		</InputField>
+		<CheckBoxField name="ShowOnForm" id="62">
+			<DataPath>Object.ShowOnForm</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ShowOnFormContextMenu" id="63"/>
+			<ExtendedTooltip name="ShowOnFormExtendedTooltip" id="64"/>
+		</CheckBoxField>
+		<CheckBoxField name="ReadOnly" id="65">
+			<DataPath>Object.ReadOnly</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ReadOnlyContextMenu" id="66"/>
+			<ExtendedTooltip name="ReadOnlyExtendedTooltip" id="67"/>
+		</CheckBoxField>
+		<LabelField name="PredefinedDataName" id="6">
+			<DataPath>Object.PredefinedDataName</DataPath>
+			<ContextMenu name="PredefinedDataNameContextMenu" id="7"/>
+			<ExtendedTooltip name="PredefinedDataNameExtendedTooltip" id="8"/>
+		</LabelField>
+		<Pages name="GroupMainPages" id="31">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Gruppe Hauptseiten</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Grup ana sayfalar</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Group main pages</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Groupe Pages principales</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа главных страниц</v8:content>
+				</v8:item>
+			</Title>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="GroupMainPagesExtendedTooltip" id="32"/>
+			<ChildItems>
+				<Page name="GroupPageExternalDataProc" id="33">
+					<Title>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Plug-Ins</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Eklentiler</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Plugins</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Plug-ins</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Внешние обработки</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="GroupPageExternalDataProcExtendedTooltip" id="34"/>
+					<ChildItems>
+						<Table name="ExternalDataProcess" id="9">
+							<Representation>List</Representation>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>Object.ExternalDataProcess</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ExternalDataProcessContextMenu" id="11"/>
+							<AutoCommandBar name="ExternalDataProcessCommandBar" id="10">
+								<ChildItems>
+									<Button name="ExternalDataProcessSetSettings" id="68">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.SetSettings</CommandName>
+										<ExtendedTooltip name="ExternalDataProcessSetSettingsExtendedTooltip" id="69"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ExternalDataProcessExtendedTooltip" id="12"/>
+							<SearchStringAddition name="ExternalDataProcessSearchString" id="13">
+								<AdditionSource>
+									<Item>ExternalDataProcess</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ExternalDataProcessSearchStringContextMenu" id="14"/>
+								<ExtendedTooltip name="ExternalDataProcessSearchStringExtendedTooltip" id="15"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ExternalDataProcessViewStatus" id="19">
+								<AdditionSource>
+									<Item>ExternalDataProcess</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<HorizontalLocation>Left</HorizontalLocation>
+								<ContextMenu name="ExternalDataProcessViewStatusContextMenu" id="20"/>
+								<ExtendedTooltip name="ExternalDataProcessViewStatusExtendedTooltip" id="21"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ExternalDataProcessSearchControl" id="16">
+								<AdditionSource>
+									<Item>ExternalDataProcess</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ExternalDataProcessSearchControlContextMenu" id="17"/>
+								<ExtendedTooltip name="ExternalDataProcessSearchControlExtendedTooltip" id="18"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnActivateRow">ExternalDataProcessorOnActivateRow</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="ExternalDataProcessLineNumber" id="22">
+									<DataPath>Object.ExternalDataProcess.LineNumber</DataPath>
+									<ContextMenu name="ExternalDataProcessLineNumberContextMenu" id="23"/>
+									<ExtendedTooltip name="ExternalDataProcessLineNumberExtendedTooltip" id="24"/>
+								</InputField>
+								<InputField name="ExternalDataProcessCountry" id="25">
+									<DataPath>Object.ExternalDataProcess.Country</DataPath>
+									<ContextMenu name="ExternalDataProcessCountryContextMenu" id="26"/>
+									<ExtendedTooltip name="ExternalDataProcessCountryExtendedTooltip" id="27"/>
+								</InputField>
+								<InputField name="ExternalDataProcessExternalDataProc" id="28">
+									<DataPath>Object.ExternalDataProcess.ExternalDataProc</DataPath>
+									<ContextMenu name="ExternalDataProcessExternalDataProcContextMenu" id="29"/>
+									<ExtendedTooltip name="ExternalDataProcessExternalDataProcExtendedTooltip" id="30"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="GroupRelatedValues" id="35">
+					<Title>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Zugehörige Werte</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Bağlı değerler</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Related values</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Valeurs associées</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Связанные виды контактной информации</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="GroupRelatedValuesExtendedTooltip" id="36"/>
+					<ChildItems>
+						<Table name="RelatedValues" id="37">
+							<Representation>List</Representation>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>Object.RelatedValues</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="RelatedValuesContextMenu" id="39"/>
+							<AutoCommandBar name="RelatedValuesCommandBar" id="38"/>
+							<ExtendedTooltip name="RelatedValuesExtendedTooltip" id="40"/>
+							<SearchStringAddition name="RelatedValuesSearchString" id="41">
+								<AdditionSource>
+									<Item>RelatedValues</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="RelatedValuesSearchStringContextMenu" id="42"/>
+								<ExtendedTooltip name="RelatedValuesSearchStringExtendedTooltip" id="43"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="RelatedValuesViewStatus" id="47">
+								<AdditionSource>
+									<Item>RelatedValues</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<HorizontalLocation>Left</HorizontalLocation>
+								<ContextMenu name="RelatedValuesViewStatusContextMenu" id="48"/>
+								<ExtendedTooltip name="RelatedValuesViewStatusExtendedTooltip" id="49"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="RelatedValuesSearchControl" id="44">
+								<AdditionSource>
+									<Item>RelatedValues</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="RelatedValuesSearchControlContextMenu" id="45"/>
+								<ExtendedTooltip name="RelatedValuesSearchControlExtendedTooltip" id="46"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="RelatedValuesLineNumber" id="50">
+									<DataPath>Object.RelatedValues.LineNumber</DataPath>
+									<ContextMenu name="RelatedValuesLineNumberContextMenu" id="51"/>
+									<ExtendedTooltip name="RelatedValuesLineNumberExtendedTooltip" id="52"/>
+								</InputField>
+								<InputField name="RelatedValuesIDInfoType" id="53">
+									<DataPath>Object.RelatedValues.IDInfoType</DataPath>
+									<ContextMenu name="RelatedValuesIDInfoTypeContextMenu" id="54"/>
+									<ExtendedTooltip name="RelatedValuesIDInfoTypeExtendedTooltip" id="55"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+		<InputField name="Comment" id="56">
+			<DataPath>Object.Comment</DataPath>
+			<ContextMenu name="CommentContextMenu" id="57"/>
+			<ExtendedTooltip name="CommentExtendedTooltip" id="58"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:ChartOfCharacteristicTypesObject.IDInfoTypes</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="AddressResult" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Temporäres Verzeichnis</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Adres sonucu</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Address result</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Répertoire temporaire</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес результата</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="RowNumber" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Zeilennummer</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Satır numarası</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Row number</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Numéro de ligne</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер строки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="SetSettings" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Einstellungen eingeben</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Ayarları belirle</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Set settings</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Spécifier les paramètres</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить настройки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Einstellungen eingeben</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Ayarları belirle</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Set settings</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Spécifier les paramètres</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить настройки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>SetSettings</Action>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.14">
+	<ChartOfCharacteristicTypes uuid="10d738d3-2d56-40a4-93e4-f2b0496421d0">
+		<InternalInfo>
+			<xr:GeneratedType name="ChartOfCharacteristicTypesObject.CurrencyMovementType" category="Object">
+				<xr:TypeId>166d1c94-55ee-4d40-89a8-09bcc57e1156</xr:TypeId>
+				<xr:ValueId>312bc615-6168-4ff1-bdba-4bee49db3147</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ChartOfCharacteristicTypesRef.CurrencyMovementType" category="Ref">
+				<xr:TypeId>a5572f8b-47c6-4326-94ef-7f59ff9b7196</xr:TypeId>
+				<xr:ValueId>c07fac51-bf33-4910-ac93-b457d462efd6</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ChartOfCharacteristicTypesSelection.CurrencyMovementType" category="Selection">
+				<xr:TypeId>34927243-2a38-4fd7-93f4-5c8ea1d7700b</xr:TypeId>
+				<xr:ValueId>4a2cd79a-d6b6-4d44-af5e-b36a514a1b37</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ChartOfCharacteristicTypesList.CurrencyMovementType" category="List">
+				<xr:TypeId>243aee04-4ce0-4190-a791-3a63e0e167b6</xr:TypeId>
+				<xr:ValueId>0871c437-da4f-4352-8127-19da6963011b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="Characteristic.CurrencyMovementType" category="Characteristic">
+				<xr:TypeId>aa4b2ee8-a652-4c64-bf65-9227aa08370c</xr:TypeId>
+				<xr:ValueId>caa817ed-7af2-45fc-af81-98e2c029694f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ChartOfCharacteristicTypesManager.CurrencyMovementType" category="Manager">
+				<xr:TypeId>2a320d3d-bf1b-4b7f-ac6e-4b534dd3a72c</xr:TypeId>
+				<xr:ValueId>5f5b1f6b-5dc3-4932-bd79-acc3ba9b0a77</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>CurrencyMovementType</Name>
+			<Comment/>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Type>
+				<v8:Type>cfg:EnumRef.CurrencyType</v8:Type>
+			</Type>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="10234ece-e0e7-42a2-bb49-47d16a9f4d2a">
+				<InternalInfo/>
+				<Properties>
+					<Name>DeferredCalculation</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="4695ec89-0581-41ad-ab80-2dbd6913f7c0">
+				<InternalInfo/>
+				<Properties>
+					<Name>Currency</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Currencies</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="125a412a-3b5f-4c8e-8887-69f1b5d32a19">
+				<InternalInfo/>
+				<Properties>
+					<Name>Source</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Type>
+						<v8:Type>cfg:CatalogRef.IntegrationSettings</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="e2bd6ab9-2236-4a0c-b8a3-0351897a6ad5">
+				<InternalInfo/>
+				<Properties>
+					<Name>Type</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Type>
+						<v8:Type>cfg:EnumRef.CurrencyType</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+		</ChildObjects>
+	</ChartOfCharacteristicTypes>
+</MetaDataObject>

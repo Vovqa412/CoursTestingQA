@@ -1,0 +1,2223 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.14">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="FormCommandBar" id="-1">
+		<ChildItems>
+			<Button name="FormShowRowKey" id="1144">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ShowRowKey</CommandName>
+				<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+				<ExtendedTooltip name="FormShowRowKeyExtendedTooltip" id="1145"/>
+			</Button>
+			<Button name="FormShowHiddenTables" id="1160">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ShowHiddenTables</CommandName>
+				<RepresentationInContextMenu>None</RepresentationInContextMenu>
+				<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+				<ExtendedTooltip name="FormShowHiddenTablesExtendedTooltip" id="1161"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="AfterWrite">AfterWrite</Event>
+		<Event name="AfterWriteAtServer">AfterWriteAtServer</Event>
+		<Event name="NotificationProcessing">NotificationProcessing</Event>
+		<Event name="OnReadAtServer">OnReadAtServer</Event>
+		<Event name="OnOpen">OnOpen</Event>
+		<Event name="BeforeWriteAtServer">BeforeWriteAtServer</Event>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+		<Event name="OnWriteAtServer">OnWriteAtServer</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="GroupTitle" id="261">
+			<Group>Vertical</Group>
+			<Behavior>Collapsible</Behavior>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="GroupTitleExtendedTooltip" id="262"/>
+			<ChildItems>
+				<UsualGroup name="GroupTitleDecorations" id="263">
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="GroupTitleDecorationsExtendedTooltip" id="264"/>
+					<ChildItems>
+						<UsualGroup name="GroupTitleCollapsed" id="265">
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="GroupTitleCollapsedExtendedTooltip" id="266"/>
+							<ChildItems>
+								<PictureDecoration name="DecorationGroupTitleCollapsedPicture" id="267">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>de</v8:lang>
+											<v8:content>Dekoration reduzierbare Formulargruppe</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>tr</v8:lang>
+											<v8:content>Dekorasyon grubu tanım birleşmiş resim</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Decoration group title collapsed picture</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>fr</v8:lang>
+											<v8:content>Décoration Groupe réductible du formulaire</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сворачиваемая группа формы</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<Picture>
+										<xr:Ref>StdPicture.MoveRight</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="DecorationGroupTitleCollapsedPictureContextMenu" id="268"/>
+									<ExtendedTooltip name="DecorationGroupTitleCollapsedPictureExtendedTooltip" id="269"/>
+									<Events>
+										<Event name="Click">DecorationGroupTitleCollapsedPictureClick</Event>
+									</Events>
+								</PictureDecoration>
+								<LabelDecoration name="DecorationGroupTitleCollapsedLabel" id="270">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>100</MaxWidth>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>de</v8:lang>
+											<v8:content>Bitte füllen Sie das Dokument aus</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>tr</v8:lang>
+											<v8:content>Lütfen, evrakı doldurun</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Please, fill the document</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>fr</v8:lang>
+											<v8:content>Veuillez compléter le document</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Пожалуйста, заполните документ</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="DecorationGroupTitleCollapsedLabelContextMenu" id="271"/>
+									<ExtendedTooltip name="DecorationGroupTitleCollapsedLabelExtendedTooltip" id="272"/>
+									<Events>
+										<Event name="Click">DecorationGroupTitleCollapsedLabelClick</Event>
+									</Events>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="GroupTitleUncollapsed" id="273">
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="GroupTitleUncollapsedExtendedTooltip" id="274"/>
+							<ChildItems>
+								<PictureDecoration name="DecorationGroupTitleUncollapsedPicture" id="275">
+									<Hyperlink>true</Hyperlink>
+									<Picture>
+										<xr:Ref>StdPicture.MoveDown</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="DecorationGroupTitleUncollapsedPictureContextMenu" id="276"/>
+									<ExtendedTooltip name="DecorationGroupTitleUncollapsedPictureExtendedTooltip" id="277"/>
+									<Events>
+										<Event name="Click">DecorationGroupTitleUncollapsedPictureClick</Event>
+									</Events>
+								</PictureDecoration>
+								<LabelDecoration name="DecorationGroupTitleUncollapsedLabel" id="278">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>100</MaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>de</v8:lang>
+											<v8:content>Bitte füllen Sie das Dokument aus</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>tr</v8:lang>
+											<v8:content>Lütfen, evrakı doldurun</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Please, fill the document</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>fr</v8:lang>
+											<v8:content>Veuillez compléter le document</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Пожалуйста, заполните документ</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="DecorationGroupTitleUncollapsedLabelContextMenu" id="279"/>
+									<ExtendedTooltip name="DecorationGroupTitleUncollapsedLabelExtendedTooltip" id="280"/>
+									<Events>
+										<Event name="Click">DecorationGroupTitleUncollapsedLabelClick</Event>
+									</Events>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="GroupTitleItems" id="281">
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="GroupTitleItemsExtendedTooltip" id="282"/>
+					<ChildItems>
+						<UsualGroup name="GroupTitleLeft" id="283">
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="GroupTitleLeftExtendedTooltip" id="284"/>
+							<ChildItems>
+								<InputField name="Company" id="7">
+									<DataPath>Object.Company</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="CompanyContextMenu" id="8"/>
+									<ExtendedTooltip name="CompanyExtendedTooltip" id="9"/>
+									<Events>
+										<Event name="OnChange">CompanyOnChange</Event>
+										<Event name="EditTextChange">CompanyEditTextChange</Event>
+										<Event name="StartChoice">CompanyStartChoice</Event>
+									</Events>
+								</InputField>
+								<LabelField name="Description" id="288">
+									<DataPath>Description</DataPath>
+									<Hiperlink>true</Hiperlink>
+									<ContextMenu name="DescriptionContextMenu" id="289"/>
+									<ExtendedTooltip name="DescriptionExtendedTooltip" id="290"/>
+									<Events>
+										<Event name="Click">DescriptionClick</Event>
+									</Events>
+								</LabelField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="GroupPages" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Gruppe Seiten</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Sayfalar grubu</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Group pages</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Groupe Pages</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страниц</v8:content>
+				</v8:item>
+			</Title>
+			<PagesRepresentation>TabsOnLeftHorizontal</PagesRepresentation>
+			<ExtendedTooltip name="GroupPagesExtendedTooltip" id="11"/>
+			<Events>
+				<Event name="OnCurrentPageChange">GroupPagesOnCurrentPageChange</Event>
+			</Events>
+			<ChildItems>
+				<Page name="GroupInventory" id="305">
+					<Title>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Lagerbestände</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Stok</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Inventory</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Inventaire</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Складские остатки</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="GroupInventoryExtendedTooltip" id="306"/>
+					<ChildItems>
+						<Table name="Inventory" id="307">
+							<Representation>List</Representation>
+							<DataPath>Object.Inventory</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="InventoryContextMenu" id="309"/>
+							<AutoCommandBar name="InventoryCommandBar" id="308"/>
+							<ExtendedTooltip name="InventoryExtendedTooltip" id="310"/>
+							<SearchStringAddition name="InventorySearchString" id="311">
+								<AdditionSource>
+									<Item>Inventory</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="InventorySearchStringContextMenu" id="312"/>
+								<ExtendedTooltip name="InventorySearchStringExtendedTooltip" id="313"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="InventoryViewStatus" id="317">
+								<AdditionSource>
+									<Item>Inventory</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<HorizontalLocation>Left</HorizontalLocation>
+								<ContextMenu name="InventoryViewStatusContextMenu" id="318"/>
+								<ExtendedTooltip name="InventoryViewStatusExtendedTooltip" id="319"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="InventorySearchControl" id="314">
+								<AdditionSource>
+									<Item>Inventory</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="InventorySearchControlContextMenu" id="315"/>
+								<ExtendedTooltip name="InventorySearchControlExtendedTooltip" id="316"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnStartEdit">InventoryOnStartEdit</Event>
+								<Event name="OnChange">MainTableOnChange</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="InventoryKey" id="1114">
+									<DataPath>Object.Inventory.Key</DataPath>
+									<Visible>false</Visible>
+									<ContextMenu name="InventoryKeyContextMenu" id="1115"/>
+									<ExtendedTooltip name="InventoryKeyExtendedTooltip" id="1116"/>
+								</InputField>
+								<InputField name="InventoryLineNumber" id="320">
+									<DataPath>Object.Inventory.LineNumber</DataPath>
+									<ContextMenu name="InventoryLineNumberContextMenu" id="321"/>
+									<ExtendedTooltip name="InventoryLineNumberExtendedTooltip" id="322"/>
+								</InputField>
+								<InputField name="InventoryItem" id="332">
+									<DataPath>Object.Inventory.Item</DataPath>
+									<ContextMenu name="InventoryItemContextMenu" id="333"/>
+									<ExtendedTooltip name="InventoryItemExtendedTooltip" id="334"/>
+									<Events>
+										<Event name="OnChange">InventoryItemOnChange</Event>
+										<Event name="EditTextChange">InventoryItemEditTextChange</Event>
+										<Event name="StartChoice">InventoryItemStartChoice</Event>
+									</Events>
+								</InputField>
+								<InputField name="InventoryItemKey" id="323">
+									<DataPath>Object.Inventory.ItemKey</DataPath>
+									<ChoiceParameterLinks>
+										<xr:Link>
+											<xr:Name>Filter.Item</xr:Name>
+											<xr:DataPath xsi:type="xs:string">Items.Inventory.CurrentData.Item</xr:DataPath>
+											<xr:ValueChange>Clear</xr:ValueChange>
+										</xr:Link>
+									</ChoiceParameterLinks>
+									<ContextMenu name="InventoryItemKeyContextMenu" id="324"/>
+									<ExtendedTooltip name="InventoryItemKeyExtendedTooltip" id="325"/>
+									<Events>
+										<Event name="OnChange">InventoryItemKeyOnChange</Event>
+									</Events>
+								</InputField>
+								<InputField name="InventoryStore" id="326">
+									<DataPath>Object.Inventory.Store</DataPath>
+									<ContextMenu name="InventoryStoreContextMenu" id="327"/>
+									<ExtendedTooltip name="InventoryStoreExtendedTooltip" id="328"/>
+								</InputField>
+								<InputField name="InventoryQuantity" id="329">
+									<DataPath>Object.Inventory.Quantity</DataPath>
+									<ContextMenu name="InventoryQuantityContextMenu" id="330"/>
+									<ExtendedTooltip name="InventoryQuantityExtendedTooltip" id="331"/>
+								</InputField>
+								<InputField name="InventorySerialLotNumber" id="1008">
+									<DataPath>Object.Inventory.SerialLotNumber</DataPath>
+									<ContextMenu name="InventorySerialLotNumberContextMenu" id="1009"/>
+									<ExtendedTooltip name="InventorySerialLotNumberExtendedTooltip" id="1010"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="GroupAccountBalance" id="338">
+					<Title>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Kontosalden</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Kasa/banka hareketleri (AccountBalance)</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Account balance</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Solde de compte</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Остатки и обороты денежных средств (AccountBalance)</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="GroupAccountBalanceExtendedTooltip" id="339"/>
+					<ChildItems>
+						<Table name="AccountBalance" id="340">
+							<Representation>List</Representation>
+							<DataPath>Object.AccountBalance</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="AccountBalanceContextMenu" id="342"/>
+							<AutoCommandBar name="AccountBalanceCommandBar" id="341">
+								<ChildItems>
+									<Button name="EditCurrenciesAccountBalance" id="1146">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.EditCurrenciesAccountBalance</CommandName>
+										<ExtendedTooltip name="EditCurrenciesAccountBalanceExtendedTooltip" id="1147"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="AccountBalanceExtendedTooltip" id="343"/>
+							<SearchStringAddition name="AccountBalanceSearchString" id="344">
+								<AdditionSource>
+									<Item>AccountBalance</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="AccountBalanceSearchStringContextMenu" id="345"/>
+								<ExtendedTooltip name="AccountBalanceSearchStringExtendedTooltip" id="346"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="AccountBalanceViewStatus" id="350">
+								<AdditionSource>
+									<Item>AccountBalance</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<HorizontalLocation>Left</HorizontalLocation>
+								<ContextMenu name="AccountBalanceViewStatusContextMenu" id="351"/>
+								<ExtendedTooltip name="AccountBalanceViewStatusExtendedTooltip" id="352"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="AccountBalanceSearchControl" id="347">
+								<AdditionSource>
+									<Item>AccountBalance</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="AccountBalanceSearchControlContextMenu" id="348"/>
+								<ExtendedTooltip name="AccountBalanceSearchControlExtendedTooltip" id="349"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnActivateCell">AccountBalanceOnActivateCell</Event>
+								<Event name="OnChange">MainTableOnChange</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="AccountBalanceKey" id="1117">
+									<DataPath>Object.AccountBalance.Key</DataPath>
+									<Visible>false</Visible>
+									<ContextMenu name="AccountBalanceKeyContextMenu" id="1118"/>
+									<ExtendedTooltip name="AccountBalanceKeyExtendedTooltip" id="1119"/>
+								</InputField>
+								<InputField name="AccountBalanceLineNumber" id="353">
+									<DataPath>Object.AccountBalance.LineNumber</DataPath>
+									<ContextMenu name="AccountBalanceLineNumberContextMenu" id="354"/>
+									<ExtendedTooltip name="AccountBalanceLineNumberExtendedTooltip" id="355"/>
+								</InputField>
+								<InputField name="AccountBalanceAccount" id="356">
+									<DataPath>Object.AccountBalance.Account</DataPath>
+									<ChoiceParameterLinks>
+										<xr:Link>
+											<xr:Name>Filter.Company</xr:Name>
+											<xr:DataPath xsi:type="xs:string">Object.Company</xr:DataPath>
+											<xr:ValueChange>Clear</xr:ValueChange>
+										</xr:Link>
+									</ChoiceParameterLinks>
+									<ContextMenu name="AccountBalanceAccountContextMenu" id="357"/>
+									<ExtendedTooltip name="AccountBalanceAccountExtendedTooltip" id="358"/>
+									<Events>
+										<Event name="OnChange">AccountBalanceAccountOnChange</Event>
+									</Events>
+								</InputField>
+								<InputField name="AccountBalanceCurrency" id="359">
+									<DataPath>Object.AccountBalance.Currency</DataPath>
+									<ContextMenu name="AccountBalanceCurrencyContextMenu" id="360"/>
+									<ExtendedTooltip name="AccountBalanceCurrencyExtendedTooltip" id="361"/>
+								</InputField>
+								<InputField name="AccountBalanceAmount" id="362">
+									<DataPath>Object.AccountBalance.Amount</DataPath>
+									<ContextMenu name="AccountBalanceAmountContextMenu" id="363"/>
+									<ExtendedTooltip name="AccountBalanceAmountExtendedTooltip" id="364"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="GroupAdvance" id="419">
+					<Title>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Vorauszahlungen</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Avans</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Advance</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Acomptes</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Авансы</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="GroupAdvanceExtendedTooltip" id="420"/>
+					<ChildItems>
+						<Pages name="GroupAdvanceFromCustomersAndToSuppliers" id="421">
+							<Title>
+								<v8:item>
+									<v8:lang>de</v8:lang>
+									<v8:content>Vorauszahlung von Kunden und an Lieferanten</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>tr</v8:lang>
+									<v8:content>Müşteri ve tedarikçi avansları</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Advance from customers and to suppliers</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>fr</v8:lang>
+									<v8:content>Acomptes des clients et acomptes aux fournisseurs</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Авансы от покупателей и авансы поставщикам</v8:content>
+								</v8:item>
+							</Title>
+							<PagesRepresentation>TabsOnTop</PagesRepresentation>
+							<ExtendedTooltip name="GroupAdvanceFromCustomersAndToSuppliersExtendedTooltip" id="422"/>
+							<Events>
+								<Event name="OnCurrentPageChange">GroupAdvanceFromCustomersAndToSuppliersOnCurrentPageChange</Event>
+							</Events>
+							<ChildItems>
+								<Page name="GroupFromCustomers" id="423">
+									<Title>
+										<v8:item>
+											<v8:lang>de</v8:lang>
+											<v8:content>Von Lieferanten</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>tr</v8:lang>
+											<v8:content>Müşteriden</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>From customers</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>fr</v8:lang>
+											<v8:content>Des clients</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Покупатели</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="GroupFromCustomersExtendedTooltip" id="424"/>
+									<ChildItems>
+										<Table name="AdvanceFromCustomers" id="427">
+											<Representation>List</Representation>
+											<DataPath>Object.AdvanceFromCustomers</DataPath>
+											<RowFilter xsi:nil="true"/>
+											<ContextMenu name="AdvanceFromCustomersContextMenu" id="429"/>
+											<AutoCommandBar name="AdvanceFromCustomersCommandBar" id="428">
+												<ChildItems>
+													<Button name="EditCurrenciesAdvanceFromCustomers" id="1148">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.Command.EditCurrenciesAdvanceFromCustomers</CommandName>
+														<ExtendedTooltip name="EditCurrenciesAdvanceFromCustomersExtendedTooltip" id="1149"/>
+													</Button>
+												</ChildItems>
+											</AutoCommandBar>
+											<ExtendedTooltip name="AdvanceFromCustomersExtendedTooltip" id="430"/>
+											<SearchStringAddition name="AdvanceFromCustomersSearchString" id="431">
+												<AdditionSource>
+													<Item>AdvanceFromCustomers</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="AdvanceFromCustomersSearchStringContextMenu" id="432"/>
+												<ExtendedTooltip name="AdvanceFromCustomersSearchStringExtendedTooltip" id="433"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="AdvanceFromCustomersViewStatus" id="437">
+												<AdditionSource>
+													<Item>AdvanceFromCustomers</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<HorizontalLocation>Left</HorizontalLocation>
+												<ContextMenu name="AdvanceFromCustomersViewStatusContextMenu" id="438"/>
+												<ExtendedTooltip name="AdvanceFromCustomersViewStatusExtendedTooltip" id="439"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="AdvanceFromCustomersSearchControl" id="434">
+												<AdditionSource>
+													<Item>AdvanceFromCustomers</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="AdvanceFromCustomersSearchControlContextMenu" id="435"/>
+												<ExtendedTooltip name="AdvanceFromCustomersSearchControlExtendedTooltip" id="436"/>
+											</SearchControlAddition>
+											<Events>
+												<Event name="OnActivateCell">AdvanceFromCustomersOnActivateCell</Event>
+												<Event name="OnChange">MainTableOnChange</Event>
+											</Events>
+											<ChildItems>
+												<InputField name="AdvanceFromCustomersKey" id="1120">
+													<DataPath>Object.AdvanceFromCustomers.Key</DataPath>
+													<Visible>false</Visible>
+													<ContextMenu name="AdvanceFromCustomersKeyContextMenu" id="1121"/>
+													<ExtendedTooltip name="AdvanceFromCustomersKeyExtendedTooltip" id="1122"/>
+												</InputField>
+												<InputField name="AdvanceFromCustomersLineNumber" id="440">
+													<DataPath>Object.AdvanceFromCustomers.LineNumber</DataPath>
+													<ContextMenu name="AdvanceFromCustomersLineNumberContextMenu" id="441"/>
+													<ExtendedTooltip name="AdvanceFromCustomersLineNumberExtendedTooltip" id="442"/>
+												</InputField>
+												<InputField name="AdvanceFromCustomersPartner" id="443">
+													<DataPath>Object.AdvanceFromCustomers.Partner</DataPath>
+													<ChoiceParameters>
+														<app:item name="Filter.Customer">
+															<app:value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation/>
+																<Value xsi:type="xs:boolean">true</Value>
+															</app:value>
+														</app:item>
+													</ChoiceParameters>
+													<ContextMenu name="AdvanceFromCustomersPartnerContextMenu" id="444"/>
+													<ExtendedTooltip name="AdvanceFromCustomersPartnerExtendedTooltip" id="445"/>
+													<Events>
+														<Event name="OnChange">AdvanceMainTablePartnerOnChange</Event>
+													</Events>
+												</InputField>
+												<InputField name="AdvanceFromCustomersLegalName" id="446">
+													<DataPath>Object.AdvanceFromCustomers.LegalName</DataPath>
+													<ContextMenu name="AdvanceFromCustomersLegalNameContextMenu" id="447"/>
+													<ExtendedTooltip name="AdvanceFromCustomersLegalNameExtendedTooltip" id="448"/>
+													<Events>
+														<Event name="EditTextChange">MainTableLegalNameEditTextChange</Event>
+														<Event name="StartChoice">MainTableLegalNameStartChoice</Event>
+													</Events>
+												</InputField>
+												<InputField name="AdvanceFromCustomersLegalNameContract" id="1063">
+													<DataPath>Object.AdvanceFromCustomers.LegalNameContract</DataPath>
+													<ContextMenu name="AdvanceFromCustomersLegalNameContractContextMenu" id="1064"/>
+													<ExtendedTooltip name="AdvanceFromCustomersLegalNameContractExtendedTooltip" id="1065"/>
+												</InputField>
+												<InputField name="AdvanceFromCustomersCurrency" id="449">
+													<DataPath>Object.AdvanceFromCustomers.Currency</DataPath>
+													<ContextMenu name="AdvanceFromCustomersCurrencyContextMenu" id="450"/>
+													<ExtendedTooltip name="AdvanceFromCustomersCurrencyExtendedTooltip" id="451"/>
+												</InputField>
+												<InputField name="AdvanceFromCustomersAmount" id="452">
+													<DataPath>Object.AdvanceFromCustomers.Amount</DataPath>
+													<ContextMenu name="AdvanceFromCustomersAmountContextMenu" id="453"/>
+													<ExtendedTooltip name="AdvanceFromCustomersAmountExtendedTooltip" id="454"/>
+												</InputField>
+											</ChildItems>
+										</Table>
+									</ChildItems>
+								</Page>
+								<Page name="GroupToSuppliers" id="425">
+									<Title>
+										<v8:item>
+											<v8:lang>de</v8:lang>
+											<v8:content>An Lieferanten</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>tr</v8:lang>
+											<v8:content>Tedarikçilere</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>To suppliers</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>fr</v8:lang>
+											<v8:content>Aux fournisseurs</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Поставщики</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="GroupToSuppliersExtendedTooltip" id="426"/>
+									<ChildItems>
+										<Table name="AdvanceToSuppliers" id="458">
+											<Representation>List</Representation>
+											<DataPath>Object.AdvanceToSuppliers</DataPath>
+											<RowFilter xsi:nil="true"/>
+											<ContextMenu name="AdvanceToSuppliersContextMenu" id="460"/>
+											<AutoCommandBar name="AdvanceToSuppliersCommandBar" id="459">
+												<ChildItems>
+													<Button name="EditCurrenciesAdvanceToSuppliers" id="1150">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.Command.EditCurrenciesAdvanceToSuppliers</CommandName>
+														<ExtendedTooltip name="EditCurrenciesAdvanceToSuppliersExtendedTooltip" id="1151"/>
+													</Button>
+												</ChildItems>
+											</AutoCommandBar>
+											<ExtendedTooltip name="AdvanceToSuppliersExtendedTooltip" id="461"/>
+											<SearchStringAddition name="AdvanceToSuppliersSearchString" id="462">
+												<AdditionSource>
+													<Item>AdvanceToSuppliers</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="AdvanceToSuppliersSearchStringContextMenu" id="463"/>
+												<ExtendedTooltip name="AdvanceToSuppliersSearchStringExtendedTooltip" id="464"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="AdvanceToSuppliersViewStatus" id="468">
+												<AdditionSource>
+													<Item>AdvanceToSuppliers</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<HorizontalLocation>Left</HorizontalLocation>
+												<ContextMenu name="AdvanceToSuppliersViewStatusContextMenu" id="469"/>
+												<ExtendedTooltip name="AdvanceToSuppliersViewStatusExtendedTooltip" id="470"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="AdvanceToSuppliersSearchControl" id="465">
+												<AdditionSource>
+													<Item>AdvanceToSuppliers</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="AdvanceToSuppliersSearchControlContextMenu" id="466"/>
+												<ExtendedTooltip name="AdvanceToSuppliersSearchControlExtendedTooltip" id="467"/>
+											</SearchControlAddition>
+											<Events>
+												<Event name="OnActivateCell">AdvanceToSuppliersOnActivateCell</Event>
+												<Event name="OnChange">MainTableOnChange</Event>
+											</Events>
+											<ChildItems>
+												<InputField name="AdvanceToSuppliersKey" id="1123">
+													<DataPath>Object.AdvanceToSuppliers.Key</DataPath>
+													<Visible>false</Visible>
+													<ContextMenu name="AdvanceToSuppliersKeyContextMenu" id="1124"/>
+													<ExtendedTooltip name="AdvanceToSuppliersKeyExtendedTooltip" id="1125"/>
+												</InputField>
+												<InputField name="AdvanceToSuppliersLineNumber" id="471">
+													<DataPath>Object.AdvanceToSuppliers.LineNumber</DataPath>
+													<ContextMenu name="AdvanceToSuppliersLineNumberContextMenu" id="472"/>
+													<ExtendedTooltip name="AdvanceToSuppliersLineNumberExtendedTooltip" id="473"/>
+												</InputField>
+												<InputField name="AdvanceToSuppliersPartner" id="474">
+													<DataPath>Object.AdvanceToSuppliers.Partner</DataPath>
+													<ChoiceParameters>
+														<app:item name="Filter.Vendor">
+															<app:value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation/>
+																<Value xsi:type="xs:boolean">true</Value>
+															</app:value>
+														</app:item>
+													</ChoiceParameters>
+													<ContextMenu name="AdvanceToSuppliersPartnerContextMenu" id="475"/>
+													<ExtendedTooltip name="AdvanceToSuppliersPartnerExtendedTooltip" id="476"/>
+													<Events>
+														<Event name="OnChange">AdvanceMainTablePartnerOnChange</Event>
+													</Events>
+												</InputField>
+												<InputField name="AdvanceToSuppliersLegalName" id="477">
+													<DataPath>Object.AdvanceToSuppliers.LegalName</DataPath>
+													<ChoiceParameterLinks>
+														<xr:Link>
+															<xr:Name>Filter.Partner</xr:Name>
+															<xr:DataPath xsi:type="xs:string">Items.AdvanceToSuppliers.CurrentData.Partner</xr:DataPath>
+															<xr:ValueChange>Clear</xr:ValueChange>
+														</xr:Link>
+													</ChoiceParameterLinks>
+													<ContextMenu name="AdvanceToSuppliersLegalNameContextMenu" id="478"/>
+													<ExtendedTooltip name="AdvanceToSuppliersLegalNameExtendedTooltip" id="479"/>
+													<Events>
+														<Event name="EditTextChange">MainTableLegalNameEditTextChange</Event>
+														<Event name="StartChoice">MainTableLegalNameStartChoice</Event>
+													</Events>
+												</InputField>
+												<InputField name="AdvanceToSuppliersLegalNameContract" id="1066">
+													<DataPath>Object.AdvanceToSuppliers.LegalNameContract</DataPath>
+													<ContextMenu name="AdvanceToSuppliersLegalNameContractContextMenu" id="1067"/>
+													<ExtendedTooltip name="AdvanceToSuppliersLegalNameContractExtendedTooltip" id="1068"/>
+												</InputField>
+												<InputField name="AdvanceToSuppliersCurrency" id="480">
+													<DataPath>Object.AdvanceToSuppliers.Currency</DataPath>
+													<ContextMenu name="AdvanceToSuppliersCurrencyContextMenu" id="481"/>
+													<ExtendedTooltip name="AdvanceToSuppliersCurrencyExtendedTooltip" id="482"/>
+												</InputField>
+												<InputField name="AdvanceToSuppliersAmount" id="483">
+													<DataPath>Object.AdvanceToSuppliers.Amount</DataPath>
+													<ContextMenu name="AdvanceToSuppliersAmountContextMenu" id="484"/>
+													<ExtendedTooltip name="AdvanceToSuppliersAmountExtendedTooltip" id="485"/>
+												</InputField>
+											</ChildItems>
+										</Table>
+									</ChildItems>
+								</Page>
+							</ChildItems>
+						</Pages>
+					</ChildItems>
+				</Page>
+				<Page name="GroupAccountPayable" id="593">
+					<Title>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Kreditoren</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Cari hesap alacakları</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Account payable</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Comptabilité fournisseur</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Взаиморасчеты с поставщиками</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="GroupAccountPayableExtendedTooltip" id="594"/>
+					<ChildItems>
+						<Pages name="GroupAccountPayableByAgreementsAndByDocuments" id="595">
+							<Title>
+								<v8:item>
+									<v8:lang>de</v8:lang>
+									<v8:content>Gruppe Kreditoren nach Vereinbarungen und Dokumenten</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>tr</v8:lang>
+									<v8:content>Grup Cari hesap (A/P tedarikçi), sözleşme ve evrak detaylı</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Group account payable by agreements and by documents</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>fr</v8:lang>
+									<v8:content>Groupe Comptabilité fournisseur par les accords et documents</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа взаиморасчеты с поставщиками по соглашениям и по документам</v8:content>
+								</v8:item>
+							</Title>
+							<PagesRepresentation>TabsOnTop</PagesRepresentation>
+							<ExtendedTooltip name="GroupAccountPayableByAgreementsAndByDocumentsExtendedTooltip" id="596"/>
+							<Events>
+								<Event name="OnCurrentPageChange">GroupAccountPayableByAgreementsAndByDocumentsOnCurrentPageChange</Event>
+							</Events>
+							<ChildItems>
+								<Page name="GroupAccountPayableByAgreements" id="597">
+									<Title>
+										<v8:item>
+											<v8:lang>de</v8:lang>
+											<v8:content>Nach Vereinbarungen</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>tr</v8:lang>
+											<v8:content>Sözleşme detaylı</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>By agreements</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>fr</v8:lang>
+											<v8:content>Par accords</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>По соглашениям</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="GroupAccountPayableByAgreementsExtendedTooltip" id="598"/>
+									<ChildItems>
+										<Table name="AccountPayableByAgreements" id="609">
+											<Representation>List</Representation>
+											<DataPath>Object.AccountPayableByAgreements</DataPath>
+											<RowFilter xsi:nil="true"/>
+											<ContextMenu name="AccountPayableByAgreementsContextMenu" id="611"/>
+											<AutoCommandBar name="AccountPayableByAgreementsCommandBar" id="610">
+												<ChildItems>
+													<Button name="EditCurrenciesAccountPayableByAgreements" id="1156">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.Command.EditCurrenciesAccountPayableByAgreements</CommandName>
+														<ExtendedTooltip name="EditCurrenciesAccountPayableByAgreementsExtendedTooltip" id="1157"/>
+													</Button>
+												</ChildItems>
+											</AutoCommandBar>
+											<ExtendedTooltip name="AccountPayableByAgreementsExtendedTooltip" id="612"/>
+											<SearchStringAddition name="AccountPayableByAgreementsSearchString" id="613">
+												<AdditionSource>
+													<Item>AccountPayableByAgreements</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="AccountPayableByAgreementsSearchStringContextMenu" id="614"/>
+												<ExtendedTooltip name="AccountPayableByAgreementsSearchStringExtendedTooltip" id="615"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="AccountPayableByAgreementsViewStatus" id="619">
+												<AdditionSource>
+													<Item>AccountPayableByAgreements</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<HorizontalLocation>Left</HorizontalLocation>
+												<ContextMenu name="AccountPayableByAgreementsViewStatusContextMenu" id="620"/>
+												<ExtendedTooltip name="AccountPayableByAgreementsViewStatusExtendedTooltip" id="621"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="AccountPayableByAgreementsSearchControl" id="616">
+												<AdditionSource>
+													<Item>AccountPayableByAgreements</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="AccountPayableByAgreementsSearchControlContextMenu" id="617"/>
+												<ExtendedTooltip name="AccountPayableByAgreementsSearchControlExtendedTooltip" id="618"/>
+											</SearchControlAddition>
+											<Events>
+												<Event name="OnActivateCell">AccountPayableByAgreementsOnActivateCell</Event>
+												<Event name="OnChange">MainTableOnChange</Event>
+											</Events>
+											<ChildItems>
+												<InputField name="AccountPayableByAgreementsKey" id="1126">
+													<DataPath>Object.AccountPayableByAgreements.Key</DataPath>
+													<Visible>false</Visible>
+													<ContextMenu name="AccountPayableByAgreementsKeyContextMenu" id="1127"/>
+													<ExtendedTooltip name="AccountPayableByAgreementsKeyExtendedTooltip" id="1128"/>
+												</InputField>
+												<InputField name="AccountPayableByAgreementsLineNumber" id="622">
+													<DataPath>Object.AccountPayableByAgreements.LineNumber</DataPath>
+													<ContextMenu name="AccountPayableByAgreementsLineNumberContextMenu" id="623"/>
+													<ExtendedTooltip name="AccountPayableByAgreementsLineNumberExtendedTooltip" id="624"/>
+												</InputField>
+												<InputField name="AccountPayableByAgreementsPartner" id="628">
+													<DataPath>Object.AccountPayableByAgreements.Partner</DataPath>
+													<ChoiceParameters>
+														<app:item name="Filter.Vendor">
+															<app:value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation/>
+																<Value xsi:type="xs:boolean">true</Value>
+															</app:value>
+														</app:item>
+													</ChoiceParameters>
+													<ContextMenu name="AccountPayableByAgreementsPartnerContextMenu" id="629"/>
+													<ExtendedTooltip name="AccountPayableByAgreementsPartnerExtendedTooltip" id="630"/>
+													<Events>
+														<Event name="OnChange">AccountPayableByAgreementsPartnerOnChange</Event>
+													</Events>
+												</InputField>
+												<InputField name="AccountPayableByAgreementsLegalName" id="631">
+													<DataPath>Object.AccountPayableByAgreements.LegalName</DataPath>
+													<ContextMenu name="AccountPayableByAgreementsLegalNameContextMenu" id="632"/>
+													<ExtendedTooltip name="AccountPayableByAgreementsLegalNameExtendedTooltip" id="633"/>
+													<Events>
+														<Event name="EditTextChange">MainTableLegalNameEditTextChange</Event>
+														<Event name="StartChoice">MainTableLegalNameStartChoice</Event>
+													</Events>
+												</InputField>
+												<InputField name="AccountPayableByAgreementsAgreement" id="634">
+													<DataPath>Object.AccountPayableByAgreements.Agreement</DataPath>
+													<ContextMenu name="AccountPayableByAgreementsAgreementContextMenu" id="635"/>
+													<ExtendedTooltip name="AccountPayableByAgreementsAgreementExtendedTooltip" id="636"/>
+													<Events>
+														<Event name="OnChange">AgreementOnChange</Event>
+														<Event name="EditTextChange">AccountPayableByAgreementsAgreementEditTextChange</Event>
+														<Event name="StartChoice">AccountPayableByAgreementsAgreementStartChoice</Event>
+													</Events>
+												</InputField>
+												<InputField name="AccountPayableByAgreementsLegalNameContract" id="1051">
+													<DataPath>Object.AccountPayableByAgreements.LegalNameContract</DataPath>
+													<ContextMenu name="AccountPayableByAgreementsLegalNameContractContextMenu" id="1052"/>
+													<ExtendedTooltip name="AccountPayableByAgreementsLegalNameContractExtendedTooltip" id="1053"/>
+												</InputField>
+												<InputField name="AccountPayableByAgreementsCurrency" id="637">
+													<DataPath>Object.AccountPayableByAgreements.Currency</DataPath>
+													<ContextMenu name="AccountPayableByAgreementsCurrencyContextMenu" id="638"/>
+													<ExtendedTooltip name="AccountPayableByAgreementsCurrencyExtendedTooltip" id="639"/>
+												</InputField>
+												<InputField name="AccountPayableByAgreementsAmount" id="640">
+													<DataPath>Object.AccountPayableByAgreements.Amount</DataPath>
+													<ContextMenu name="AccountPayableByAgreementsAmountContextMenu" id="641"/>
+													<ExtendedTooltip name="AccountPayableByAgreementsAmountExtendedTooltip" id="642"/>
+												</InputField>
+											</ChildItems>
+										</Table>
+									</ChildItems>
+								</Page>
+								<Page name="GroupAccountPayableByDocuments" id="599">
+									<Title>
+										<v8:item>
+											<v8:lang>de</v8:lang>
+											<v8:content>Nach Dokumenten</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>tr</v8:lang>
+											<v8:content>Evrak detaylı</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>By documents</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>fr</v8:lang>
+											<v8:content>Par documents</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>По документам</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="GroupAccountPayableByDocumentsExtendedTooltip" id="600"/>
+									<ChildItems>
+										<Table name="AccountPayableByDocuments" id="643">
+											<Representation>List</Representation>
+											<DataPath>Object.AccountPayableByDocuments</DataPath>
+											<RowFilter xsi:nil="true"/>
+											<ContextMenu name="AccountPayableByDocumentsContextMenu" id="645"/>
+											<AutoCommandBar name="AccountPayableByDocumentsCommandBar" id="644">
+												<ChildItems>
+													<Button name="EditCurrenciesAccountPayableByDocuments" id="1158">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.Command.EditCurrenciesAccountPayableByDocuments</CommandName>
+														<ExtendedTooltip name="EditCurrenciesAccountPayableByDocumentsExtendedTooltip" id="1159"/>
+													</Button>
+												</ChildItems>
+											</AutoCommandBar>
+											<ExtendedTooltip name="AccountPayableByDocumentsExtendedTooltip" id="646"/>
+											<SearchStringAddition name="AccountPayableByDocumentsSearchString" id="647">
+												<AdditionSource>
+													<Item>AccountPayableByDocuments</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="AccountPayableByDocumentsSearchStringContextMenu" id="648"/>
+												<ExtendedTooltip name="AccountPayableByDocumentsSearchStringExtendedTooltip" id="649"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="AccountPayableByDocumentsViewStatus" id="653">
+												<AdditionSource>
+													<Item>AccountPayableByDocuments</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<HorizontalLocation>Left</HorizontalLocation>
+												<ContextMenu name="AccountPayableByDocumentsViewStatusContextMenu" id="654"/>
+												<ExtendedTooltip name="AccountPayableByDocumentsViewStatusExtendedTooltip" id="655"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="AccountPayableByDocumentsSearchControl" id="650">
+												<AdditionSource>
+													<Item>AccountPayableByDocuments</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="AccountPayableByDocumentsSearchControlContextMenu" id="651"/>
+												<ExtendedTooltip name="AccountPayableByDocumentsSearchControlExtendedTooltip" id="652"/>
+											</SearchControlAddition>
+											<Events>
+												<Event name="OnActivateRow">AccountPayableByDocumentsOnActivateRow</Event>
+												<Event name="AfterDeleteRow">AccountPayableByDocumentsAfterDeleteRow</Event>
+												<Event name="OnActivateCell">AccountPayableByDocumentsOnActivateCell</Event>
+												<Event name="OnChange">MainTableOnChange</Event>
+											</Events>
+											<ChildItems>
+												<InputField name="AccountPayableByDocumentsKey" id="1129">
+													<DataPath>Object.AccountPayableByDocuments.Key</DataPath>
+													<Visible>false</Visible>
+													<ContextMenu name="AccountPayableByDocumentsKeyContextMenu" id="1130"/>
+													<ExtendedTooltip name="AccountPayableByDocumentsKeyExtendedTooltip" id="1131"/>
+												</InputField>
+												<InputField name="AccountPayableByDocumentsLineNumber" id="656">
+													<DataPath>Object.AccountPayableByDocuments.LineNumber</DataPath>
+													<ContextMenu name="AccountPayableByDocumentsLineNumberContextMenu" id="657"/>
+													<ExtendedTooltip name="AccountPayableByDocumentsLineNumberExtendedTooltip" id="658"/>
+												</InputField>
+												<InputField name="AccountPayableByDocumentsPartner" id="665">
+													<DataPath>Object.AccountPayableByDocuments.Partner</DataPath>
+													<ChoiceParameters>
+														<app:item name="Filter.Vendor">
+															<app:value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation/>
+																<Value xsi:type="xs:boolean">true</Value>
+															</app:value>
+														</app:item>
+													</ChoiceParameters>
+													<ContextMenu name="AccountPayableByDocumentsPartnerContextMenu" id="666"/>
+													<ExtendedTooltip name="AccountPayableByDocumentsPartnerExtendedTooltip" id="667"/>
+													<Events>
+														<Event name="OnChange">AccountPayableByDocumentsPartnerOnChange</Event>
+													</Events>
+												</InputField>
+												<InputField name="AccountPayableByDocumentsLegalName" id="668">
+													<DataPath>Object.AccountPayableByDocuments.LegalName</DataPath>
+													<ContextMenu name="AccountPayableByDocumentsLegalNameContextMenu" id="669"/>
+													<ExtendedTooltip name="AccountPayableByDocumentsLegalNameExtendedTooltip" id="670"/>
+													<Events>
+														<Event name="EditTextChange">MainTableLegalNameEditTextChange</Event>
+														<Event name="StartChoice">MainTableLegalNameStartChoice</Event>
+													</Events>
+												</InputField>
+												<InputField name="AccountPayableByDocumentsAgreement" id="671">
+													<DataPath>Object.AccountPayableByDocuments.Agreement</DataPath>
+													<ContextMenu name="AccountPayableByDocumentsAgreementContextMenu" id="672"/>
+													<ExtendedTooltip name="AccountPayableByDocumentsAgreementExtendedTooltip" id="673"/>
+													<Events>
+														<Event name="OnChange">AgreementOnChange</Event>
+														<Event name="EditTextChange">AccountPayableByDocumentsAgreementEditTextChange</Event>
+														<Event name="StartChoice">AccountPayableByDocumentsAgreementStartChoice</Event>
+													</Events>
+												</InputField>
+												<InputField name="AccountPayableByDocumentsLegalNameContract" id="1054">
+													<DataPath>Object.AccountPayableByDocuments.LegalNameContract</DataPath>
+													<ContextMenu name="AccountPayableByDocumentsLegalNameContractContextMenu" id="1055"/>
+													<ExtendedTooltip name="AccountPayableByDocumentsLegalNameContractExtendedTooltip" id="1056"/>
+												</InputField>
+												<InputField name="AccountPayableByDocumentsCurrency" id="674">
+													<DataPath>Object.AccountPayableByDocuments.Currency</DataPath>
+													<ContextMenu name="AccountPayableByDocumentsCurrencyContextMenu" id="675"/>
+													<ExtendedTooltip name="AccountPayableByDocumentsCurrencyExtendedTooltip" id="676"/>
+												</InputField>
+												<InputField name="AccountPayableByDocumentsAmount" id="677">
+													<DataPath>Object.AccountPayableByDocuments.Amount</DataPath>
+													<ContextMenu name="AccountPayableByDocumentsAmountContextMenu" id="678"/>
+													<ExtendedTooltip name="AccountPayableByDocumentsAmountExtendedTooltip" id="679"/>
+												</InputField>
+											</ChildItems>
+										</Table>
+										<Table name="VendorsPaymentTerms" id="1011">
+											<Representation>List</Representation>
+											<DataPath>Object.VendorsPaymentTerms</DataPath>
+											<RowFilter xsi:nil="true"/>
+											<ContextMenu name="VendorsPaymentTermsContextMenu" id="1013"/>
+											<AutoCommandBar name="VendorsPaymentTermsCommandBar" id="1012"/>
+											<ExtendedTooltip name="VendorsPaymentTermsExtendedTooltip" id="1014"/>
+											<SearchStringAddition name="VendorsPaymentTermsSearchString" id="1015">
+												<AdditionSource>
+													<Item>VendorsPaymentTerms</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="VendorsPaymentTermsSearchStringContextMenu" id="1016"/>
+												<ExtendedTooltip name="VendorsPaymentTermsSearchStringExtendedTooltip" id="1017"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="VendorsPaymentTermsViewStatus" id="1021">
+												<AdditionSource>
+													<Item>VendorsPaymentTerms</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="VendorsPaymentTermsViewStatusContextMenu" id="1022"/>
+												<ExtendedTooltip name="VendorsPaymentTermsViewStatusExtendedTooltip" id="1023"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="VendorsPaymentTermsSearchControl" id="1018">
+												<AdditionSource>
+													<Item>VendorsPaymentTerms</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="VendorsPaymentTermsSearchControlContextMenu" id="1019"/>
+												<ExtendedTooltip name="VendorsPaymentTermsSearchControlExtendedTooltip" id="1020"/>
+											</SearchControlAddition>
+											<Events>
+												<Event name="BeforeAddRow">VendorsPaymentTermsBeforeAddRow</Event>
+											</Events>
+											<ChildItems>
+												<InputField name="VendorsPaymentTermsKey" id="1132">
+													<DataPath>Object.VendorsPaymentTerms.Key</DataPath>
+													<Visible>false</Visible>
+													<ContextMenu name="VendorsPaymentTermsKeyContextMenu" id="1133"/>
+													<ExtendedTooltip name="VendorsPaymentTermsKeyExtendedTooltip" id="1134"/>
+												</InputField>
+												<InputField name="VendorsPaymentTermsCalculationType" id="1030">
+													<DataPath>Object.VendorsPaymentTerms.CalculationType</DataPath>
+													<ContextMenu name="VendorsPaymentTermsCalculationTypeContextMenu" id="1031"/>
+													<ExtendedTooltip name="VendorsPaymentTermsCalculationTypeExtendedTooltip" id="1032"/>
+												</InputField>
+												<InputField name="VendorsPaymentTermsDate" id="1033">
+													<DataPath>Object.VendorsPaymentTerms.Date</DataPath>
+													<ContextMenu name="VendorsPaymentTermsDateContextMenu" id="1034"/>
+													<ExtendedTooltip name="VendorsPaymentTermsDateExtendedTooltip" id="1035"/>
+												</InputField>
+												<InputField name="VendorsPaymentTermsAmount" id="1036">
+													<DataPath>Object.VendorsPaymentTerms.Amount</DataPath>
+													<ContextMenu name="VendorsPaymentTermsAmountContextMenu" id="1037"/>
+													<ExtendedTooltip name="VendorsPaymentTermsAmountExtendedTooltip" id="1038"/>
+												</InputField>
+											</ChildItems>
+										</Table>
+									</ChildItems>
+								</Page>
+							</ChildItems>
+						</Pages>
+					</ChildItems>
+				</Page>
+				<Page name="GroupAccountReceivable" id="601">
+					<Title>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Debitoren</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Cari hesap borçları</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Account receivable</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Comptabilité client</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Взаиморасчеты с покупателями</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="GroupAccountReceivableExtendedTooltip" id="602"/>
+					<ChildItems>
+						<Pages name="GroupAccountReceivableByAgreementsAndByDocuments" id="603">
+							<Title>
+								<v8:item>
+									<v8:lang>de</v8:lang>
+									<v8:content>Gruppe Debitoren nach Vereinbarungen und Dokumenten</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>tr</v8:lang>
+									<v8:content>Grup Cari hesap (A/R müşteri), sözleşme ve evrak detaylı</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Group account receivable by agreements and by documents</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>fr</v8:lang>
+									<v8:content>Groupe Comptabilité client par les accords et documents</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа взаиморасчеты с покупателями по соглашениям и по документам</v8:content>
+								</v8:item>
+							</Title>
+							<PagesRepresentation>TabsOnTop</PagesRepresentation>
+							<ExtendedTooltip name="GroupAccountReceivableByAgreementsAndByDocumentsExtendedTooltip" id="604"/>
+							<Events>
+								<Event name="OnCurrentPageChange">GroupAccountReceivableByAgreementsAndByDocumentsOnCurrentPageChange</Event>
+							</Events>
+							<ChildItems>
+								<Page name="GroupAccountReceivableByAgreements" id="605">
+									<Title>
+										<v8:item>
+											<v8:lang>de</v8:lang>
+											<v8:content>Nach Vereinbarungen</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>tr</v8:lang>
+											<v8:content>Sözleşme detaylı</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>By agreements</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>fr</v8:lang>
+											<v8:content>Par accords</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>По соглашениям</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="GroupAccountReceivableByAgreementsExtendedTooltip" id="606"/>
+									<ChildItems>
+										<Table name="AccountReceivableByAgreements" id="680">
+											<Representation>List</Representation>
+											<DataPath>Object.AccountReceivableByAgreements</DataPath>
+											<RowFilter xsi:nil="true"/>
+											<ContextMenu name="AccountReceivableByAgreementsContextMenu" id="682"/>
+											<AutoCommandBar name="AccountReceivableByAgreementsCommandBar" id="681">
+												<ChildItems>
+													<Button name="EditCurrenciesAccountReceivableByAgreements" id="1152">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.Command.EditCurrenciesAccountReceivableByAgreements</CommandName>
+														<ExtendedTooltip name="EditCurrenciesAccountReceivableByAgreementsExtendedTooltip" id="1153"/>
+													</Button>
+												</ChildItems>
+											</AutoCommandBar>
+											<ExtendedTooltip name="AccountReceivableByAgreementsExtendedTooltip" id="683"/>
+											<SearchStringAddition name="AccountReceivableByAgreementsSearchString" id="684">
+												<AdditionSource>
+													<Item>AccountReceivableByAgreements</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="AccountReceivableByAgreementsSearchStringContextMenu" id="685"/>
+												<ExtendedTooltip name="AccountReceivableByAgreementsSearchStringExtendedTooltip" id="686"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="AccountReceivableByAgreementsViewStatus" id="690">
+												<AdditionSource>
+													<Item>AccountReceivableByAgreements</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<HorizontalLocation>Left</HorizontalLocation>
+												<ContextMenu name="AccountReceivableByAgreementsViewStatusContextMenu" id="691"/>
+												<ExtendedTooltip name="AccountReceivableByAgreementsViewStatusExtendedTooltip" id="692"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="AccountReceivableByAgreementsSearchControl" id="687">
+												<AdditionSource>
+													<Item>AccountReceivableByAgreements</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="AccountReceivableByAgreementsSearchControlContextMenu" id="688"/>
+												<ExtendedTooltip name="AccountReceivableByAgreementsSearchControlExtendedTooltip" id="689"/>
+											</SearchControlAddition>
+											<Events>
+												<Event name="OnActivateCell">AccountReceivableByAgreementsOnActivateCell</Event>
+												<Event name="OnChange">MainTableOnChange</Event>
+											</Events>
+											<ChildItems>
+												<InputField name="AccountReceivableByAgreementsKey" id="1135">
+													<DataPath>Object.AccountReceivableByAgreements.Key</DataPath>
+													<Visible>false</Visible>
+													<ContextMenu name="AccountReceivableByAgreementsKeyContextMenu" id="1136"/>
+													<ExtendedTooltip name="AccountReceivableByAgreementsKeyExtendedTooltip" id="1137"/>
+												</InputField>
+												<InputField name="AccountReceivableByAgreementsLineNumber" id="693">
+													<DataPath>Object.AccountReceivableByAgreements.LineNumber</DataPath>
+													<ContextMenu name="AccountReceivableByAgreementsLineNumberContextMenu" id="694"/>
+													<ExtendedTooltip name="AccountReceivableByAgreementsLineNumberExtendedTooltip" id="695"/>
+												</InputField>
+												<InputField name="AccountReceivableByAgreementsPartner" id="699">
+													<DataPath>Object.AccountReceivableByAgreements.Partner</DataPath>
+													<ChoiceParameters>
+														<app:item name="Filter.Customer">
+															<app:value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation/>
+																<Value xsi:type="xs:boolean">true</Value>
+															</app:value>
+														</app:item>
+													</ChoiceParameters>
+													<ContextMenu name="AccountReceivableByAgreementsPartnerContextMenu" id="700"/>
+													<ExtendedTooltip name="AccountReceivableByAgreementsPartnerExtendedTooltip" id="701"/>
+													<Events>
+														<Event name="OnChange">AccountReceivableByAgreementsPartnerOnChange</Event>
+													</Events>
+												</InputField>
+												<InputField name="AccountReceivableByAgreementsLegalName" id="702">
+													<DataPath>Object.AccountReceivableByAgreements.LegalName</DataPath>
+													<ContextMenu name="AccountReceivableByAgreementsLegalNameContextMenu" id="703"/>
+													<ExtendedTooltip name="AccountReceivableByAgreementsLegalNameExtendedTooltip" id="704"/>
+													<Events>
+														<Event name="EditTextChange">MainTableLegalNameEditTextChange</Event>
+														<Event name="StartChoice">MainTableLegalNameStartChoice</Event>
+													</Events>
+												</InputField>
+												<InputField name="AccountReceivableByAgreementsAgreement" id="705">
+													<DataPath>Object.AccountReceivableByAgreements.Agreement</DataPath>
+													<ContextMenu name="AccountReceivableByAgreementsAgreementContextMenu" id="706"/>
+													<ExtendedTooltip name="AccountReceivableByAgreementsAgreementExtendedTooltip" id="707"/>
+													<Events>
+														<Event name="OnChange">AgreementOnChange</Event>
+														<Event name="EditTextChange">AccountReceivableByAgreementsAgreementEditTextChange</Event>
+														<Event name="StartChoice">AccountReceivableByAgreementsAgreementStartChoice</Event>
+													</Events>
+												</InputField>
+												<InputField name="AccountReceivableByAgreementsLegalNameContract" id="1057">
+													<DataPath>Object.AccountReceivableByAgreements.LegalNameContract</DataPath>
+													<ContextMenu name="AccountReceivableByAgreementsLegalNameContractContextMenu" id="1058"/>
+													<ExtendedTooltip name="AccountReceivableByAgreementsLegalNameContractExtendedTooltip" id="1059"/>
+												</InputField>
+												<InputField name="AccountReceivableByAgreementsCurrency" id="708">
+													<DataPath>Object.AccountReceivableByAgreements.Currency</DataPath>
+													<ContextMenu name="AccountReceivableByAgreementsCurrencyContextMenu" id="709"/>
+													<ExtendedTooltip name="AccountReceivableByAgreementsCurrencyExtendedTooltip" id="710"/>
+												</InputField>
+												<InputField name="AccountReceivableByAgreementsAmount" id="711">
+													<DataPath>Object.AccountReceivableByAgreements.Amount</DataPath>
+													<ContextMenu name="AccountReceivableByAgreementsAmountContextMenu" id="712"/>
+													<ExtendedTooltip name="AccountReceivableByAgreementsAmountExtendedTooltip" id="713"/>
+												</InputField>
+											</ChildItems>
+										</Table>
+									</ChildItems>
+								</Page>
+								<Page name="GroupAccountReceivableByDocuments" id="607">
+									<Title>
+										<v8:item>
+											<v8:lang>de</v8:lang>
+											<v8:content>Nach Dokumenten</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>tr</v8:lang>
+											<v8:content>Evrak detaylı</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>By documents</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>fr</v8:lang>
+											<v8:content>Par documents</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>По документам</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="GroupAccountReceivableByDocumentsExtendedTooltip" id="608"/>
+									<ChildItems>
+										<Table name="AccountReceivableByDocuments" id="714">
+											<Representation>List</Representation>
+											<DataPath>Object.AccountReceivableByDocuments</DataPath>
+											<RowFilter xsi:nil="true"/>
+											<ContextMenu name="AccountReceivableByDocumentsContextMenu" id="716"/>
+											<AutoCommandBar name="AccountReceivableByDocumentsCommandBar" id="715">
+												<ChildItems>
+													<Button name="EditCurrenciesAccountReceivableByDocuments" id="1154">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.Command.EditCurrenciesAccountReceivableByDocuments</CommandName>
+														<ExtendedTooltip name="EditCurrenciesAccountReceivableByDocumentsExtendedTooltip" id="1155"/>
+													</Button>
+												</ChildItems>
+											</AutoCommandBar>
+											<ExtendedTooltip name="AccountReceivableByDocumentsExtendedTooltip" id="717"/>
+											<SearchStringAddition name="AccountReceivableByDocumentsSearchString" id="718">
+												<AdditionSource>
+													<Item>AccountReceivableByDocuments</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="AccountReceivableByDocumentsSearchStringContextMenu" id="719"/>
+												<ExtendedTooltip name="AccountReceivableByDocumentsSearchStringExtendedTooltip" id="720"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="AccountReceivableByDocumentsViewStatus" id="724">
+												<AdditionSource>
+													<Item>AccountReceivableByDocuments</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<HorizontalLocation>Left</HorizontalLocation>
+												<ContextMenu name="AccountReceivableByDocumentsViewStatusContextMenu" id="725"/>
+												<ExtendedTooltip name="AccountReceivableByDocumentsViewStatusExtendedTooltip" id="726"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="AccountReceivableByDocumentsSearchControl" id="721">
+												<AdditionSource>
+													<Item>AccountReceivableByDocuments</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="AccountReceivableByDocumentsSearchControlContextMenu" id="722"/>
+												<ExtendedTooltip name="AccountReceivableByDocumentsSearchControlExtendedTooltip" id="723"/>
+											</SearchControlAddition>
+											<Events>
+												<Event name="OnActivateRow">AccountReceivableByDocumentsOnActivateRow</Event>
+												<Event name="AfterDeleteRow">AccountReceivableByDocumentsAfterDeleteRow</Event>
+												<Event name="OnActivateCell">AccountReceivableByDocumentsOnActivateCell</Event>
+												<Event name="OnChange">MainTableOnChange</Event>
+											</Events>
+											<ChildItems>
+												<InputField name="AccountReceivableByDocumentsKey" id="1138">
+													<DataPath>Object.AccountReceivableByDocuments.Key</DataPath>
+													<Visible>false</Visible>
+													<ContextMenu name="AccountReceivableByDocumentsKeyContextMenu" id="1139"/>
+													<ExtendedTooltip name="AccountReceivableByDocumentsKeyExtendedTooltip" id="1140"/>
+												</InputField>
+												<InputField name="AccountReceivableByDocumentsLineNumber" id="727">
+													<DataPath>Object.AccountReceivableByDocuments.LineNumber</DataPath>
+													<ContextMenu name="AccountReceivableByDocumentsLineNumberContextMenu" id="728"/>
+													<ExtendedTooltip name="AccountReceivableByDocumentsLineNumberExtendedTooltip" id="729"/>
+												</InputField>
+												<InputField name="AccountReceivableByDocumentsPartner" id="736">
+													<DataPath>Object.AccountReceivableByDocuments.Partner</DataPath>
+													<ChoiceParameters>
+														<app:item name="Filter.Customer">
+															<app:value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation/>
+																<Value xsi:type="xs:boolean">true</Value>
+															</app:value>
+														</app:item>
+													</ChoiceParameters>
+													<ContextMenu name="AccountReceivableByDocumentsPartnerContextMenu" id="737"/>
+													<ExtendedTooltip name="AccountReceivableByDocumentsPartnerExtendedTooltip" id="738"/>
+													<Events>
+														<Event name="OnChange">AccountReceivableByDocumentsPartnerOnChange</Event>
+													</Events>
+												</InputField>
+												<InputField name="AccountReceivableByDocumentsLegalName" id="739">
+													<DataPath>Object.AccountReceivableByDocuments.LegalName</DataPath>
+													<ContextMenu name="AccountReceivableByDocumentsLegalNameContextMenu" id="740"/>
+													<ExtendedTooltip name="AccountReceivableByDocumentsLegalNameExtendedTooltip" id="741"/>
+													<Events>
+														<Event name="EditTextChange">MainTableLegalNameEditTextChange</Event>
+														<Event name="StartChoice">MainTableLegalNameStartChoice</Event>
+													</Events>
+												</InputField>
+												<InputField name="AccountReceivableByDocumentsAgreement" id="742">
+													<DataPath>Object.AccountReceivableByDocuments.Agreement</DataPath>
+													<ContextMenu name="AccountReceivableByDocumentsAgreementContextMenu" id="743"/>
+													<ExtendedTooltip name="AccountReceivableByDocumentsAgreementExtendedTooltip" id="744"/>
+													<Events>
+														<Event name="OnChange">AgreementOnChange</Event>
+														<Event name="EditTextChange">AccountReceivableByDocumentsAgreementEditTextChange</Event>
+														<Event name="StartChoice">AccountReceivableByDocumentsAgreementStartChoice</Event>
+													</Events>
+												</InputField>
+												<InputField name="AccountReceivableByDocumentsLegalNameContract" id="1060">
+													<DataPath>Object.AccountReceivableByDocuments.LegalNameContract</DataPath>
+													<ContextMenu name="AccountReceivableByDocumentsLegalNameContractContextMenu" id="1061"/>
+													<ExtendedTooltip name="AccountReceivableByDocumentsLegalNameContractExtendedTooltip" id="1062"/>
+												</InputField>
+												<InputField name="AccountReceivableByDocumentsCurrency" id="745">
+													<DataPath>Object.AccountReceivableByDocuments.Currency</DataPath>
+													<ContextMenu name="AccountReceivableByDocumentsCurrencyContextMenu" id="746"/>
+													<ExtendedTooltip name="AccountReceivableByDocumentsCurrencyExtendedTooltip" id="747"/>
+												</InputField>
+												<InputField name="AccountReceivableByDocumentsAmount" id="748">
+													<DataPath>Object.AccountReceivableByDocuments.Amount</DataPath>
+													<ContextMenu name="AccountReceivableByDocumentsAmountContextMenu" id="749"/>
+													<ExtendedTooltip name="AccountReceivableByDocumentsAmountExtendedTooltip" id="750"/>
+												</InputField>
+											</ChildItems>
+										</Table>
+										<Table name="CustomersPaymentTerms" id="974">
+											<Representation>List</Representation>
+											<Height>5</Height>
+											<DataPath>Object.CustomersPaymentTerms</DataPath>
+											<RowFilter xsi:nil="true"/>
+											<ContextMenu name="CustomersPaymentTermsContextMenu" id="976"/>
+											<AutoCommandBar name="CustomersPaymentTermsCommandBar" id="975"/>
+											<ExtendedTooltip name="CustomersPaymentTermsExtendedTooltip" id="977"/>
+											<SearchStringAddition name="CustomersPaymentTermsSearchString" id="978">
+												<AdditionSource>
+													<Item>CustomersPaymentTerms</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="CustomersPaymentTermsSearchStringContextMenu" id="979"/>
+												<ExtendedTooltip name="CustomersPaymentTermsSearchStringExtendedTooltip" id="980"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="CustomersPaymentTermsViewStatus" id="984">
+												<AdditionSource>
+													<Item>CustomersPaymentTerms</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="CustomersPaymentTermsViewStatusContextMenu" id="985"/>
+												<ExtendedTooltip name="CustomersPaymentTermsViewStatusExtendedTooltip" id="986"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="CustomersPaymentTermsSearchControl" id="981">
+												<AdditionSource>
+													<Item>CustomersPaymentTerms</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="CustomersPaymentTermsSearchControlContextMenu" id="982"/>
+												<ExtendedTooltip name="CustomersPaymentTermsSearchControlExtendedTooltip" id="983"/>
+											</SearchControlAddition>
+											<Events>
+												<Event name="BeforeAddRow">CustomersPaymentTermsBeforeAddRow</Event>
+											</Events>
+											<ChildItems>
+												<InputField name="CustomersPaymentTermsKey" id="1141">
+													<DataPath>Object.CustomersPaymentTerms.Key</DataPath>
+													<Visible>false</Visible>
+													<ContextMenu name="CustomersPaymentTermsKeyContextMenu" id="1142"/>
+													<ExtendedTooltip name="CustomersPaymentTermsKeyExtendedTooltip" id="1143"/>
+												</InputField>
+												<InputField name="CustomersPaymentTermsCalculationType" id="1005">
+													<DataPath>Object.CustomersPaymentTerms.CalculationType</DataPath>
+													<ContextMenu name="CustomersPaymentTermsCalculationTypeContextMenu" id="1006"/>
+													<ExtendedTooltip name="CustomersPaymentTermsCalculationTypeExtendedTooltip" id="1007"/>
+												</InputField>
+												<InputField name="CustomersPaymentTermsDate" id="993">
+													<DataPath>Object.CustomersPaymentTerms.Date</DataPath>
+													<ContextMenu name="CustomersPaymentTermsDateContextMenu" id="994"/>
+													<ExtendedTooltip name="CustomersPaymentTermsDateExtendedTooltip" id="995"/>
+												</InputField>
+												<InputField name="CustomersPaymentTermsAmount" id="1002">
+													<DataPath>Object.CustomersPaymentTerms.Amount</DataPath>
+													<ContextMenu name="CustomersPaymentTermsAmountContextMenu" id="1003"/>
+													<ExtendedTooltip name="CustomersPaymentTermsAmountExtendedTooltip" id="1004"/>
+												</InputField>
+											</ChildItems>
+										</Table>
+									</ChildItems>
+								</Page>
+							</ChildItems>
+						</Pages>
+					</ChildItems>
+				</Page>
+				<Page name="GroupOther" id="303">
+					<Title>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Sonstiges</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Diğer</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Other</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Autres</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дополнительно</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="GroupOtherExtendedTooltip" id="304"/>
+					<ChildItems>
+						<InputField name="Date" id="4">
+							<DataPath>Object.Date</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="DateContextMenu" id="5"/>
+							<ExtendedTooltip name="DateExtendedTooltip" id="6"/>
+							<Events>
+								<Event name="OnChange">DateOnChange</Event>
+							</Events>
+						</InputField>
+						<InputField name="Number" id="1">
+							<DataPath>Object.Number</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="NumberContextMenu" id="2"/>
+							<ExtendedTooltip name="NumberExtendedTooltip" id="3"/>
+						</InputField>
+						<InputField name="Branch" id="968">
+							<DataPath>Object.Branch</DataPath>
+							<ContextMenu name="BranchContextMenu" id="969"/>
+							<ExtendedTooltip name="BranchExtendedTooltip" id="970"/>
+						</InputField>
+						<InputField name="Author" id="965">
+							<DataPath>Object.Author</DataPath>
+							<ContextMenu name="AuthorContextMenu" id="966"/>
+							<ExtendedTooltip name="AuthorExtendedTooltip" id="967"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+		<UsualGroup name="GroupBottom" id="299">
+			<HorizontalStretch>true</HorizontalStretch>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="GroupBottomExtendedTooltip" id="300"/>
+			<ChildItems>
+				<UsualGroup name="GroupTotal" id="301">
+					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<BackColor>#F2F2F2</BackColor>
+					<ExtendedTooltip name="GroupTotalExtendedTooltip" id="302"/>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.OpeningEntry</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Object.RegisterRecords</Field>
+			</UseAlways>
+			<Columns>
+				<AdditionalColumns table="Object.Inventory">
+					<Column name="Item" id="4">
+						<Title>
+							<v8:item>
+								<v8:lang>de</v8:lang>
+								<v8:content>Produkt</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>tr</v8:lang>
+								<v8:content>Malzeme</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Item</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>fr</v8:lang>
+								<v8:content>Article</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Номенклатура</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>cfg:CatalogRef.Items</v8:Type>
+						</Type>
+					</Column>
+				</AdditionalColumns>
+				<AdditionalColumns table="Object.CustomersPaymentTerms">
+					<Column name="IsVisible" id="7">
+						<Title>
+							<v8:item>
+								<v8:lang>de</v8:lang>
+								<v8:content>Ist sichtbar</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>tr</v8:lang>
+								<v8:content>Görünür</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Is visible</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>fr</v8:lang>
+								<v8:content>Visible</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Видимый</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+					</Column>
+				</AdditionalColumns>
+				<AdditionalColumns table="Object.VendorsPaymentTerms">
+					<Column name="IsVisible" id="8">
+						<Title>
+							<v8:item>
+								<v8:lang>de</v8:lang>
+								<v8:content>Ist sichtbar</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>tr</v8:lang>
+								<v8:content>Görünür</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Is visible</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>fr</v8:lang>
+								<v8:content>Visible</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Видимый</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+					</Column>
+				</AdditionalColumns>
+				<AdditionalColumns table="Object.Currencies"/>
+			</Columns>
+		</Attribute>
+		<Attribute name="Description" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Beschreibung</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Tanım</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Description</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Description</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Комментарий</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="GroupItems" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Gruppe Elemente</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Grup malzemeler</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Group items</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Groupe Éléments</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа элементов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription"/>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>CurrenciesAccountBalanceMovementType</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>CurrenciesAccountBalanceMovementTypeType</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>CurrenciesAccountBalanceCurrencyFrom</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>CurrenciesAccountBalanceMovementTypeCurrency</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>CurrenciesAccountBalanceShowReverseRate</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>CurrenciesAccountBalanceRatePresentation</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>CurrenciesAccountBalanceMultiplicity</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>CurrenciesAccountBalanceAmount</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>CurrenciesAdvanceFromCustomersMovementType</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>CurrenciesAdvanceFromCustomersMovementTypeType</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>CurrenciesAdvanceFromCustomersCurrencyFrom</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>CurrenciesAdvanceFromCustomersMovementTypeCurrency</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>CurrenciesAdvanceFromCustomersShowReverseRate</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>CurrenciesAdvanceFromCustomersRatePresentation</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>CurrenciesAdvanceFromCustomersMultiplicity</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>CurrenciesAdvanceFromCustomersAmount</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>CurrenciesAdvanceToSuppliersMovementType</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>CurrenciesAdvanceToSuppliersMovementTypeType</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>CurrenciesAdvanceToSuppliersCurrencyFrom</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>CurrenciesAdvanceToSuppliersMovementTypeCurrency</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>CurrenciesAdvanceToSuppliersShowReverseRate</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>CurrenciesAdvanceToSuppliersRatePresentation</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>CurrenciesAdvanceToSuppliersMultiplicity</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>CurrenciesAdvanceToSuppliersAmount</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>CurrenciesAccountPayableByAgreementsMovementType</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>CurrenciesAccountPayableByAgreementsMovementTypeType</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>CurrenciesAccountPayableByAgreementsCurrencyFrom</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>CurrenciesAccountPayableByAgreementsMovementTypeCurrency</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>CurrenciesAccountPayableByAgreementsShowReverseRate</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>CurrenciesAccountPayableByAgreementsRatePresentation</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>CurrenciesAccountPayableByAgreementsMultiplicity</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>CurrenciesAccountPayableByAgreementsAmount</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>CurrenciesAccountPayableByDocumentsMovementType</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>CurrenciesAccountPayableByDocumentsMovementTypeType</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>CurrenciesAccountPayableByDocumentsCurrencyFrom</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>CurrenciesAccountPayableByDocumentsMovementTypeCurrency</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>CurrenciesAccountPayableByDocumentsShowReverseRate</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>CurrenciesAccountPayableByDocumentsRatePresentation</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>CurrenciesAccountPayableByDocumentsMultiplicity</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>CurrenciesAccountPayableByDocumentsAmount</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>CurrenciesAccountReceivableByAgreementsMovementType</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>CurrenciesAccountReceivableByAgreementsMovementTypeType</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>CurrenciesAccountReceivableByAgreementsCurrencyFrom</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>CurrenciesAccountReceivableByAgreementsMovementTypeCurrency</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>CurrenciesAccountReceivableByAgreementsShowReverseRate</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>CurrenciesAccountReceivableByAgreementsRatePresentation</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>CurrenciesAccountReceivableByAgreementsMultiplicity</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>CurrenciesAccountReceivableByAgreementsAmount</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>CurrenciesAccountReceivableByDocumentsMovementType</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>CurrenciesAccountReceivableByDocumentsMovementTypeType</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>CurrenciesAccountReceivableByDocumentsCurrencyFrom</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>CurrenciesAccountReceivableByDocumentsMovementTypeCurrency</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>CurrenciesAccountReceivableByDocumentsShowReverseRate</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>CurrenciesAccountReceivableByDocumentsRatePresentation</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>CurrenciesAccountReceivableByDocumentsMultiplicity</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>CurrenciesAccountReceivableByDocumentsAmount</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Object.Currencies.IsVisible</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Visible</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>Show</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:use>false</dcsset:use>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>GroupAccountPayableByAgreementsAndByDocuments</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>GroupAccountReceivableByAgreementsAndByDocuments</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">isSaasMode</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Visible</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>CustomersPaymentTermsCalculationType</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>CustomersPaymentTermsDate</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>CustomersPaymentTermsAmount</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Object.CustomersPaymentTerms.IsVisible</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Visible</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>VendorsPaymentTermsCalculationType</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>VendorsPaymentTermsDate</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>VendorsPaymentTermsAmount</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Object.VendorsPaymentTerms.IsVisible</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Visible</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="ShowRowKey" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Show row key</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Satır antahtarı göster</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать row key</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>StdPicture.GetURL</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ShowRowKey</Action>
+		</Command>
+		<Command name="EditCurrenciesAccountBalance" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Редактирование валют остатков и оборотов денежных средств</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Edit currencies account balance</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>CommonPicture.EditCurrencies</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>EditCurrenciesAccountBalance</Action>
+		</Command>
+		<Command name="EditCurrenciesAdvanceFromCustomers" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Редактирование валют авансов покупателей</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Edit currencies advance from customers</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>CommonPicture.EditCurrencies</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>EditCurrenciesAdvanceFromCustomers</Action>
+		</Command>
+		<Command name="EditCurrenciesAdvanceToSuppliers" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Редактирование валют авансов поставщикам</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Edit currencies advance to suppliers</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>CommonPicture.EditCurrencies</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>EditCurrenciesAdvanceToSuppliers</Action>
+		</Command>
+		<Command name="EditCurrenciesAccountReceivableByAgreements" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Редактирование валют взаиморасчетов с покупателями по соглашениям</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Edit currencies account receivable by agreements</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>CommonPicture.EditCurrencies</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>EditCurrenciesAccountReceivableByAgreements</Action>
+		</Command>
+		<Command name="EditCurrenciesAccountReceivableByDocuments" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Редактирование валют взаиморасчетов с покупателями по документам</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Edit currencies account receivable by documents</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>CommonPicture.EditCurrencies</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>EditCurrenciesAccountReceivableByDocuments</Action>
+		</Command>
+		<Command name="EditCurrenciesAccountPayableByAgreements" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Редактирование валют взаиморасчетов с поставщиками по соглашениям</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Edit currencies account payable by agreements</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>CommonPicture.EditCurrencies</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>EditCurrenciesAccountPayableByAgreements</Action>
+		</Command>
+		<Command name="EditCurrenciesAccountPayableByDocuments" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Редактирование валют взаиморасчетов с поставщиками по документам</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Edit currencies account payable by documents</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>CommonPicture.EditCurrencies</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>EditCurrenciesAccountPayableByDocuments</Action>
+		</Command>
+		<Command name="ShowHiddenTables" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать скрытые таблицы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Show hidden tables</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>StdPicture.ShowData</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ShowHiddenTables</Action>
+		</Command>
+	</Commands>
+</Form>

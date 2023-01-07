@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.14">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="FormCommandBar" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="Header" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Kopfzeile</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Başlık</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Header</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>En-tête</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заголовок</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="HeaderExtendedTooltip" id="2"/>
+			<ChildItems>
+				<InputField name="ConnectionStatus" id="5">
+					<DataPath>ConstantsSet.ConnectionStatus</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ConnectionStatusContextMenu" id="6"/>
+					<ExtendedTooltip name="ConnectionStatusExtendedTooltip" id="7"/>
+				</InputField>
+				<InputField name="DefaultPictureStorageVolume" id="8">
+					<DataPath>ConstantsSet.DefaultPictureStorageVolume</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="DefaultPictureStorageVolumeContextMenu" id="9"/>
+					<ExtendedTooltip name="DefaultPictureStorageVolumeExtendedTooltip" id="10"/>
+				</InputField>
+				<CheckBoxField name="UseCompanies" id="16">
+					<DataPath>ConstantsSet.UseCompanies</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="UseCompaniesContextMenu" id="17"/>
+					<ExtendedTooltip name="UseCompaniesExtendedTooltip" id="18"/>
+				</CheckBoxField>
+				<CheckBoxField name="NotFirstStart" id="19">
+					<DataPath>ConstantsSet.NotFirstStart</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="NotFirstStartContextMenu" id="20"/>
+					<ExtendedTooltip name="NotFirstStartExtendedTooltip" id="21"/>
+				</CheckBoxField>
+				<CheckBoxField name="SaasMode" id="22">
+					<DataPath>ConstantsSet.SaasMode</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="SaasModeContextMenu" id="23"/>
+					<ExtendedTooltip name="SaasModeExtendedTooltip" id="24"/>
+				</CheckBoxField>
+				<CheckBoxField name="UseItemKey" id="30">
+					<DataPath>ConstantsSet.UseItemKey</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="UseItemKeyContextMenu" id="31"/>
+					<ExtendedTooltip name="UseItemKeyExtendedTooltip" id="32"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ConstantsSet" id="1">
+			<Type>
+				<v8:Type>cfg:ConstantsSet</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

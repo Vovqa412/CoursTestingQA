@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.14">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="FormCommandBar" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+		<Event name="BeforeWriteAtServer">BeforeWriteAtServer</Event>
+	</Events>
+	<ChildItems>
+		<RadioButtonField name="RecordType" id="19">
+			<DataPath>RecordType</DataPath>
+			<TitleLocation>None</TitleLocation>
+			<RadioButtonType>Tumbler</RadioButtonType>
+			<ContextMenu name="RecordTypeContextMenu" id="20"/>
+			<ExtendedTooltip name="RecordTypeExtendedTooltip" id="21"/>
+			<Events>
+				<Event name="OnChange">RecordTypeOnChange</Event>
+			</Events>
+		</RadioButtonField>
+		<InputField name="Period" id="1">
+			<DataPath>Record.Period</DataPath>
+			<ContextMenu name="PeriodContextMenu" id="2"/>
+			<ExtendedTooltip name="PeriodExtendedTooltip" id="3"/>
+		</InputField>
+		<InputField name="Company" id="4">
+			<DataPath>Record.Company</DataPath>
+			<ContextMenu name="CompanyContextMenu" id="5"/>
+			<ExtendedTooltip name="CompanyExtendedTooltip" id="6"/>
+		</InputField>
+		<InputField name="Tax" id="22">
+			<DataPath>Record.Tax</DataPath>
+			<ContextMenu name="TaxContextMenu" id="23"/>
+			<ExtendedTooltip name="TaxExtendedTooltip" id="24"/>
+			<Events>
+				<Event name="OnChange">TaxOnChange</Event>
+			</Events>
+		</InputField>
+		<InputField name="ItemType" id="7">
+			<DataPath>Record.ItemType</DataPath>
+			<ContextMenu name="ItemTypeContextMenu" id="8"/>
+			<ExtendedTooltip name="ItemTypeExtendedTooltip" id="9"/>
+		</InputField>
+		<InputField name="Item" id="10">
+			<DataPath>Record.Item</DataPath>
+			<ContextMenu name="ItemContextMenu" id="11"/>
+			<ExtendedTooltip name="ItemExtendedTooltip" id="12"/>
+		</InputField>
+		<InputField name="ItemKey" id="13">
+			<DataPath>Record.ItemKey</DataPath>
+			<ContextMenu name="ItemKeyContextMenu" id="14"/>
+			<ExtendedTooltip name="ItemKeyExtendedTooltip" id="15"/>
+		</InputField>
+		<InputField name="Agreement" id="25">
+			<DataPath>Record.Agreement</DataPath>
+			<ContextMenu name="AgreementContextMenu" id="26"/>
+			<ExtendedTooltip name="AgreementExtendedTooltip" id="27"/>
+		</InputField>
+		<InputField name="TaxRate" id="16">
+			<DataPath>Record.TaxRate</DataPath>
+			<ListChoiceMode>true</ListChoiceMode>
+			<TextEdit>false</TextEdit>
+			<ContextMenu name="TaxRateContextMenu" id="17"/>
+			<ExtendedTooltip name="TaxRateExtendedTooltip" id="18"/>
+			<Events>
+				<Event name="StartListChoice">TaxRateStartListChoice</Event>
+			</Events>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Record" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.TaxSettings</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="RecordType" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Datensatztyp</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Kayıt tipi</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Record type</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Type d'enregistrement</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип записи</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+</Form>

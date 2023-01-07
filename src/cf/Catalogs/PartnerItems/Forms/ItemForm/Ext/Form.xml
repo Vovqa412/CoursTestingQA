@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.14">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="FormCommandBar" id="-1"/>
+	<Events>
+		<Event name="NotificationProcessing">NotificationProcessing</Event>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+		<Event name="BeforeWriteAtServer">BeforeWriteAtServer</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="GroupDescriptions" id="41">
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="GroupDescriptionsExtendedTooltip" id="42"/>
+			<ChildItems>
+				<InputField name="Code" id="43">
+					<DataPath>Object.Code</DataPath>
+					<ContextMenu name="CodeContextMenu" id="44"/>
+					<ExtendedTooltip name="CodeExtendedTooltip" id="45"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="ItemID" id="46">
+			<DataPath>Object.ItemID</DataPath>
+			<ContextMenu name="ItemIDContextMenu" id="47"/>
+			<ExtendedTooltip name="ItemIDExtendedTooltip" id="48"/>
+		</InputField>
+		<InputField name="Partner" id="4">
+			<DataPath>Object.Partner</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="PartnerContextMenu" id="5"/>
+			<ExtendedTooltip name="PartnerExtendedTooltip" id="6"/>
+		</InputField>
+		<InputField name="Item" id="49">
+			<DataPath>Object.Item</DataPath>
+			<ContextMenu name="ItemContextMenu" id="50"/>
+			<ExtendedTooltip name="ItemExtendedTooltip" id="51"/>
+		</InputField>
+		<InputField name="ItemKey" id="52">
+			<DataPath>Object.ItemKey</DataPath>
+			<ContextMenu name="ItemKeyContextMenu" id="53"/>
+			<ExtendedTooltip name="ItemKeyExtendedTooltip" id="54"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.PartnerItems</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

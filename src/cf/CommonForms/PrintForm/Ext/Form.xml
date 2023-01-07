@@ -1,0 +1,392 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.14">
+	<AutoCommandBar name="FormCommandBar" id="-1">
+		<ChildItems>
+			<Button name="FormPrint" id="62">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Item.Result.StandardCommand.Print</CommandName>
+				<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+				<ExtendedTooltip name="FormPrintExtendedTooltip" id="63"/>
+			</Button>
+			<Button name="FormEditResult" id="60">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.EditResult</CommandName>
+				<ExtendedTooltip name="FormEditResultExtendedTooltip" id="61"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">OnOpen</Event>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+	</Events>
+	<ChildItems>
+		<CommandBar name="GroupResultCommandBar" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Group result command bar</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Grup araç çubuk sonucu</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа результат панель свойств</v8:content>
+				</v8:item>
+			</Title>
+			<CommandSource>Item.Result</CommandSource>
+			<ExtendedTooltip name="GroupResultCommandBarExtendedTooltip" id="5"/>
+			<ChildItems>
+				<ButtonGroup name="GroupResultFontFormatting" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Group result font formatting</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Grup yazı tipi düzeltme sonucu</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа результат форматирования шрифта</v8:content>
+						</v8:item>
+					</Title>
+					<Representation>Compact</Representation>
+					<ExtendedTooltip name="GroupResultFontFormattingExtendedTooltip" id="7"/>
+					<ChildItems>
+						<Button name="Bold" id="8">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Item.Result.StandardCommand.Bold</CommandName>
+							<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+							<ExtendedTooltip name="BoldExtendedTooltip" id="9"/>
+						</Button>
+						<Button name="Italic" id="10">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Item.Result.StandardCommand.Italic</CommandName>
+							<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+							<ExtendedTooltip name="ItalicExtendedTooltip" id="11"/>
+						</Button>
+						<Button name="Underline" id="12">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Item.Result.StandardCommand.Underline</CommandName>
+							<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+							<ExtendedTooltip name="UnderlineExtendedTooltip" id="13"/>
+						</Button>
+						<Button name="BackColor" id="14">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Item.Result.StandardCommand.BackColor</CommandName>
+							<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+							<ExtendedTooltip name="BackColorExtendedTooltip" id="15"/>
+						</Button>
+						<Button name="TextColor" id="16">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Item.Result.StandardCommand.TextColor</CommandName>
+							<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+							<ExtendedTooltip name="TextColorExtendedTooltip" id="17"/>
+						</Button>
+						<Button name="Font" id="18">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Item.Result.StandardCommand.Font</CommandName>
+							<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+							<ExtendedTooltip name="FontExtendedTooltip" id="19"/>
+						</Button>
+					</ChildItems>
+				</ButtonGroup>
+				<ButtonGroup name="GroupResultBorders" id="20">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Group result borders</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Grup kenar sonucu</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа результат границы</v8:content>
+						</v8:item>
+					</Title>
+					<Representation>Compact</Representation>
+					<ExtendedTooltip name="GroupResultBordersExtendedTooltip" id="21"/>
+					<ChildItems>
+						<Button name="BorderLeft" id="22">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Item.Result.StandardCommand.BorderLeft</CommandName>
+							<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+							<ExtendedTooltip name="BorderLeftExtendedTooltip" id="23"/>
+						</Button>
+						<Button name="BorderTop" id="24">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Item.Result.StandardCommand.BorderTop</CommandName>
+							<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+							<ExtendedTooltip name="BorderTopExtendedTooltip" id="25"/>
+						</Button>
+						<Button name="BorderRight" id="26">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Item.Result.StandardCommand.BorderRight</CommandName>
+							<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+							<ExtendedTooltip name="BorderRightExtendedTooltip" id="27"/>
+						</Button>
+						<Button name="BorderBottom" id="28">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Item.Result.StandardCommand.BorderBottom</CommandName>
+							<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+							<ExtendedTooltip name="BorderBottomExtendedTooltip" id="29"/>
+						</Button>
+						<Button name="BorderAll" id="30">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Item.Result.StandardCommand.BorderAll</CommandName>
+							<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+							<ExtendedTooltip name="BorderAllExtendedTooltip" id="31"/>
+						</Button>
+						<Button name="BorderOutline" id="32">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Item.Result.StandardCommand.BorderOutline</CommandName>
+							<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+							<ExtendedTooltip name="BorderOutlineExtendedTooltip" id="33"/>
+						</Button>
+						<Button name="BorderInside" id="34">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Item.Result.StandardCommand.BorderInside</CommandName>
+							<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+							<ExtendedTooltip name="BorderInsideExtendedTooltip" id="35"/>
+						</Button>
+						<Button name="ThickBorderOutline" id="36">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Item.Result.StandardCommand.ThickBorderOutline</CommandName>
+							<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+							<ExtendedTooltip name="ThickBorderOutlineExtendedTooltip" id="37"/>
+						</Button>
+						<Button name="BorderColor" id="38">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Item.Result.StandardCommand.BorderColor</CommandName>
+							<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+							<ExtendedTooltip name="BorderColorExtendedTooltip" id="39"/>
+						</Button>
+					</ChildItems>
+				</ButtonGroup>
+				<ButtonGroup name="GroupResultAlign" id="40">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Group result align</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Grup hızalama sonucu</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа результат выравнивания</v8:content>
+						</v8:item>
+					</Title>
+					<Representation>Compact</Representation>
+					<ExtendedTooltip name="GroupResultAlignExtendedTooltip" id="41"/>
+					<ChildItems>
+						<Button name="AlignLeft" id="42">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Item.Result.StandardCommand.AlignLeft</CommandName>
+							<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+							<ExtendedTooltip name="AlignLeftExtendedTooltip" id="43"/>
+						</Button>
+						<Button name="AlignCenter" id="44">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Item.Result.StandardCommand.AlignCenter</CommandName>
+							<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+							<ExtendedTooltip name="AlignCenterExtendedTooltip" id="45"/>
+						</Button>
+						<Button name="AlignRight" id="46">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Item.Result.StandardCommand.AlignRight</CommandName>
+							<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+							<ExtendedTooltip name="AlignRightExtendedTooltip" id="47"/>
+						</Button>
+						<Button name="AlignJustify" id="48">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Item.Result.StandardCommand.AlignJustify</CommandName>
+							<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+							<ExtendedTooltip name="AlignJustifyExtendedTooltip" id="49"/>
+						</Button>
+					</ChildItems>
+				</ButtonGroup>
+				<ButtonGroup name="GroupResultOther" id="50">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Group result other</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Grup diğer sonuç</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа результат другой</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="GroupResultOtherExtendedTooltip" id="51"/>
+					<ChildItems>
+						<Button name="Merge" id="52">
+							<Type>CommandBarButton</Type>
+							<Representation>Picture</Representation>
+							<CommandName>Form.Item.Result.StandardCommand.Merge</CommandName>
+							<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+							<ExtendedTooltip name="MergeExtendedTooltip" id="53"/>
+						</Button>
+						<ButtonGroup name="ResultUnReDo" id="54">
+							<Title>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Result un re do</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>tr</v8:lang>
+									<v8:content>Undo/Redo result</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Результат назад вперед</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Result un re do</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>tr</v8:lang>
+									<v8:content>Undo/Redo result</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Результат назад вперед</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>Compact</Representation>
+							<ExtendedTooltip name="ResultUnReDoExtendedTooltip" id="55"/>
+							<ChildItems>
+								<Button name="Undo" id="56">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Item.Result.StandardCommand.Undo</CommandName>
+									<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+									<ExtendedTooltip name="UndoExtendedTooltip" id="57"/>
+								</Button>
+								<Button name="Redo" id="58">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Item.Result.StandardCommand.Redo</CommandName>
+									<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+									<ExtendedTooltip name="RedoExtendedTooltip" id="59"/>
+								</Button>
+							</ChildItems>
+						</ButtonGroup>
+					</ChildItems>
+				</ButtonGroup>
+			</ChildItems>
+		</CommandBar>
+		<SpreadSheetDocumentField name="Result" id="1">
+			<DataPath>Result</DataPath>
+			<TitleLocation>None</TitleLocation>
+			<ContextMenu name="ResultContextMenu" id="2"/>
+			<ExtendedTooltip name="ResultExtendedTooltip" id="3"/>
+		</SpreadSheetDocumentField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Result" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Ergebnis</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Sonuç</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Result</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Résultat</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Результат</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type>
+			</Type>
+			<Settings xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet" xsi:type="mxl:SpreadsheetDocument">
+				<mxl:languageSettings>
+					<mxl:currentLanguage>en</mxl:currentLanguage>
+					<mxl:defaultLanguage>en</mxl:defaultLanguage>
+					<mxl:languageInfo>
+						<mxl:id>en</mxl:id>
+						<mxl:code>English</mxl:code>
+						<mxl:description>English</mxl:description>
+					</mxl:languageInfo>
+					<mxl:languageInfo>
+						<mxl:id>tr</mxl:id>
+						<mxl:code>Turkish</mxl:code>
+						<mxl:description/>
+					</mxl:languageInfo>
+					<mxl:languageInfo>
+						<mxl:id>ru</mxl:id>
+						<mxl:code>Russian</mxl:code>
+						<mxl:description/>
+					</mxl:languageInfo>
+					<mxl:languageInfo>
+						<mxl:id>fr</mxl:id>
+						<mxl:code>French</mxl:code>
+						<mxl:description/>
+					</mxl:languageInfo>
+					<mxl:languageInfo>
+						<mxl:id>de</mxl:id>
+						<mxl:code>German</mxl:code>
+						<mxl:description/>
+					</mxl:languageInfo>
+					<mxl:languageInfo>
+						<mxl:id>ha</mxl:id>
+						<mxl:code>HASH</mxl:code>
+						<mxl:description/>
+					</mxl:languageInfo>
+				</mxl:languageSettings>
+				<mxl:columns>
+					<mxl:size>0</mxl:size>
+				</mxl:columns>
+				<mxl:rowsItem>
+					<mxl:index>0</mxl:index>
+					<mxl:row>
+						<mxl:empty>true</mxl:empty>
+					</mxl:row>
+				</mxl:rowsItem>
+				<mxl:templateMode>true</mxl:templateMode>
+				<mxl:vgRows>0</mxl:vgRows>
+			</Settings>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="EditResult" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Edit result</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Düzeltme sonucu</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменить результат</v8:content>
+				</v8:item>
+			</Title>
+			<Action>EditResult</Action>
+		</Command>
+	</Commands>
+</Form>

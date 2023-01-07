@@ -1,0 +1,967 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.14">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="FormCommandBar" id="-1"/>
+	<Events>
+		<Event name="AfterWrite">AfterWrite</Event>
+		<Event name="NotificationProcessing">NotificationProcessing</Event>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+		<Event name="BeforeWriteAtServer">BeforeWriteAtServer</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="GroupDescriptions" id="115">
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="GroupDescriptionsExtendedTooltip" id="116"/>
+			<ChildItems>
+				<InputField name="Code" id="126">
+					<DataPath>Object.Code</DataPath>
+					<ContextMenu name="CodeContextMenu" id="127"/>
+					<ExtendedTooltip name="CodeExtendedTooltip" id="128"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<LabelField name="PredefinedDataName" id="69">
+			<DataPath>Object.PredefinedDataName</DataPath>
+			<ContextMenu name="PredefinedDataNameContextMenu" id="70"/>
+			<ExtendedTooltip name="PredefinedDataNameExtendedTooltip" id="71"/>
+		</LabelField>
+		<Pages name="Pages" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Seiten</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Satırlar</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Pages</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Pages</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="PagesExtendedTooltip" id="14"/>
+			<ChildItems>
+				<Page name="GroupAttributesItemKeys" id="75">
+					<Title>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Attribute</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Ek alanlar</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Attributes</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Attributs</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Реквизиты</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="GroupAttributesItemKeysExtendedTooltip" id="76"/>
+					<ChildItems>
+						<Table name="AttributesTree" id="77">
+							<Representation>Tree</Representation>
+							<ReadOnly>true</ReadOnly>
+							<Header>false</Header>
+							<InitialTreeView>ExpandAllLevels</InitialTreeView>
+							<DataPath>AttributesTree</DataPath>
+							<ContextMenu name="AttributesTreeContextMenu" id="79">
+								<Autofill>false</Autofill>
+							</ContextMenu>
+							<AutoCommandBar name="AttributesTreeCommandBar" id="78">
+								<Autofill>false</Autofill>
+								<ChildItems>
+									<Button name="DeleteItemType" id="113">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.DeleteItemType</CommandName>
+										<ExtendedTooltip name="DeleteItemTypeExtendedTooltip" id="114"/>
+									</Button>
+									<Button name="EditItemType" id="101">
+										<Type>CommandBarButton</Type>
+										<Representation>Picture</Representation>
+										<CommandName>Form.Command.EditItemType</CommandName>
+										<Picture>
+											<xr:Ref>StdPicture.Change</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<ExtendedTooltip name="EditItemTypeExtendedTooltip" id="102"/>
+									</Button>
+									<Button name="AttributesTreeList" id="129">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Item.AttributesTree.StandardCommand.List</CommandName>
+										<ExtendedTooltip name="AttributesTreeListExtendedTooltip" id="130"/>
+									</Button>
+									<Button name="AttributesTreeHierarchicalList" id="131">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Item.AttributesTree.StandardCommand.HierarchicalList</CommandName>
+										<ExtendedTooltip name="AttributesTreeHierarchicalListExtendedTooltip" id="132"/>
+									</Button>
+									<Button name="AttributesTreeTree" id="133">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Item.AttributesTree.StandardCommand.Tree</CommandName>
+										<ExtendedTooltip name="AttributesTreeTreeExtendedTooltip" id="134"/>
+									</Button>
+									<Button name="AttributesTreeSortListAsc" id="135">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Item.AttributesTree.StandardCommand.SortListAsc</CommandName>
+										<ExtendedTooltip name="AttributesTreeSortListAscExtendedTooltip" id="136"/>
+									</Button>
+									<Button name="AttributesTreeSortListDesc" id="137">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Item.AttributesTree.StandardCommand.SortListDesc</CommandName>
+										<ExtendedTooltip name="AttributesTreeSortListDescExtendedTooltip" id="138"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="AttributesTreeExtendedTooltip" id="80"/>
+							<SearchStringAddition name="AttributesTreeSearchString" id="81">
+								<AdditionSource>
+									<Item>AttributesTree</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="AttributesTreeSearchStringContextMenu" id="82"/>
+								<ExtendedTooltip name="AttributesTreeSearchStringExtendedTooltip" id="83"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="AttributesTreeViewStatus" id="87">
+								<AdditionSource>
+									<Item>AttributesTree</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<HorizontalLocation>Left</HorizontalLocation>
+								<ContextMenu name="AttributesTreeViewStatusContextMenu" id="88"/>
+								<ExtendedTooltip name="AttributesTreeViewStatusExtendedTooltip" id="89"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="AttributesTreeSearchControl" id="84">
+								<AdditionSource>
+									<Item>AttributesTree</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="AttributesTreeSearchControlContextMenu" id="85"/>
+								<ExtendedTooltip name="AttributesTreeSearchControlExtendedTooltip" id="86"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnActivateRow">AttributesTreeOnActivateRow</Event>
+							</Events>
+							<ChildItems>
+								<ColumnGroup name="GroupItemTypeAndPresentation" id="99">
+									<Title>
+										<v8:item>
+											<v8:lang>de</v8:lang>
+											<v8:content>Elementtyp und Präsentation</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>tr</v8:lang>
+											<v8:content>Item tipi ve görünümü</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>item type and presentation</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>fr</v8:lang>
+											<v8:content>type et présentation d'article</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>вид номенклатуры и представление</v8:content>
+										</v8:item>
+									</Title>
+									<Group>InCell</Group>
+									<ExtendedTooltip name="GroupItemTypeAndPresentationExtendedTooltip" id="100"/>
+									<ChildItems>
+										<PictureField name="AttributesTreeItemPicture" id="90">
+											<DataPath>AttributesTree.Picture</DataPath>
+											<ValuesPicture>
+												<xr:Ref>CommonPicture.IconCollection1</xr:Ref>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
+											</ValuesPicture>
+											<ContextMenu name="AttributesTreeItemPictureContextMenu" id="91"/>
+											<ExtendedTooltip name="AttributesTreeItemPictureExtendedTooltip" id="92"/>
+										</PictureField>
+										<InputField name="AttributesTreePresentation" id="96">
+											<DataPath>AttributesTree.Presentation</DataPath>
+											<ContextMenu name="AttributesTreePresentationContextMenu" id="97"/>
+											<ExtendedTooltip name="AttributesTreePresentationExtendedTooltip" id="98"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="GroupAttributes" id="15">
+					<Title>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Attribute</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Ek alanlar</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Attributes</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Attributs</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Реквизиты</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="GroupAttributesExtendedTooltip" id="16"/>
+					<ChildItems>
+						<Table name="Attributes" id="17">
+							<Representation>List</Representation>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>Object.Attributes</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="AttributesContextMenu" id="18"/>
+							<AutoCommandBar name="AttributesCommandBar" id="19">
+								<ChildItems>
+									<Button name="AttributesSetCondition" id="60">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.SetConditionAttribute</CommandName>
+										<Title>
+											<v8:item>
+												<v8:lang>de</v8:lang>
+												<v8:content>Bedingung festlegen</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>tr</v8:lang>
+												<v8:content>Koşul belirle</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>en</v8:lang>
+												<v8:content>Set condition</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>fr</v8:lang>
+												<v8:content>Définir une condition</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Установить условие</v8:content>
+											</v8:item>
+										</Title>
+										<RepresentationInContextMenu>None</RepresentationInContextMenu>
+										<ExtendedTooltip name="AttributesSetConditionExtendedTooltip" id="61"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="AttributesExtendedTooltip" id="20"/>
+							<SearchStringAddition name="AttributesSearchString" id="21">
+								<AdditionSource>
+									<Item>Attributes</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="AttributesSearchStringContextMenu" id="22"/>
+								<ExtendedTooltip name="AttributesSearchStringExtendedTooltip" id="23"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="AttributesViewStatus" id="24">
+								<AdditionSource>
+									<Item>Attributes</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<HorizontalLocation>Left</HorizontalLocation>
+								<ContextMenu name="AttributesViewStatusContextMenu" id="25"/>
+								<ExtendedTooltip name="AttributesViewStatusExtendedTooltip" id="26"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="AttributesSearchControl" id="27">
+								<AdditionSource>
+									<Item>Attributes</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="AttributesSearchControlContextMenu" id="28"/>
+								<ExtendedTooltip name="AttributesSearchControlExtendedTooltip" id="29"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="BeforeAddRow">AttributesBeforeAddRow</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="AttributesLineNumber" id="30">
+									<DataPath>Object.Attributes.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="AttributesLineNumberContextMenu" id="31"/>
+									<ExtendedTooltip name="AttributesLineNumberExtendedTooltip" id="32"/>
+								</LabelField>
+								<InputField name="AttributesAttribute" id="33">
+									<DataPath>Object.Attributes.Attribute</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="AttributesAttributeContextMenu" id="34"/>
+									<ExtendedTooltip name="AttributesAttributeExtendedTooltip" id="35"/>
+								</InputField>
+								<InputField name="AttributesInterfaceGroup" id="72">
+									<DataPath>Object.Attributes.InterfaceGroup</DataPath>
+									<ContextMenu name="AttributesInterfaceGroupContextMenu" id="73"/>
+									<ExtendedTooltip name="AttributesInterfaceGroupExtendedTooltip" id="74"/>
+								</InputField>
+								<PictureField name="AttributesIsConditionSet" id="57">
+									<DataPath>Object.Attributes.IsConditionSet</DataPath>
+									<ValuesPicture>
+										<xr:Ref>CommonPicture.RadioButton</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</ValuesPicture>
+									<FileDragMode>AsFile</FileDragMode>
+									<ContextMenu name="AttributesIsConditionSetContextMenu" id="58"/>
+									<ExtendedTooltip name="AttributesIsConditionSetExtendedTooltip" id="59"/>
+								</PictureField>
+								<CheckBoxField name="AttributesRequired" id="117">
+									<DataPath>Object.Attributes.Required</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="AttributesRequiredContextMenu" id="118"/>
+									<ExtendedTooltip name="AttributesRequiredExtendedTooltip" id="119"/>
+								</CheckBoxField>
+								<CheckBoxField name="AttributesShowInHTML" id="120">
+									<DataPath>Object.Attributes.ShowInHTML</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="AttributesShowInHTMLContextMenu" id="121"/>
+									<ExtendedTooltip name="AttributesShowInHTMLExtendedTooltip" id="122"/>
+								</CheckBoxField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="GroupProperties" id="36">
+					<Title>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Eigenschaften</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Ek özellikler</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Properties</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Propriétés</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Свойства</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="GroupPropertiesExtendedTooltip" id="37"/>
+					<ChildItems>
+						<Table name="Properties" id="38">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>Object.Properties</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="PropertiesContextMenu" id="39"/>
+							<AutoCommandBar name="PropertiesCommandBar" id="40">
+								<ChildItems>
+									<Button name="PropertiesSetConditionProperty" id="65">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.SetConditionProperty</CommandName>
+										<Title>
+											<v8:item>
+												<v8:lang>de</v8:lang>
+												<v8:content>Bedingung festlegen</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>tr</v8:lang>
+												<v8:content>Koşul belirle</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>en</v8:lang>
+												<v8:content>Set condition</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>fr</v8:lang>
+												<v8:content>Définir une condition</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Установить условие</v8:content>
+											</v8:item>
+										</Title>
+										<RepresentationInContextMenu>None</RepresentationInContextMenu>
+										<ExtendedTooltip name="PropertiesSetConditionPropertyExtendedTooltip" id="66"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="PropertiesExtendedTooltip" id="41"/>
+							<SearchStringAddition name="PropertiesSearchString" id="42">
+								<AdditionSource>
+									<Item>Properties</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="PropertiesSearchStringContextMenu" id="43"/>
+								<ExtendedTooltip name="PropertiesSearchStringExtendedTooltip" id="44"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="PropertiesViewStatus" id="45">
+								<AdditionSource>
+									<Item>Properties</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<HorizontalLocation>Left</HorizontalLocation>
+								<ContextMenu name="PropertiesViewStatusContextMenu" id="46"/>
+								<ExtendedTooltip name="PropertiesViewStatusExtendedTooltip" id="47"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="PropertiesSearchControl" id="48">
+								<AdditionSource>
+									<Item>Properties</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="PropertiesSearchControlContextMenu" id="49"/>
+								<ExtendedTooltip name="PropertiesSearchControlExtendedTooltip" id="50"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="BeforeAddRow">PropertiesBeforeAddRow</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="PropertiesLineNumber" id="51">
+									<DataPath>Object.Properties.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="PropertiesLineNumberContextMenu" id="52"/>
+									<ExtendedTooltip name="PropertiesLineNumberExtendedTooltip" id="53"/>
+								</LabelField>
+								<InputField name="PropertiesProperty" id="54">
+									<DataPath>Object.Properties.Property</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="PropertiesPropertyContextMenu" id="55"/>
+									<ExtendedTooltip name="PropertiesPropertyExtendedTooltip" id="56"/>
+								</InputField>
+								<PictureField name="PropertiesIsConditionSet" id="62">
+									<DataPath>Object.Properties.IsConditionSet</DataPath>
+									<ValuesPicture>
+										<xr:Ref>CommonPicture.RadioButton</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</ValuesPicture>
+									<FileDragMode>AsFile</FileDragMode>
+									<ContextMenu name="PropertiesIsConditionSetContextMenu" id="63"/>
+									<ExtendedTooltip name="PropertiesIsConditionSetExtendedTooltip" id="64"/>
+								</PictureField>
+								<CheckBoxField name="PropertiesShowInHTML" id="123">
+									<DataPath>Object.Properties.ShowInHTML</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="PropertiesShowInHTMLContextMenu" id="124"/>
+									<ExtendedTooltip name="PropertiesShowInHTMLExtendedTooltip" id="125"/>
+								</CheckBoxField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="GroupExtensionAttributes" id="139">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Extension attributes</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Uzantı ek alanlar</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Реквизиты расширения</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="GroupExtensionAttributesExtendedTooltip" id="140"/>
+					<ChildItems>
+						<Table name="ExtensionAttributes" id="141">
+							<Representation>List</Representation>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>Object.ExtensionAttributes</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ExtensionAttributesContextMenu" id="142"/>
+							<AutoCommandBar name="ExtensionAttributesCommandBar" id="143">
+								<ChildItems>
+									<Button name="ExtensionAttributesFillExtensionAttributesList" id="195">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.FillExtensionAttributesList</CommandName>
+										<ExtendedTooltip name="ExtensionAttributesFillExtensionAttributesListExtendedTooltip" id="196"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ExtensionAttributesExtendedTooltip" id="146"/>
+							<SearchStringAddition name="ExtensionAttributesSearchString" id="147">
+								<AdditionSource>
+									<Item>ExtensionAttributes</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ExtensionAttributesSearchStringContextMenu" id="148"/>
+								<ExtendedTooltip name="ExtensionAttributesSearchStringExtendedTooltip" id="149"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ExtensionAttributesViewStatus" id="150">
+								<AdditionSource>
+									<Item>ExtensionAttributes</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<HorizontalLocation>Left</HorizontalLocation>
+								<ContextMenu name="ExtensionAttributesViewStatusContextMenu" id="151"/>
+								<ExtendedTooltip name="ExtensionAttributesViewStatusExtendedTooltip" id="152"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ExtensionAttributesSearchControl" id="153">
+								<AdditionSource>
+									<Item>ExtensionAttributes</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ExtensionAttributesSearchControlContextMenu" id="154"/>
+								<ExtendedTooltip name="ExtensionAttributesSearchControlExtendedTooltip" id="155"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="ExtensionAttributesLineNumber" id="174">
+									<DataPath>Object.ExtensionAttributes.LineNumber</DataPath>
+									<ContextMenu name="ExtensionAttributesLineNumberContextMenu" id="175"/>
+									<ExtendedTooltip name="ExtensionAttributesLineNumberExtendedTooltip" id="176"/>
+								</InputField>
+								<InputField name="ExtensionAttributesAttribute" id="177">
+									<DataPath>Object.ExtensionAttributes.Attribute</DataPath>
+									<ContextMenu name="ExtensionAttributesAttributeContextMenu" id="178"/>
+									<ExtendedTooltip name="ExtensionAttributesAttributeExtendedTooltip" id="179"/>
+								</InputField>
+								<CheckBoxField name="ExtensionAttributesShow" id="192">
+									<DataPath>Object.ExtensionAttributes.Show</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ExtensionAttributesShowContextMenu" id="193"/>
+									<ExtendedTooltip name="ExtensionAttributesShowExtendedTooltip" id="194"/>
+								</CheckBoxField>
+								<InputField name="ExtensionAttributesInterfaceGroup" id="183">
+									<DataPath>Object.ExtensionAttributes.InterfaceGroup</DataPath>
+									<ContextMenu name="ExtensionAttributesInterfaceGroupContextMenu" id="184"/>
+									<ExtendedTooltip name="ExtensionAttributesInterfaceGroupExtendedTooltip" id="185"/>
+								</InputField>
+								<CheckBoxField name="ExtensionAttributesRequired" id="186">
+									<DataPath>Object.ExtensionAttributes.Required</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ExtensionAttributesRequiredContextMenu" id="187"/>
+									<ExtendedTooltip name="ExtensionAttributesRequiredExtendedTooltip" id="188"/>
+								</CheckBoxField>
+								<CheckBoxField name="ExtensionAttributesShowInHTML" id="189">
+									<DataPath>Object.ExtensionAttributes.ShowInHTML</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ExtensionAttributesShowInHTMLContextMenu" id="190"/>
+									<ExtendedTooltip name="ExtensionAttributesShowInHTMLExtendedTooltip" id="191"/>
+								</CheckBoxField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.AddAttributeAndPropertySets</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<Columns>
+				<AdditionalColumns table="Object.Attributes">
+					<Column name="ConditionData" id="9">
+						<Title>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Condition data</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>tr</v8:lang>
+								<v8:content>Koşul verisi</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Данные условия</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="Unprocessed" id="11">
+						<Title>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Unprocessed</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>tr</v8:lang>
+								<v8:content>İşlenmemiş</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Необработанный</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+					</Column>
+				</AdditionalColumns>
+				<AdditionalColumns table="Object.Properties">
+					<Column name="ConditionData" id="12">
+						<Title>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Condition data</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>tr</v8:lang>
+								<v8:content>Koşul verisi</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Данные условия</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="Unprocessed" id="13">
+						<Title>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Unprocessed</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>tr</v8:lang>
+								<v8:content>İşlenmemiş</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Необработанный</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+					</Column>
+				</AdditionalColumns>
+			</Columns>
+		</Attribute>
+		<Attribute name="AttributesTree" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Attributbaum</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Ek alan ağacı</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Attributes tree</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Arborescence des attributs</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дерево реквизитов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Picture" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Bild</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Resim</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Picture</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Image</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Картинка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Attribute" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Attribut</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Alan</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Attribute</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Attribut</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Реквизит</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:ChartOfCharacteristicTypesRef.AddAttributeAndProperty</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Presentation" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Präsentation</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Görünüm</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Presentation</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Présentation</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Представление</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ItemType" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Elementtyp</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Malzeme tipi</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Item type</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Type d'article</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вид номенклатуры</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ItemTypes</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="CopiedAttribute" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Copied attribute</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Kopyalanmış alan</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Скопированный реквизит</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:ChartOfCharacteristicTypesRef.AddAttributeAndProperty</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="SetConditionAttribute" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Attributbedingung festlegen</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Koşul özelliği ayarla</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Set condition attribute</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Définir une condition de l'attribut</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить условие применения реквизита</v8:content>
+				</v8:item>
+			</Title>
+			<Action>SetConditionAttribute</Action>
+		</Command>
+		<Command name="SetConditionProperty" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Eigenschaftsbedingung festlegen</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Koşul ayarla</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Set condition property</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Définir une condition de la propriété</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить условие применения свойства</v8:content>
+				</v8:item>
+			</Title>
+			<Action>SetConditionProperty</Action>
+		</Command>
+		<Command name="EditItemType" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Elementtyp bearbeiten</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Malzeme tipi değiştir</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Edit item type</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Modifier le type d'article</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Редактировать вид номенклатуры</v8:content>
+				</v8:item>
+			</Title>
+			<Action>EditItemType</Action>
+		</Command>
+		<Command name="DeleteItemType" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Elementtyp löschen</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Malzeme tipi kaldır</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Delete item type</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Supprimer le type d'article</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить вид номенклатуры</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>StdPicture.Delete</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>DeleteItemType</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="FillExtensionAttributesList" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Fill attributes list</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Ek alanlar listesi doldur</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить список реквизитов</v8:content>
+				</v8:item>
+			</Title>
+			<Action>FillExtensionAttributesList</Action>
+		</Command>
+	</Commands>
+</Form>

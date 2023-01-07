@@ -1,0 +1,988 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.14">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="FormCommandBar" id="-1"/>
+	<Events>
+		<Event name="AfterWriteAtServer">AfterWriteAtServer</Event>
+		<Event name="NotificationProcessing">NotificationProcessing</Event>
+		<Event name="OnReadAtServer">OnReadAtServer</Event>
+		<Event name="OnOpen">OnOpen</Event>
+		<Event name="BeforeWriteAtServer">BeforeWriteAtServer</Event>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="GroupTitle" id="114">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Gruppentitel</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Grup tanımı</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Group title</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Titre de groupe</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Название группы</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="GroupTitleExtendedTooltip" id="115"/>
+			<ChildItems>
+				<UsualGroup name="GroupTitleDecorations" id="116">
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="GroupTitleDecorationsExtendedTooltip" id="117"/>
+					<ChildItems>
+						<UsualGroup name="GroupTitleCollapsed" id="118">
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="GroupTitleCollapsedExtendedTooltip" id="119"/>
+							<ChildItems>
+								<PictureDecoration name="DecorationGroupTitleCollapsedPicture" id="120">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>de</v8:lang>
+											<v8:content>Dekoration reduzierbare Formulargruppe</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>tr</v8:lang>
+											<v8:content>Dekorasyon grubu tanım birleşmiş resim</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Decoration group title collapsed picture</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>fr</v8:lang>
+											<v8:content>Décoration Groupe réductible du formulaire</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сворачиваемая группа формы</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<Picture>
+										<xr:Ref>StdPicture.MoveRight</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="DecorationGroupTitleCollapsedPictureContextMenu" id="121"/>
+									<ExtendedTooltip name="DecorationGroupTitleCollapsedPictureExtendedTooltip" id="122"/>
+									<Events>
+										<Event name="Click">DecorationGroupTitleCollapsedPictureClick</Event>
+									</Events>
+								</PictureDecoration>
+								<LabelDecoration name="DecorationGroupTitleCollapsedLabel" id="123">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>100</MaxWidth>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>de</v8:lang>
+											<v8:content>Bitte füllen Sie das Dokument aus</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>tr</v8:lang>
+											<v8:content>Lütfen, evrakı doldurun</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Please, fill the document</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>fr</v8:lang>
+											<v8:content>Veuillez compléter le document</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Пожалуйста, заполните документ</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="DecorationGroupTitleCollapsedLabelContextMenu" id="124"/>
+									<ExtendedTooltip name="DecorationGroupTitleCollapsedLabelExtendedTooltip" id="125"/>
+									<Events>
+										<Event name="Click">DecorationGroupTitleCollapsedLabelClick</Event>
+									</Events>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="GroupTitleUncollapsed" id="126">
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="GroupTitleUncollapsedExtendedTooltip" id="127"/>
+							<ChildItems>
+								<PictureDecoration name="DecorationGroupTitleUncollapsedPicture" id="128">
+									<Hyperlink>true</Hyperlink>
+									<Picture>
+										<xr:Ref>StdPicture.MoveDown</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="DecorationGroupTitleUncollapsedPictureContextMenu" id="129"/>
+									<ExtendedTooltip name="DecorationGroupTitleUncollapsedPictureExtendedTooltip" id="130"/>
+									<Events>
+										<Event name="Click">DecorationGroupTitleUncollapsedPictureClick</Event>
+									</Events>
+								</PictureDecoration>
+								<LabelDecoration name="DecorationGroupTitleUncollapsedLabel" id="131">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>100</MaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>de</v8:lang>
+											<v8:content>Bitte füllen Sie das Dokument aus</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>tr</v8:lang>
+											<v8:content>Lütfen, evrakı doldurun</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Please, fill the document</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>fr</v8:lang>
+											<v8:content>Veuillez compléter le document</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Пожалуйста, заполните документ</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="DecorationGroupTitleUncollapsedLabelContextMenu" id="132"/>
+									<ExtendedTooltip name="DecorationGroupTitleUncollapsedLabelExtendedTooltip" id="133"/>
+									<Events>
+										<Event name="Click">DecorationGroupTitleUncollapsedLabelClick</Event>
+									</Events>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="GroupTitleItems" id="134">
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="GroupTitleItemsExtendedTooltip" id="135"/>
+					<ChildItems>
+						<UsualGroup name="GroupTitleLeft" id="136">
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="GroupTitleLeftExtendedTooltip" id="137"/>
+							<ChildItems>
+								<InputField name="OperationType" id="10">
+									<DataPath>Object.OperationType</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="OperationTypeContextMenu" id="11"/>
+									<ExtendedTooltip name="OperationTypeExtendedTooltip" id="12"/>
+									<Events>
+										<Event name="OnChange">OperationTypeOnChange</Event>
+									</Events>
+								</InputField>
+								<InputField name="Company" id="7">
+									<DataPath>Object.Company</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="CompanyContextMenu" id="8"/>
+									<ExtendedTooltip name="CompanyExtendedTooltip" id="9"/>
+									<Events>
+										<Event name="OnChange">CompanyOnChange</Event>
+										<Event name="EditTextChange">CompanyEditTextChange</Event>
+										<Event name="StartChoice">CompanyStartChoice</Event>
+									</Events>
+								</InputField>
+								<InputField name="PartnerArTransactionsBasisDocument" id="83">
+									<DataPath>Object.PartnerArTransactionsBasisDocument</DataPath>
+									<ContextMenu name="PartnerArTransactionsBasisDocumentContextMenu" id="84"/>
+									<ExtendedTooltip name="PartnerArTransactionsBasisDocumentExtendedTooltip" id="85"/>
+									<Events>
+										<Event name="OnChange">PartnerArTransactionsBasisDocumentOnChange</Event>
+										<Event name="StartChoice">PartnerArTransactionsBasisDocumentStartChoice</Event>
+									</Events>
+								</InputField>
+								<InputField name="PartnerApTransactionsBasisDocument" id="80">
+									<DataPath>Object.PartnerApTransactionsBasisDocument</DataPath>
+									<ContextMenu name="PartnerApTransactionsBasisDocumentContextMenu" id="81"/>
+									<ExtendedTooltip name="PartnerApTransactionsBasisDocumentExtendedTooltip" id="82"/>
+									<Events>
+										<Event name="OnChange">PartnerApTransactionsBasisDocumentOnChange</Event>
+										<Event name="StartChoice">PartnerApTransactionsBasisDocumentStartChoice</Event>
+									</Events>
+								</InputField>
+								<LabelField name="Description" id="144">
+									<DataPath>Description</DataPath>
+									<Hiperlink>true</Hiperlink>
+									<ContextMenu name="DescriptionContextMenu" id="145"/>
+									<ExtendedTooltip name="DescriptionExtendedTooltip" id="146"/>
+									<Events>
+										<Event name="Click">DescriptionClick</Event>
+									</Events>
+								</LabelField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="GroupTitleRight" id="147">
+							<Title>
+								<v8:item>
+									<v8:lang>de</v8:lang>
+									<v8:content>Gruppe rechts</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>tr</v8:lang>
+									<v8:content>Grup (sağ)</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Group right</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>fr</v8:lang>
+									<v8:content>Groupe à droite</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группировка по правому краю</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="GroupTitleRightExtendedTooltip" id="148"/>
+							<ChildItems>
+								<LabelField name="Partner" id="100">
+									<DataPath>Object.Partner</DataPath>
+									<ContextMenu name="PartnerContextMenu" id="101"/>
+									<ExtendedTooltip name="PartnerExtendedTooltip" id="102"/>
+								</LabelField>
+								<LabelField name="LegalName" id="22">
+									<DataPath>Object.LegalName</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="LegalNameContextMenu" id="23"/>
+									<ExtendedTooltip name="LegalNameExtendedTooltip" id="24"/>
+								</LabelField>
+								<LabelField name="Agreement" id="103">
+									<DataPath>Object.Agreement</DataPath>
+									<ContextMenu name="AgreementContextMenu" id="104"/>
+									<ExtendedTooltip name="AgreementExtendedTooltip" id="105"/>
+								</LabelField>
+								<UsualGroup name="GroupCurrencyAmount" id="161">
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="GroupCurrencyAmountExtendedTooltip" id="162"/>
+									<ChildItems>
+										<LabelField name="PartnerTransactionsBasisDocumentAmount" id="163">
+											<DataPath>PartnerTransactionsBasisDocumentAmount</DataPath>
+											<HorizontalAlign>Left</HorizontalAlign>
+											<ContextMenu name="PartnerTransactionsBasisDocumentAmountContextMenu" id="164"/>
+											<ExtendedTooltip name="PartnerTransactionsBasisDocumentAmountExtendedTooltip" id="165"/>
+										</LabelField>
+										<LabelField name="CurrencyAmount" id="19">
+											<DataPath>Object.Currency</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ContextMenu name="CurrencyAmountContextMenu" id="20"/>
+											<ExtendedTooltip name="CurrencyAmountExtendedTooltip" id="21"/>
+										</LabelField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="GroupCurrencyDebt" id="175">
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="GroupCurrencyDebtExtendedTooltip" id="176"/>
+									<ChildItems>
+										<LabelField name="PartnerTransactionsBasisDocumentDebt" id="169">
+											<DataPath>PartnerTransactionsBasisDocumentDebt</DataPath>
+											<HorizontalAlign>Left</HorizontalAlign>
+											<ContextMenu name="PartnerTransactionsBasisDocumentDebtContextMenu" id="170"/>
+											<ExtendedTooltip name="PartnerTransactionsBasisDocumentDebtExtendedTooltip" id="171"/>
+										</LabelField>
+										<LabelField name="CurrencyDebt" id="183">
+											<DataPath>Object.Currency</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ContextMenu name="CurrencyDebtContextMenu" id="184"/>
+											<ExtendedTooltip name="CurrencyDebtExtendedTooltip" id="185"/>
+										</LabelField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="GroupMainPaiges" id="108">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Gruppe Hauptseiten</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Grup ana sayfalar</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Group main pages</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Groupe Pages principales</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа главных страниц</v8:content>
+				</v8:item>
+			</Title>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="GroupMainPaigesExtendedTooltip" id="109"/>
+			<ChildItems>
+				<Page name="GroupTransactions" id="110">
+					<Title>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Transaktionen</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>İşlemler</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Transactions</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Transactions</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основное</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="GroupTransactionsExtendedTooltip" id="111"/>
+					<ChildItems>
+						<Table name="Transactions" id="25">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Object.Transactions</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="TransactionsContextMenu" id="26"/>
+							<AutoCommandBar name="TransactionsCommandBar" id="27">
+								<ChildItems>
+									<Button name="TransactionsTransactionsFillTransactions" id="86">
+										<Type>CommandBarButton</Type>
+										<Visible>false</Visible>
+										<CommandName>Form.Command.FillTransactions</CommandName>
+										<ExtendedTooltip name="TransactionsTransactionsFillTransactionsExtendedTooltip" id="87"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="TransactionsExtendedTooltip" id="28"/>
+							<SearchStringAddition name="TransactionsSearchString" id="29">
+								<AdditionSource>
+									<Item>Transactions</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="TransactionsSearchStringContextMenu" id="30"/>
+								<ExtendedTooltip name="TransactionsSearchStringExtendedTooltip" id="31"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="TransactionsViewStatus" id="32">
+								<AdditionSource>
+									<Item>Transactions</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<HorizontalLocation>Left</HorizontalLocation>
+								<ContextMenu name="TransactionsViewStatusContextMenu" id="33"/>
+								<ExtendedTooltip name="TransactionsViewStatusExtendedTooltip" id="34"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="TransactionsSearchControl" id="35">
+								<AdditionSource>
+									<Item>Transactions</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="TransactionsSearchControlContextMenu" id="36"/>
+								<ExtendedTooltip name="TransactionsSearchControlExtendedTooltip" id="37"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnChange">TransactionsOnChange</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="TransactionsLineNumber" id="38">
+									<DataPath>Object.Transactions.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="TransactionsLineNumberContextMenu" id="39"/>
+									<ExtendedTooltip name="TransactionsLineNumberExtendedTooltip" id="40"/>
+								</LabelField>
+								<InputField name="TransactionsPartnerApTransactionsBasisDocument" id="186">
+									<DataPath>Object.Transactions.PartnerApTransactionsBasisDocument</DataPath>
+									<ContextMenu name="TransactionsPartnerApTransactionsBasisDocumentContextMenu" id="187"/>
+									<ExtendedTooltip name="TransactionsPartnerApTransactionsBasisDocumentExtendedTooltip" id="188"/>
+								</InputField>
+								<InputField name="TransactionsPartnerArTransactionsBasisDocument" id="189">
+									<DataPath>Object.Transactions.PartnerArTransactionsBasisDocument</DataPath>
+									<ContextMenu name="TransactionsPartnerArTransactionsBasisDocumentContextMenu" id="190"/>
+									<ExtendedTooltip name="TransactionsPartnerArTransactionsBasisDocumentExtendedTooltip" id="191"/>
+								</InputField>
+								<InputField name="TransactionsPartner" id="47">
+									<DataPath>Object.Transactions.Partner</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="TransactionsPartnerContextMenu" id="48"/>
+									<ExtendedTooltip name="TransactionsPartnerExtendedTooltip" id="49"/>
+									<Events>
+										<Event name="EditTextChange">TransactionsPartnerEditTextChange</Event>
+										<Event name="StartChoice">TransactionsPartnerStartChoice</Event>
+									</Events>
+								</InputField>
+								<InputField name="TransactionsLegalName" id="50">
+									<DataPath>Object.Transactions.LegalName</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="TransactionsLegalNameContextMenu" id="51"/>
+									<ExtendedTooltip name="TransactionsLegalNameExtendedTooltip" id="52"/>
+									<Events>
+										<Event name="EditTextChange">TransactionsLegalNameEditTextChange</Event>
+										<Event name="StartChoice">TransactionsLegalNameStartChoice</Event>
+									</Events>
+								</InputField>
+								<InputField name="TransactionsAgreement" id="53">
+									<DataPath>Object.Transactions.Agreement</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="TransactionsAgreementContextMenu" id="54"/>
+									<ExtendedTooltip name="TransactionsAgreementExtendedTooltip" id="55"/>
+								</InputField>
+								<InputField name="TransactionsCurrency" id="56">
+									<DataPath>Object.Transactions.Currency</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="TransactionsCurrencyContextMenu" id="57"/>
+									<ExtendedTooltip name="TransactionsCurrencyExtendedTooltip" id="58"/>
+									<Events>
+										<Event name="OnChange">TransactionsCurrencyOnChange</Event>
+									</Events>
+								</InputField>
+								<InputField name="TransactionsAmount" id="91">
+									<DataPath>Object.Transactions.Amount</DataPath>
+									<ContextMenu name="TransactionsAmountContextMenu" id="92"/>
+									<ExtendedTooltip name="TransactionsAmountExtendedTooltip" id="93"/>
+								</InputField>
+								<InputField name="TransactionsClosingAmount" id="88">
+									<DataPath>Object.Transactions.ClosingAmount</DataPath>
+									<ContextMenu name="TransactionsClosingAmountContextMenu" id="89"/>
+									<ExtendedTooltip name="TransactionsClosingAmountExtendedTooltip" id="90"/>
+								</InputField>
+								<InputField name="TransactionsCurrencyRate" id="94">
+									<DataPath>Object.Transactions.CurrencyRate</DataPath>
+									<ContextMenu name="TransactionsCurrencyRateContextMenu" id="95"/>
+									<ExtendedTooltip name="TransactionsCurrencyRateExtendedTooltip" id="96"/>
+								</InputField>
+								<InputField name="TransactionsCurrencyMultiplicity" id="65">
+									<DataPath>Object.Transactions.CurrencyMultiplicity</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="TransactionsCurrencyMultiplicityContextMenu" id="66"/>
+									<ExtendedTooltip name="TransactionsCurrencyMultiplicityExtendedTooltip" id="67"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="GroupAdvances" id="192">
+					<Title>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Vorauszahlungen</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Avanslar</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Advances</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Acomptes</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Авансы</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="GroupAdvancesExtendedTooltip" id="193"/>
+					<ChildItems>
+						<Table name="Advances" id="194">
+							<Representation>List</Representation>
+							<DataPath>Object.Advances</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="AdvancesContextMenu" id="196"/>
+							<AutoCommandBar name="AdvancesCommandBar" id="195">
+								<ChildItems>
+									<Button name="AdvancesFillAdvances" id="231">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.FillAdvances</CommandName>
+										<ExtendedTooltip name="AdvancesFillAdvancesExtendedTooltip" id="232"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="AdvancesExtendedTooltip" id="197"/>
+							<SearchStringAddition name="AdvancesSearchString" id="198">
+								<AdditionSource>
+									<Item>Advances</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="AdvancesSearchStringContextMenu" id="199"/>
+								<ExtendedTooltip name="AdvancesSearchStringExtendedTooltip" id="200"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="AdvancesViewStatus" id="204">
+								<AdditionSource>
+									<Item>Advances</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<HorizontalLocation>Left</HorizontalLocation>
+								<ContextMenu name="AdvancesViewStatusContextMenu" id="205"/>
+								<ExtendedTooltip name="AdvancesViewStatusExtendedTooltip" id="206"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="AdvancesSearchControl" id="201">
+								<AdditionSource>
+									<Item>Advances</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="AdvancesSearchControlContextMenu" id="202"/>
+								<ExtendedTooltip name="AdvancesSearchControlExtendedTooltip" id="203"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnChange">AdvancesOnChange</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="AdvancesLineNumber" id="207">
+									<DataPath>Object.Advances.LineNumber</DataPath>
+									<ContextMenu name="AdvancesLineNumberContextMenu" id="208"/>
+									<ExtendedTooltip name="AdvancesLineNumberExtendedTooltip" id="209"/>
+								</InputField>
+								<InputField name="AdvancesReceiptDocument" id="210">
+									<DataPath>Object.Advances.ReceiptDocument</DataPath>
+									<ContextMenu name="AdvancesReceiptDocumentContextMenu" id="211"/>
+									<ExtendedTooltip name="AdvancesReceiptDocumentExtendedTooltip" id="212"/>
+								</InputField>
+								<InputField name="AdvancesPaymentDocument" id="213">
+									<DataPath>Object.Advances.PaymentDocument</DataPath>
+									<ContextMenu name="AdvancesPaymentDocumentContextMenu" id="214"/>
+									<ExtendedTooltip name="AdvancesPaymentDocumentExtendedTooltip" id="215"/>
+								</InputField>
+								<InputField name="AdvancesPartner" id="216">
+									<DataPath>Object.Advances.Partner</DataPath>
+									<ContextMenu name="AdvancesPartnerContextMenu" id="217"/>
+									<ExtendedTooltip name="AdvancesPartnerExtendedTooltip" id="218"/>
+								</InputField>
+								<InputField name="AdvancesLegalName" id="219">
+									<DataPath>Object.Advances.LegalName</DataPath>
+									<ContextMenu name="AdvancesLegalNameContextMenu" id="220"/>
+									<ExtendedTooltip name="AdvancesLegalNameExtendedTooltip" id="221"/>
+								</InputField>
+								<InputField name="AdvancesCurrency" id="225">
+									<DataPath>Object.Advances.Currency</DataPath>
+									<ContextMenu name="AdvancesCurrencyContextMenu" id="226"/>
+									<ExtendedTooltip name="AdvancesCurrencyExtendedTooltip" id="227"/>
+									<Events>
+										<Event name="OnChange">AdvancesCurrencyOnChange</Event>
+									</Events>
+								</InputField>
+								<InputField name="AdvancesAmount" id="228">
+									<DataPath>Object.Advances.Amount</DataPath>
+									<ContextMenu name="AdvancesAmountContextMenu" id="229"/>
+									<ExtendedTooltip name="AdvancesAmountExtendedTooltip" id="230"/>
+								</InputField>
+								<InputField name="AdvancesClosingAmount" id="233">
+									<DataPath>Object.Advances.ClosingAmount</DataPath>
+									<ContextMenu name="AdvancesClosingAmountContextMenu" id="234"/>
+									<ExtendedTooltip name="AdvancesClosingAmountExtendedTooltip" id="235"/>
+								</InputField>
+								<InputField name="AdvancesCurrencyRate" id="236">
+									<DataPath>Object.Advances.CurrencyRate</DataPath>
+									<ContextMenu name="AdvancesCurrencyRateContextMenu" id="237"/>
+									<ExtendedTooltip name="AdvancesCurrencyRateExtendedTooltip" id="238"/>
+								</InputField>
+								<InputField name="AdvancesCurrencyMultiplicity" id="239">
+									<DataPath>Object.Advances.CurrencyMultiplicity</DataPath>
+									<ContextMenu name="AdvancesCurrencyMultiplicityContextMenu" id="240"/>
+									<ExtendedTooltip name="AdvancesCurrencyMultiplicityExtendedTooltip" id="241"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="GroupCurrencies" id="248">
+					<Title>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Währungen</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Dövizler</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Currencies</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Devises</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Валюты</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="GroupCurrenciesExtendedTooltip" id="249"/>
+					<ChildItems>
+						<Table name="Currencies" id="250">
+							<Representation>List</Representation>
+							<DataPath>Object.Currencies</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="CurrenciesContextMenu" id="252"/>
+							<AutoCommandBar name="CurrenciesCommandBar" id="251"/>
+							<ExtendedTooltip name="CurrenciesExtendedTooltip" id="253"/>
+							<SearchStringAddition name="CurrenciesSearchString" id="254">
+								<AdditionSource>
+									<Item>Currencies</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="CurrenciesSearchStringContextMenu" id="255"/>
+								<ExtendedTooltip name="CurrenciesSearchStringExtendedTooltip" id="256"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="CurrenciesViewStatus" id="260">
+								<AdditionSource>
+									<Item>Currencies</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<HorizontalLocation>Left</HorizontalLocation>
+								<ContextMenu name="CurrenciesViewStatusContextMenu" id="261"/>
+								<ExtendedTooltip name="CurrenciesViewStatusExtendedTooltip" id="262"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="CurrenciesSearchControl" id="257">
+								<AdditionSource>
+									<Item>Currencies</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="CurrenciesSearchControlContextMenu" id="258"/>
+								<ExtendedTooltip name="CurrenciesSearchControlExtendedTooltip" id="259"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="CurrenciesLineNumber" id="263">
+									<DataPath>Object.Currencies.LineNumber</DataPath>
+									<ContextMenu name="CurrenciesLineNumberContextMenu" id="264"/>
+									<ExtendedTooltip name="CurrenciesLineNumberExtendedTooltip" id="265"/>
+								</InputField>
+								<LabelField name="CurrenciesKey" id="266">
+									<DataPath>Object.Currencies.Key</DataPath>
+									<ContextMenu name="CurrenciesKeyContextMenu" id="267"/>
+									<ExtendedTooltip name="CurrenciesKeyExtendedTooltip" id="268"/>
+								</LabelField>
+								<InputField name="CurrenciesMovementType" id="278">
+									<DataPath>Object.Currencies.MovementType</DataPath>
+									<ContextMenu name="CurrenciesMovementTypeContextMenu" id="279"/>
+									<ExtendedTooltip name="CurrenciesMovementTypeExtendedTooltip" id="280"/>
+								</InputField>
+								<InputField name="CurrenciesMovementTypeType" id="284">
+									<DataPath>Object.Currencies.MovementType.Type</DataPath>
+									<ContextMenu name="CurrenciesMovementTypeTypeContextMenu" id="285"/>
+									<ExtendedTooltip name="CurrenciesMovementTypeTypeExtendedTooltip" id="286"/>
+								</InputField>
+								<InputField name="CurrenciesCurrencyFrom" id="269">
+									<DataPath>Object.Currencies.CurrencyFrom</DataPath>
+									<ContextMenu name="CurrenciesCurrencyFromContextMenu" id="270"/>
+									<ExtendedTooltip name="CurrenciesCurrencyFromExtendedTooltip" id="271"/>
+								</InputField>
+								<InputField name="CurrenciesMovementTypeCurrency" id="287">
+									<DataPath>Object.Currencies.MovementType.Currency</DataPath>
+									<ContextMenu name="CurrenciesMovementTypeCurrencyContextMenu" id="288"/>
+									<ExtendedTooltip name="CurrenciesMovementTypeCurrencyExtendedTooltip" id="289"/>
+								</InputField>
+								<CheckBoxField name="CurrenciesShowReverseRate" id="290">
+									<DataPath>Object.Currencies.ShowReverseRate</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="CurrenciesShowReverseRateContextMenu" id="291"/>
+									<ExtendedTooltip name="CurrenciesShowReverseRateExtendedTooltip" id="292"/>
+								</CheckBoxField>
+								<InputField name="CurrenciesReverseRate" id="293">
+									<DataPath>Object.Currencies.ReverseRate</DataPath>
+									<ContextMenu name="CurrenciesReverseRateContextMenu" id="294"/>
+									<ExtendedTooltip name="CurrenciesReverseRateExtendedTooltip" id="295"/>
+								</InputField>
+								<InputField name="CurrenciesRate" id="272">
+									<DataPath>Object.Currencies.Rate</DataPath>
+									<ContextMenu name="CurrenciesRateContextMenu" id="273"/>
+									<ExtendedTooltip name="CurrenciesRateExtendedTooltip" id="274"/>
+								</InputField>
+								<InputField name="CurrenciesMultiplicity" id="275">
+									<DataPath>Object.Currencies.Multiplicity</DataPath>
+									<ContextMenu name="CurrenciesMultiplicityContextMenu" id="276"/>
+									<ExtendedTooltip name="CurrenciesMultiplicityExtendedTooltip" id="277"/>
+								</InputField>
+								<InputField name="CurrenciesAmount" id="281">
+									<DataPath>Object.Currencies.Amount</DataPath>
+									<ContextMenu name="CurrenciesAmountContextMenu" id="282"/>
+									<ExtendedTooltip name="CurrenciesAmountExtendedTooltip" id="283"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="GroupOther" id="112">
+					<Title>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Sonstiges</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Diğer</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Other</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Autres</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дополнительно</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="GroupOtherExtendedTooltip" id="113"/>
+					<ChildItems>
+						<InputField name="Number" id="1">
+							<DataPath>Object.Number</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="NumberContextMenu" id="2"/>
+							<ExtendedTooltip name="NumberExtendedTooltip" id="3"/>
+						</InputField>
+						<InputField name="Date" id="4">
+							<DataPath>Object.Date</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="DateContextMenu" id="5"/>
+							<ExtendedTooltip name="DateExtendedTooltip" id="6"/>
+						</InputField>
+						<InputField name="Branch" id="299">
+							<DataPath>Object.Branch</DataPath>
+							<ContextMenu name="BranchContextMenu" id="300"/>
+							<ExtendedTooltip name="BranchExtendedTooltip" id="301"/>
+						</InputField>
+						<InputField name="Author" id="296">
+							<DataPath>Object.Author</DataPath>
+							<ContextMenu name="AuthorContextMenu" id="297"/>
+							<ExtendedTooltip name="AuthorExtendedTooltip" id="298"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.InvoiceMatch</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Object.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+		<Attribute name="PartnerTransactionsBasisDocumentAmount" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Betrag</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Tutar</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Amount</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Montant</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:TypeSet>cfg:DefinedType.typeAmount</v8:TypeSet>
+			</Type>
+		</Attribute>
+		<Attribute name="Description" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Beschreibung</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Tanım</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Description</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Description</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Комментарий</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="PartnerTransactionsBasisDocumentDebt" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Schulden</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Borç</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Debt</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Dette</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Долг</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:TypeSet>cfg:DefinedType.typeAmount</v8:TypeSet>
+			</Type>
+		</Attribute>
+		<Attribute name="GroupItems" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Gruppe Elemente</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Grup malzemeler</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Group items</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Groupe Éléments</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа элементов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription"/>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="FillTransactions" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Transaktionen ausfüllen</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>İşlemleri doldur</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Fill transactions</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Compléter les transactions</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить</v8:content>
+				</v8:item>
+			</Title>
+			<Action>FillTransactions</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
+		</Command>
+		<Command name="FillAdvances" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Vorauszahlungen ausfüllen</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Avansları doldur</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Fill advances</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Compléter les acomptes</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить авансовые платежи</v8:content>
+				</v8:item>
+			</Title>
+			<Action>FillAdvances</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.14">
+	<Subsystem uuid="e7926fce-da7b-4d92-9aa4-1ed2f64b2df1">
+		<Properties>
+			<Name>Catalogs</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Kataloge</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Kart listeleri</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Catalogs</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Catalogues</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Справочники</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.CashAccounts</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Companies</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Countries</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Currencies</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Items</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ItemSegments</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ItemTypes</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Partners</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.PaymentTypes</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.PriceTypes</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.SpecialOffers</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Stores</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.TaxRates</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Users</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ItemKeys</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.InterfaceGroups</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.PartnerItems</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.AttachedFiles</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

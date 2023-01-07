@@ -1,0 +1,434 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.14">
+	<AutoCommandBar name="FormCommandBar" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="Ok" id="1">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.Ok</CommandName>
+				<ExtendedTooltip name="OkExtendedTooltip" id="2"/>
+			</Button>
+			<Button name="FormCancel" id="3">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Cancel</CommandName>
+				<ExtendedTooltip name="FormCancelExtendedTooltip" id="4"/>
+			</Button>
+			<Button name="FormCheckAll" id="32">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.CheckAll</CommandName>
+				<ExtendedTooltip name="FormCheckAllExtendedTooltip" id="33"/>
+			</Button>
+			<Button name="FormUncheckAll" id="34">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.UncheckAll</CommandName>
+				<ExtendedTooltip name="FormUncheckAllExtendedTooltip" id="35"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+	</Events>
+	<ChildItems>
+		<Table name="TableOfInternalSupplyRequest" id="5">
+			<Representation>List</Representation>
+			<DataPath>TableOfInternalSupplyRequest</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="TableOfInternalSupplyRequestContextMenu" id="7">
+				<Autofill>false</Autofill>
+			</ContextMenu>
+			<AutoCommandBar name="TableOfInternalSupplyRequestCommandBar" id="6">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="TableOfInternalSupplyRequestExtendedTooltip" id="8"/>
+			<SearchStringAddition name="TableOfInternalSupplyRequestSearchString" id="9">
+				<AdditionSource>
+					<Item>TableOfInternalSupplyRequest</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="TableOfInternalSupplyRequestSearchStringContextMenu" id="10"/>
+				<ExtendedTooltip name="TableOfInternalSupplyRequestSearchStringExtendedTooltip" id="11"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="TableOfInternalSupplyRequestViewStatus" id="15">
+				<AdditionSource>
+					<Item>TableOfInternalSupplyRequest</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="TableOfInternalSupplyRequestViewStatusContextMenu" id="16"/>
+				<ExtendedTooltip name="TableOfInternalSupplyRequestViewStatusExtendedTooltip" id="17"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="TableOfInternalSupplyRequestSearchControl" id="12">
+				<AdditionSource>
+					<Item>TableOfInternalSupplyRequest</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="TableOfInternalSupplyRequestSearchControlContextMenu" id="13"/>
+				<ExtendedTooltip name="TableOfInternalSupplyRequestSearchControlExtendedTooltip" id="14"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="BeforeAddRow">TableOfInternalSupplyRequestBeforeAddRow</Event>
+				<Event name="BeforeDeleteRow">TableOfInternalSupplyRequestBeforeDeleteRow</Event>
+			</Events>
+			<ChildItems>
+				<LabelField name="TableOfInternalSupplyRequestRowKey" id="39">
+					<DataPath>TableOfInternalSupplyRequest.RowKey</DataPath>
+					<Visible>false</Visible>
+					<ContextMenu name="TableOfInternalSupplyRequestRowKeyContextMenu" id="40"/>
+					<ExtendedTooltip name="TableOfInternalSupplyRequestRowKeyExtendedTooltip" id="41"/>
+				</LabelField>
+				<CheckBoxField name="TableOfInternalSupplyRequestUse" id="24">
+					<DataPath>TableOfInternalSupplyRequest.Use</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="TableOfInternalSupplyRequestUseContextMenu" id="25"/>
+					<ExtendedTooltip name="TableOfInternalSupplyRequestUseExtendedTooltip" id="26"/>
+				</CheckBoxField>
+				<ColumnGroup name="TableOfInternalSupplyRequestGroup" id="30">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Table of internal supply request group</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Grup iç talep siparişler tablosu</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Таблица группа заявок на обеспечение товаров </v8:content>
+						</v8:item>
+					</Title>
+					<Group>InCell</Group>
+					<ExtendedTooltip name="TableOfInternalSupplyRequestGroupExtendedTooltip" id="31"/>
+					<ChildItems>
+						<PictureField name="TableOfInternalSupplyRequestPicture" id="27">
+							<DataPath>TableOfInternalSupplyRequest.Picture</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<ValuesPicture>
+								<xr:Ref>CommonPicture.DocumentStatuses</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</ValuesPicture>
+							<ContextMenu name="TableOfInternalSupplyRequestPictureContextMenu" id="28"/>
+							<ExtendedTooltip name="TableOfInternalSupplyRequestPictureExtendedTooltip" id="29"/>
+						</PictureField>
+						<InputField name="TableOfInternalSupplyRequestIternalSupplyRequest" id="18">
+							<DataPath>TableOfInternalSupplyRequest.InternalSupplyRequest</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<ContextMenu name="TableOfInternalSupplyRequestIternalSupplyRequestContextMenu" id="19"/>
+							<ExtendedTooltip name="TableOfInternalSupplyRequestIternalSupplyRequestExtendedTooltip" id="20"/>
+						</InputField>
+					</ChildItems>
+				</ColumnGroup>
+				<InputField name="TableOfInternalSupplyRequestProcurementDate" id="36">
+					<DataPath>TableOfInternalSupplyRequest.ProcurementDate</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="TableOfInternalSupplyRequestProcurementDateContextMenu" id="37"/>
+					<ExtendedTooltip name="TableOfInternalSupplyRequestProcurementDateExtendedTooltip" id="38"/>
+				</InputField>
+				<InputField name="TableOfInternalSupplyRequestQuantity" id="21">
+					<DataPath>TableOfInternalSupplyRequest.Quantity</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="TableOfInternalSupplyRequestQuantityContextMenu" id="22"/>
+					<ExtendedTooltip name="TableOfInternalSupplyRequestQuantityExtendedTooltip" id="23"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="TableOfInternalSupplyRequest" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Table of internal supply request</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>İç talep siparişler tablosu</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица заявок на обеспечение товаров</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="InternalSupplyRequest" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Warenbeschaffungsanfrage</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>İç talep siparişi</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Internal supply request</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Demande d'approvisionnement</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заявка на обеспечение товара</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:DocumentRef.InternalSupplyRequest</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Quantity" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Erwartete Anzahl</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Miktar</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Quantity</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Quantité</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:DefinedType.typeQuantity</v8:TypeSet>
+					</Type>
+				</Column>
+				<Column name="Use" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Verwendung</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Kullan</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Use</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Utiliser</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Применить</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Picture" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Bild</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Resim</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Picture</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Image</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Картинка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ProcurementDate" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Procurement date</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Tedarik tarihi</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата обеспечения</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="RowKey" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Zeilenschlüssel</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Satır anahtarı</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Row key</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Clé de ligne</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ключ строки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:DefinedType.typeRowID</v8:TypeSet>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Ok" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>OK</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Tamam</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Ok</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>OK</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ок</v8:content>
+				</v8:item>
+			</Title>
+			<Action>Ok</Action>
+		</Command>
+		<Command name="Cancel" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Abbrechen</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>İptal</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Cancel</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Annuler</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отмена</v8:content>
+				</v8:item>
+			</Title>
+			<Action>Cancel</Action>
+		</Command>
+		<Command name="CheckAll" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Alle markieren</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Tümü işaretle</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Check all</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Sélectionner tout</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать все</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>StdPicture.CheckAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>CheckAll</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="UncheckAll" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Alle Markierungen aufheben</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Tümü kaldır</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Uncheck all</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Désélectionner tout</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отменить все</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>StdPicture.UncheckAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>UncheckAll</Action>
+			<Representation>Picture</Representation>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.14">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="FormCommandBar" id="-1">
+		<ChildItems>
+			<Button name="FormTest" id="40">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Test</CommandName>
+				<ExtendedTooltip name="FormTestExtendedTooltip" id="41"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">NotificationProcessing</Event>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+		<Event name="BeforeWriteAtServer">BeforeWriteAtServer</Event>
+	</Events>
+	<ChildItems>
+		<CheckBoxField name="Enabled" id="42">
+			<DataPath>Object.Enabled</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="EnabledContextMenu" id="43"/>
+			<ExtendedTooltip name="EnabledExtendedTooltip" id="44"/>
+		</CheckBoxField>
+		<InputField name="Code" id="1">
+			<DataPath>Object.Code</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="CodeContextMenu" id="2"/>
+			<ExtendedTooltip name="CodeExtendedTooltip" id="3"/>
+		</InputField>
+		<InputField name="Description" id="4">
+			<DataPath>Object.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="DescriptionContextMenu" id="5"/>
+			<ExtendedTooltip name="DescriptionExtendedTooltip" id="6"/>
+		</InputField>
+		<InputField name="EquipmentType" id="34">
+			<DataPath>Object.EquipmentType</DataPath>
+			<ContextMenu name="EquipmentTypeContextMenu" id="35"/>
+			<ExtendedTooltip name="EquipmentTypeExtendedTooltip" id="36"/>
+		</InputField>
+		<InputField name="Driver" id="37">
+			<DataPath>Object.Driver</DataPath>
+			<ContextMenu name="DriverContextMenu" id="38"/>
+			<ExtendedTooltip name="DriverExtendedTooltip" id="39"/>
+		</InputField>
+		<InputField name="Workstation" id="7">
+			<DataPath>Object.Workstation</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="WorkstationContextMenu" id="8"/>
+			<ExtendedTooltip name="WorkstationExtendedTooltip" id="9"/>
+		</InputField>
+		<Table name="ConnectParameters" id="10">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Object.ConnectParameters</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ConnectParametersContextMenu" id="11"/>
+			<AutoCommandBar name="ConnectParametersCommandBar" id="12">
+				<ChildItems>
+					<Button name="ConnectParametersLoadSettings" id="32">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.LoadSettings</CommandName>
+						<ExtendedTooltip name="ConnectParametersLoadSettingsExtendedTooltip" id="33"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ConnectParametersExtendedTooltip" id="13"/>
+			<SearchStringAddition name="ConnectParametersSearchString" id="14">
+				<AdditionSource>
+					<Item>ConnectParameters</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ConnectParametersSearchStringContextMenu" id="15"/>
+				<ExtendedTooltip name="ConnectParametersSearchStringExtendedTooltip" id="16"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ConnectParametersViewStatus" id="17">
+				<AdditionSource>
+					<Item>ConnectParameters</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<HorizontalLocation>Left</HorizontalLocation>
+				<ContextMenu name="ConnectParametersViewStatusContextMenu" id="18"/>
+				<ExtendedTooltip name="ConnectParametersViewStatusExtendedTooltip" id="19"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ConnectParametersSearchControl" id="20">
+				<AdditionSource>
+					<Item>ConnectParameters</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ConnectParametersSearchControlContextMenu" id="21"/>
+				<ExtendedTooltip name="ConnectParametersSearchControlExtendedTooltip" id="22"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ConnectParametersLineNumber" id="23">
+					<DataPath>Object.ConnectParameters.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ConnectParametersLineNumberContextMenu" id="24"/>
+					<ExtendedTooltip name="ConnectParametersLineNumberExtendedTooltip" id="25"/>
+				</LabelField>
+				<InputField name="ConnectParametersName" id="26">
+					<DataPath>Object.ConnectParameters.Name</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ConnectParametersNameContextMenu" id="27"/>
+					<ExtendedTooltip name="ConnectParametersNameExtendedTooltip" id="28"/>
+				</InputField>
+				<InputField name="ConnectParametersValue" id="29">
+					<DataPath>Object.ConnectParameters.Value</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ConnectParametersValueContextMenu" id="30"/>
+					<ExtendedTooltip name="ConnectParametersValueExtendedTooltip" id="31"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Hardware</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="LoadSettings" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Einstellungen laden</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Ayarları yükle</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Load settings</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Charger les paramètres</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить настройки</v8:content>
+				</v8:item>
+			</Title>
+			<Action>LoadSettings</Action>
+		</Command>
+		<Command name="Test" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Testen</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Test</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Test</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Test</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тест</v8:content>
+				</v8:item>
+			</Title>
+			<Action>Test</Action>
+		</Command>
+	</Commands>
+</Form>

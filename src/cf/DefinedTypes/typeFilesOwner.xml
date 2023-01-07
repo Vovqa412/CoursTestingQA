@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.14">
+	<DefinedType uuid="22692619-6399-4ccc-a8aa-56bf1888cac7">
+		<InternalInfo>
+			<xr:GeneratedType name="DefinedType.typeFilesOwner" category="DefinedType">
+				<xr:TypeId>77130677-9357-48c4-ab94-ed3263e22199</xr:TypeId>
+				<xr:ValueId>3787b7f3-1cef-481d-9c70-4c547f6d394e</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>typeFilesOwner</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Typ Dateibesitzer</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Dosya sahip tipi</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Type files owner</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Type Propriétaire des fichiers</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип владелец файлов</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Companies</v8:Type>
+				<v8:Type>cfg:CatalogRef.LegalNameContracts</v8:Type>
+				<v8:Type>cfg:DocumentRef.CashTransferOrder</v8:Type>
+				<v8:Type>cfg:DocumentRef.IncomingPaymentOrder</v8:Type>
+				<v8:Type>cfg:CatalogRef.PaymentTerminals</v8:Type>
+				<v8:Type>cfg:CatalogRef.CashAccounts</v8:Type>
+				<v8:Type>cfg:DocumentRef.SalesReturnOrder</v8:Type>
+				<v8:Type>cfg:DocumentRef.CashPayment</v8:Type>
+				<v8:Type>cfg:DocumentRef.PurchaseInvoice</v8:Type>
+				<v8:Type>cfg:DocumentRef.DebitNote</v8:Type>
+				<v8:Type>cfg:DocumentRef.CreditNote</v8:Type>
+				<v8:Type>cfg:DocumentRef.InvoiceMatch</v8:Type>
+				<v8:Type>cfg:DocumentRef.BankReceipt</v8:Type>
+				<v8:Type>cfg:DocumentRef.PurchaseReturn</v8:Type>
+				<v8:Type>cfg:CatalogRef.IntegrationSettings</v8:Type>
+				<v8:Type>cfg:DocumentRef.ManualRegisterEntry</v8:Type>
+				<v8:Type>cfg:DocumentRef.PurchaseReturnOrder</v8:Type>
+				<v8:Type>cfg:CatalogRef.PriceTypes</v8:Type>
+				<v8:Type>cfg:DocumentRef.Labeling</v8:Type>
+				<v8:Type>cfg:DocumentRef.BankPayment</v8:Type>
+				<v8:Type>cfg:CatalogRef.Partners</v8:Type>
+				<v8:Type>cfg:DocumentRef.ShipmentConfirmation</v8:Type>
+				<v8:Type>cfg:DocumentRef.InternalSupplyRequest</v8:Type>
+				<v8:Type>cfg:DocumentRef.Unbundling</v8:Type>
+				<v8:Type>cfg:DocumentRef.PriceList</v8:Type>
+				<v8:Type>cfg:CatalogRef.EquipmentDrivers</v8:Type>
+				<v8:Type>cfg:DocumentRef.PurchaseOrder</v8:Type>
+				<v8:Type>cfg:DocumentRef.CashReceipt</v8:Type>
+				<v8:Type>cfg:CatalogRef.Hardware</v8:Type>
+				<v8:Type>cfg:DocumentRef.OutgoingPaymentOrder</v8:Type>
+				<v8:Type>cfg:CatalogRef.PartnersBankAccounts</v8:Type>
+				<v8:Type>cfg:DocumentRef.OpeningEntry</v8:Type>
+				<v8:Type>cfg:DocumentRef.RetailReturnReceipt</v8:Type>
+				<v8:Type>cfg:DocumentRef.SalesOrder</v8:Type>
+				<v8:Type>cfg:DocumentRef.SalesReturn</v8:Type>
+				<v8:Type>cfg:DocumentRef.VendorsAdvancesClosing</v8:Type>
+				<v8:Type>cfg:DocumentRef.CashRevenue</v8:Type>
+				<v8:Type>cfg:DocumentRef.CashStatement</v8:Type>
+				<v8:Type>cfg:DocumentRef.PhysicalCountByLocation</v8:Type>
+				<v8:Type>cfg:DocumentRef.CustomersAdvancesClosing</v8:Type>
+				<v8:Type>cfg:DocumentRef.StockAdjustmentAsSurplus</v8:Type>
+				<v8:Type>cfg:DocumentRef.StockAdjustmentAsWriteOff</v8:Type>
+				<v8:Type>cfg:DocumentRef.Bundling</v8:Type>
+				<v8:Type>cfg:DocumentRef.RetailSalesReceipt</v8:Type>
+				<v8:Type>cfg:CatalogRef.Items</v8:Type>
+				<v8:Type>cfg:DocumentRef.PlannedReceiptReservation</v8:Type>
+				<v8:Type>cfg:CatalogRef.BankTerms</v8:Type>
+				<v8:Type>cfg:CatalogRef.Agreements</v8:Type>
+				<v8:Type>cfg:DocumentRef.ItemStockAdjustment</v8:Type>
+				<v8:Type>cfg:CatalogRef.RetailCustomers</v8:Type>
+				<v8:Type>cfg:DocumentRef.InventoryTransferOrder</v8:Type>
+				<v8:Type>cfg:CatalogRef.CashStatementStatuses</v8:Type>
+				<v8:Type>cfg:DocumentRef.PurchaseOrderClosing</v8:Type>
+				<v8:Type>cfg:DocumentRef.SalesOrderClosing</v8:Type>
+				<v8:Type>cfg:CatalogRef.Specifications</v8:Type>
+				<v8:Type>cfg:CatalogRef.Stores</v8:Type>
+				<v8:Type>cfg:DocumentRef.InventoryTransfer</v8:Type>
+				<v8:Type>cfg:CatalogRef.ItemKeys</v8:Type>
+				<v8:Type>cfg:DocumentRef.ReconciliationStatement</v8:Type>
+				<v8:Type>cfg:DocumentRef.GoodsReceipt</v8:Type>
+				<v8:Type>cfg:DocumentRef.PhysicalInventory</v8:Type>
+				<v8:Type>cfg:DocumentRef.SalesInvoice</v8:Type>
+				<v8:Type>cfg:CatalogRef.ChequeBonds</v8:Type>
+				<v8:Type>cfg:CatalogRef.BusinessUnits</v8:Type>
+				<v8:Type>cfg:DocumentRef.CashExpense</v8:Type>
+			</Type>
+		</Properties>
+	</DefinedType>
+</MetaDataObject>

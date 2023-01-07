@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.14">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="FormCommandBar" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="GroupDescriptions" id="10">
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="GroupDescriptionsExtendedTooltip" id="11"/>
+		</UsualGroup>
+		<CheckBoxField name="DeferredCalculation" id="12">
+			<DataPath>Object.DeferredCalculation</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="DeferredCalculationContextMenu" id="13"/>
+			<ExtendedTooltip name="DeferredCalculationExtendedTooltip" id="14"/>
+		</CheckBoxField>
+		<InputField name="Currency" id="1">
+			<DataPath>Object.Currency</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="CurrencyContextMenu" id="2"/>
+			<ExtendedTooltip name="CurrencyExtendedTooltip" id="3"/>
+		</InputField>
+		<InputField name="Source" id="4">
+			<DataPath>Object.Source</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ChoiceParameters>
+				<app:item name="Filter.IntegrationType">
+					<app:value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation/>
+						<Value xsi:type="xr:DesignTimeRef">Enum.IntegrationType.EnumValue.CurrencyRates</Value>
+					</app:value>
+				</app:item>
+			</ChoiceParameters>
+			<ContextMenu name="SourceContextMenu" id="5"/>
+			<ExtendedTooltip name="SourceExtendedTooltip" id="6"/>
+		</InputField>
+		<InputField name="Type" id="7">
+			<DataPath>Object.Type</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="TypeContextMenu" id="8"/>
+			<ExtendedTooltip name="TypeExtendedTooltip" id="9"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:ChartOfCharacteristicTypesObject.CurrencyMovementType</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

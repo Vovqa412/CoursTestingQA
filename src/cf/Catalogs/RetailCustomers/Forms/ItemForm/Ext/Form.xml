@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.14">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="FormCommandBar" id="-1"/>
+	<Events>
+		<Event name="NotificationProcessing">NotificationProcessing</Event>
+		<Event name="OnReadAtServer">OnReadAtServer</Event>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+		<Event name="BeforeWriteAtServer">BeforeWriteAtServer</Event>
+		<Event name="OnWriteAtServer">OnWriteAtServer</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Code" id="1">
+			<DataPath>Object.Code</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="CodeContextMenu" id="2"/>
+			<ExtendedTooltip name="CodeExtendedTooltip" id="3"/>
+		</InputField>
+		<InputField name="Description" id="4">
+			<DataPath>Object.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="DescriptionContextMenu" id="5"/>
+			<ExtendedTooltip name="DescriptionExtendedTooltip" id="6"/>
+		</InputField>
+		<InputField name="Name" id="9">
+			<DataPath>Object.Name</DataPath>
+			<ContextMenu name="NameContextMenu" id="10"/>
+			<ExtendedTooltip name="NameExtendedTooltip" id="11"/>
+		</InputField>
+		<InputField name="Surname" id="12">
+			<DataPath>Object.Surname</DataPath>
+			<ContextMenu name="SurnameContextMenu" id="13"/>
+			<ExtendedTooltip name="SurnameExtendedTooltip" id="14"/>
+		</InputField>
+		<CheckBoxField name="UsePartnerTransactions" id="26">
+			<DataPath>Object.UsePartnerTransactions</DataPath>
+			<TitleLocation>Right</TitleLocation>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="UsePartnerTransactionsContextMenu" id="27"/>
+			<ExtendedTooltip name="UsePartnerTransactionsExtendedTooltip" id="28"/>
+			<Events>
+				<Event name="OnChange">UsePartnerTransactionsOnChange</Event>
+			</Events>
+		</CheckBoxField>
+		<UsualGroup name="GroupPartnerInfo" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Partner info</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Cari hesap bilgisi</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Информация о партнере</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<ExtendedTooltip name="GroupPartnerInfoExtendedTooltip" id="16"/>
+			<ChildItems>
+				<CheckBoxField name="UsePartnerInfo" id="29">
+					<DataPath>Object.UsePartnerInfo</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="UsePartnerInfoContextMenu" id="30"/>
+					<ExtendedTooltip name="UsePartnerInfoExtendedTooltip" id="31"/>
+					<Events>
+						<Event name="OnChange">UsePartnerInfoOnChange</Event>
+					</Events>
+				</CheckBoxField>
+				<InputField name="Partner" id="17">
+					<DataPath>Object.Partner</DataPath>
+					<ContextMenu name="PartnerContextMenu" id="18"/>
+					<ExtendedTooltip name="PartnerExtendedTooltip" id="19"/>
+					<Events>
+						<Event name="EditTextChange">PartnerEditTextChange</Event>
+						<Event name="StartChoice">PartnerStartChoice</Event>
+					</Events>
+				</InputField>
+				<InputField name="LegalName" id="20">
+					<DataPath>Object.LegalName</DataPath>
+					<ContextMenu name="LegalNameContextMenu" id="21"/>
+					<ExtendedTooltip name="LegalNameExtendedTooltip" id="22"/>
+					<Events>
+						<Event name="EditTextChange">LegalNameEditTextChange</Event>
+						<Event name="StartChoice">LegalNameStartChoice</Event>
+					</Events>
+				</InputField>
+				<InputField name="Agreement" id="23">
+					<DataPath>Object.Agreement</DataPath>
+					<ContextMenu name="AgreementContextMenu" id="24"/>
+					<ExtendedTooltip name="AgreementExtendedTooltip" id="25"/>
+					<Events>
+						<Event name="EditTextChange">AgreementEditTextChange</Event>
+						<Event name="StartChoice">AgreementStartChoice</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.RetailCustomers</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

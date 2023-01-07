@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.14">
+	<SubsystemsVisibility>
+		<Subsystem name="Subsystem.Temp">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Subsystem>
+	</SubsystemsVisibility>
+	<SubsystemsOrder>
+		<Subsystem>Subsystem.Temp</Subsystem>
+		<Subsystem>Subsystem.PurchaseAP</Subsystem>
+		<Subsystem>Subsystem.SalesAR</Subsystem>
+		<Subsystem>Subsystem.Inventory</Subsystem>
+		<Subsystem>Subsystem.Mobile</Subsystem>
+		<Subsystem>Subsystem.Treasury</Subsystem>
+		<Subsystem>Subsystem.MasterData</Subsystem>
+		<Subsystem>Subsystem.Settings</Subsystem>
+		<Subsystem>Subsystem.Reports</Subsystem>
+		<Subsystem>Subsystem.Saas</Subsystem>
+		<Subsystem>Subsystem.Retail</Subsystem>
+	</SubsystemsOrder>
+</CommandInterface>

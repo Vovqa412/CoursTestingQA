@@ -1,0 +1,4 @@
+﻿&AtClient
+Procedure CommandProcessing(CommandParameter, CommandExecuteParameters)
+	DocPhysicalInventoryClient.CreatePhysicalCount(CommandParameter);
+EndProcedure

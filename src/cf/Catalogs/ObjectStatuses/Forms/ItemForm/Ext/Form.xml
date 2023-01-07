@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.14">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="FormCommandBar" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="GroupDescriptions" id="12">
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="GroupDescriptionsExtendedTooltip" id="13"/>
+			<ChildItems>
+				<InputField name="Code" id="69">
+					<DataPath>Object.Code</DataPath>
+					<ContextMenu name="CodeContextMenu" id="70"/>
+					<ExtendedTooltip name="CodeExtendedTooltip" id="71"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Parent" id="1">
+			<DataPath>Object.Parent</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<InputHint>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Objekt auswählen</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Nesne seç</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Select object</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Sélectionner un objet</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать объект</v8:content>
+				</v8:item>
+			</InputHint>
+			<ContextMenu name="ParentContextMenu" id="2"/>
+			<ExtendedTooltip name="ParentExtendedTooltip" id="3"/>
+			<Events>
+				<Event name="OnChange">ParentOnChange</Event>
+			</Events>
+		</InputField>
+		<CheckBoxField name="SetByDefault" id="6">
+			<DataPath>Object.SetByDefault</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="SetByDefaultContextMenu" id="7"/>
+			<ExtendedTooltip name="SetByDefaultExtendedTooltip" id="8"/>
+		</CheckBoxField>
+		<CheckBoxField name="Posting" id="9">
+			<DataPath>Object.Posting</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="PostingContextMenu" id="10"/>
+			<ExtendedTooltip name="PostingExtendedTooltip" id="11"/>
+		</CheckBoxField>
+		<InputField name="UniqueID" id="66">
+			<DataPath>Object.UniqueID</DataPath>
+			<ContextMenu name="UniqueIDContextMenu" id="67"/>
+			<ExtendedTooltip name="UniqueIDExtendedTooltip" id="68"/>
+		</InputField>
+		<Pages name="GroupPagesCheque" id="33">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Seitengruppe Bankschecks</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Sayfalar grubu çekler</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Group pages cheque</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Groupe de pages Chèques</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страниц банковские чеки</v8:content>
+				</v8:item>
+			</Title>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="GroupPagesChequeExtendedTooltip" id="34"/>
+			<ChildItems>
+				<Page name="GroupNextPossibleStatuses" id="35">
+					<Title>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Weitere möglichen Status</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Sonraki uygun statüler</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Next possible statuses</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Statuts suivants possibles</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Следующие возможные статусы</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="GroupNextPossibleStatusesExtendedTooltip" id="36"/>
+					<ChildItems>
+						<Table name="NextPossibleStatuses" id="14">
+							<Representation>List</Representation>
+							<DataPath>Object.NextPossibleStatuses</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="NextPossibleStatusesContextMenu" id="16"/>
+							<AutoCommandBar name="NextPossibleStatusesCommandBar" id="15"/>
+							<ExtendedTooltip name="NextPossibleStatusesExtendedTooltip" id="17"/>
+							<SearchStringAddition name="NextPossibleStatusesSearchString" id="18">
+								<AdditionSource>
+									<Item>NextPossibleStatuses</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="NextPossibleStatusesSearchStringContextMenu" id="19"/>
+								<ExtendedTooltip name="NextPossibleStatusesSearchStringExtendedTooltip" id="20"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="NextPossibleStatusesViewStatus" id="24">
+								<AdditionSource>
+									<Item>NextPossibleStatuses</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<HorizontalLocation>Left</HorizontalLocation>
+								<ContextMenu name="NextPossibleStatusesViewStatusContextMenu" id="25"/>
+								<ExtendedTooltip name="NextPossibleStatusesViewStatusExtendedTooltip" id="26"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="NextPossibleStatusesSearchControl" id="21">
+								<AdditionSource>
+									<Item>NextPossibleStatuses</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="NextPossibleStatusesSearchControlContextMenu" id="22"/>
+								<ExtendedTooltip name="NextPossibleStatusesSearchControlExtendedTooltip" id="23"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="NextPossibleStatusesLineNumber" id="27">
+									<DataPath>Object.NextPossibleStatuses.LineNumber</DataPath>
+									<ContextMenu name="NextPossibleStatusesLineNumberContextMenu" id="28"/>
+									<ExtendedTooltip name="NextPossibleStatusesLineNumberExtendedTooltip" id="29"/>
+								</InputField>
+								<InputField name="NextPossibleStatusesStatus" id="30">
+									<DataPath>Object.NextPossibleStatuses.Status</DataPath>
+									<ChoiceParameterLinks>
+										<xr:Link>
+											<xr:Name>Filter.Parent</xr:Name>
+											<xr:DataPath xsi:type="xs:string">Object.Parent</xr:DataPath>
+											<xr:ValueChange>Clear</xr:ValueChange>
+										</xr:Link>
+									</ChoiceParameterLinks>
+									<ContextMenu name="NextPossibleStatusesStatusContextMenu" id="31"/>
+									<ExtendedTooltip name="NextPossibleStatusesStatusExtendedTooltip" id="32"/>
+									<Events>
+										<Event name="EditTextChange">NextPossibleStatusesStatusEditTextChange</Event>
+										<Event name="StartChoice">NextPossibleStatusesStatusStartChoice</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="GroupPosting" id="37">
+					<Title>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Buchung</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Kayıt</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Posting</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Comptabilisation</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройка проводок</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="GroupPostingExtendedTooltip" id="38"/>
+					<ChildItems>
+						<InputField name="PostingChequeBondBalance" id="63">
+							<Title>
+								<v8:item>
+									<v8:lang>de</v8:lang>
+									<v8:content>Scheck- oder Anleiherestbetrag</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>tr</v8:lang>
+									<v8:content>Çek/senet bakiyeleri (ChequeBondBalance)</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Cheque bond balance</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>fr</v8:lang>
+									<v8:content>Balance de chèque/obligation</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Остаток обязательств по чекам</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Right</TitleLocation>
+							<ContextMenu name="PostingChequeBondBalanceContextMenu" id="64"/>
+							<ExtendedTooltip name="PostingChequeBondBalanceExtendedTooltip" id="65"/>
+						</InputField>
+						<InputField name="PostingAdvanced" id="39">
+							<TitleLocation>Right</TitleLocation>
+							<ContextMenu name="PostingAdvancedContextMenu" id="40"/>
+							<ExtendedTooltip name="PostingAdvancedExtendedTooltip" id="41"/>
+						</InputField>
+						<InputField name="PostingPartnerAccountTransactions" id="42">
+							<TitleLocation>Right</TitleLocation>
+							<ContextMenu name="PostingPartnerAccountTransactionsContextMenu" id="43"/>
+							<ExtendedTooltip name="PostingPartnerAccountTransactionsExtendedTooltip" id="44"/>
+						</InputField>
+						<InputField name="PostingReconciliationStatement" id="45">
+							<TitleLocation>Right</TitleLocation>
+							<ContextMenu name="PostingReconciliationStatementContextMenu" id="46"/>
+							<ExtendedTooltip name="PostingReconciliationStatementExtendedTooltip" id="47"/>
+						</InputField>
+						<InputField name="PostingAccountBalance" id="48">
+							<TitleLocation>Right</TitleLocation>
+							<ContextMenu name="PostingAccountBalanceContextMenu" id="49"/>
+							<ExtendedTooltip name="PostingAccountBalanceExtendedTooltip" id="50"/>
+						</InputField>
+						<InputField name="PostingPlaningCashTransactions" id="60">
+							<TitleLocation>Right</TitleLocation>
+							<ContextMenu name="PostingPlaningCashTransactionsContextMenu" id="61"/>
+							<ExtendedTooltip name="PostingPlaningCashTransactionsExtendedTooltip" id="62"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ObjectStatuses</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

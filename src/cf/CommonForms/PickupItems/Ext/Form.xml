@@ -1,0 +1,1446 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.14">
+	<AutoCommandBar name="FormCommandBar" id="-1">
+		<ChildItems>
+			<Button name="FormCommandSaveAndClose" id="102">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.CommandSaveAndClose</CommandName>
+				<ExtendedTooltip name="FormCommandSaveAndCloseExtendedTooltip" id="103"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">OnOpen</Event>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="GroupFilters" id="1">
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="GroupFiltersExtendedTooltip" id="2"/>
+			<ChildItems>
+				<InputField name="TitleFilter" id="106">
+					<DataPath>TitleFilter</DataPath>
+					<ClearButton>true</ClearButton>
+					<InputHint>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Geben Sie ein, und drücken Sie die EINGABETASTE</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Doldurun ve Enter basınız</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Type and press enter</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Tapez et appuyez sur Entrée</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Введите и нажмите Enter</v8:content>
+						</v8:item>
+					</InputHint>
+					<ContextMenu name="TitleFilterContextMenu" id="107"/>
+					<ExtendedTooltip name="TitleFilterExtendedTooltip" id="108"/>
+					<Events>
+						<Event name="OnChange">TitleFilterOnChange</Event>
+						<Event name="Clearing">TitleFilterClearing</Event>
+					</Events>
+				</InputField>
+				<InputField name="ItemType" id="3">
+					<DataPath>ItemType</DataPath>
+					<ClearButton>true</ClearButton>
+					<OpenButton>false</OpenButton>
+					<ContextMenu name="ItemTypeContextMenu" id="4"/>
+					<ExtendedTooltip name="ItemTypeExtendedTooltip" id="5"/>
+					<Events>
+						<Event name="OnChange">ItemTypeOnChange</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="GroupItems" id="16" DisplayImportance="Usual">
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="GroupItemsExtendedTooltip" id="17"/>
+			<ChildItems>
+				<Table name="ItemList" id="18">
+					<Representation>List</Representation>
+					<RowSelectionMode>Row</RowSelectionMode>
+					<DataPath>ItemList</DataPath>
+					<CommandSet>
+						<ExcludedCommand>Add</ExcludedCommand>
+						<ExcludedCommand>Change</ExcludedCommand>
+						<ExcludedCommand>Copy</ExcludedCommand>
+						<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+						<ExcludedCommand>Delete</ExcludedCommand>
+						<ExcludedCommand>EndEdit</ExcludedCommand>
+						<ExcludedCommand>MoveDown</ExcludedCommand>
+						<ExcludedCommand>MoveUp</ExcludedCommand>
+						<ExcludedCommand>SelectAll</ExcludedCommand>
+						<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+						<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+					</CommandSet>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ItemListContextMenu" id="19"/>
+					<AutoCommandBar name="ItemListCommandBar" id="20">
+						<ChildItems>
+							<Button name="ItemListItemListCommandBack" id="104">
+								<Type>CommandBarButton</Type>
+								<Enabled>false</Enabled>
+								<CommandName>Form.Command.CommandBack</CommandName>
+								<ExtendedTooltip name="ItemListItemListCommandBackExtendedTooltip" id="105"/>
+							</Button>
+						</ChildItems>
+					</AutoCommandBar>
+					<ExtendedTooltip name="ItemListExtendedTooltip" id="21"/>
+					<SearchStringAddition name="ItemListSearchString" id="22">
+						<AdditionSource>
+							<Item>ItemList</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ItemListSearchStringContextMenu" id="23"/>
+						<ExtendedTooltip name="ItemListSearchStringExtendedTooltip" id="24"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ItemListViewStatus" id="25">
+						<AdditionSource>
+							<Item>ItemList</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<HorizontalLocation>Left</HorizontalLocation>
+						<ContextMenu name="ItemListViewStatusContextMenu" id="26"/>
+						<ExtendedTooltip name="ItemListViewStatusExtendedTooltip" id="27"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ItemListSearchControl" id="28">
+						<AdditionSource>
+							<Item>ItemList</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ItemListSearchControlContextMenu" id="29"/>
+						<ExtendedTooltip name="ItemListSearchControlExtendedTooltip" id="30"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="Selection">ItemListSelection</Event>
+						<Event name="BeforeAddRow">ItemListBeforeAddRow</Event>
+						<Event name="BeforeDeleteRow">ItemListBeforeDeleteRow</Event>
+						<Event name="BeforeRowChange">ItemListBeforeRowChange</Event>
+					</Events>
+					<ChildItems>
+						<InputField name="ItemListTitle" id="35" DisplayImportance="VeryHigh">
+							<DataPath>ItemList.Title</DataPath>
+							<ContextMenu name="ItemListTitleContextMenu" id="36"/>
+							<ExtendedTooltip name="ItemListTitleExtendedTooltip" id="37"/>
+						</InputField>
+						<InputField name="ItemListInStock" id="40" DisplayImportance="VeryLow">
+							<DataPath>ItemList.InStock</DataPath>
+							<ContextMenu name="ItemListInStockContextMenu" id="41"/>
+							<ExtendedTooltip name="ItemListInStockExtendedTooltip" id="42"/>
+						</InputField>
+						<InputField name="ItemListUnit" id="127" DisplayImportance="VeryLow">
+							<DataPath>ItemList.Unit</DataPath>
+							<ContextMenu name="ItemListUnitContextMenu" id="128"/>
+							<ExtendedTooltip name="ItemListUnitExtendedTooltip" id="129"/>
+						</InputField>
+						<InputField name="ItemListInStockReceiver" id="130" DisplayImportance="VeryLow">
+							<DataPath>ItemList.InStockReceiver</DataPath>
+							<ContextMenu name="ItemListInStockReceiverContextMenu" id="131"/>
+							<ExtendedTooltip name="ItemListInStockReceiverExtendedTooltip" id="132"/>
+						</InputField>
+						<InputField name="ItemListPrice" id="109" DisplayImportance="VeryHigh">
+							<DataPath>ItemList.Price</DataPath>
+							<MaxWidth>5</MaxWidth>
+							<ContextMenu name="ItemListPriceContextMenu" id="110"/>
+							<ExtendedTooltip name="ItemListPriceExtendedTooltip" id="111"/>
+						</InputField>
+						<InputField name="ItemListPickedOut" id="43" DisplayImportance="VeryHigh">
+							<DataPath>ItemList.PickedOut</DataPath>
+							<HorizontalAlign>Right</HorizontalAlign>
+							<ContextMenu name="ItemListPickedOutContextMenu" id="44"/>
+							<ExtendedTooltip name="ItemListPickedOutExtendedTooltip" id="45"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="GroupItemKeys" id="46" DisplayImportance="Usual">
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="GroupItemKeysExtendedTooltip" id="47"/>
+			<ChildItems>
+				<Table name="ItemKeyList" id="48">
+					<Representation>List</Representation>
+					<ReadOnly>true</ReadOnly>
+					<DataPath>ItemKeyList</DataPath>
+					<CommandSet>
+						<ExcludedCommand>Add</ExcludedCommand>
+						<ExcludedCommand>CancelSearch</ExcludedCommand>
+						<ExcludedCommand>Change</ExcludedCommand>
+						<ExcludedCommand>Copy</ExcludedCommand>
+						<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+						<ExcludedCommand>Delete</ExcludedCommand>
+						<ExcludedCommand>EndEdit</ExcludedCommand>
+						<ExcludedCommand>Find</ExcludedCommand>
+						<ExcludedCommand>MoveDown</ExcludedCommand>
+						<ExcludedCommand>MoveUp</ExcludedCommand>
+						<ExcludedCommand>OutputList</ExcludedCommand>
+						<ExcludedCommand>SelectAll</ExcludedCommand>
+						<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+						<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+						<ExcludedCommand>SortListAsc</ExcludedCommand>
+						<ExcludedCommand>SortListDesc</ExcludedCommand>
+					</CommandSet>
+					<BehaviorOnHorizontalCompression>MoveItemsByImportance</BehaviorOnHorizontalCompression>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ItemKeyListContextMenu" id="49"/>
+					<AutoCommandBar name="ItemKeyListCommandBar" id="50">
+						<ChildItems>
+							<Button name="ItemKeyListCommandBack" id="100">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.CommandBack</CommandName>
+								<ExtendedTooltip name="ItemKeyListCommandBackExtendedTooltip" id="101"/>
+							</Button>
+						</ChildItems>
+					</AutoCommandBar>
+					<ExtendedTooltip name="ItemKeyListExtendedTooltip" id="51"/>
+					<SearchStringAddition name="ItemKeyListSearchString" id="52">
+						<AdditionSource>
+							<Item>ItemKeyList</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ItemKeyListSearchStringContextMenu" id="53"/>
+						<ExtendedTooltip name="ItemKeyListSearchStringExtendedTooltip" id="54"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ItemKeyListViewStatus" id="55">
+						<AdditionSource>
+							<Item>ItemKeyList</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<HorizontalLocation>Left</HorizontalLocation>
+						<ContextMenu name="ItemKeyListViewStatusContextMenu" id="56"/>
+						<ExtendedTooltip name="ItemKeyListViewStatusExtendedTooltip" id="57"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ItemKeyListSearchControl" id="58">
+						<AdditionSource>
+							<Item>ItemKeyList</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ItemKeyListSearchControlContextMenu" id="59"/>
+						<ExtendedTooltip name="ItemKeyListSearchControlExtendedTooltip" id="60"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="Selection">ItemKeyListSelection</Event>
+					</Events>
+					<ChildItems>
+						<InputField name="ItemKeyListTitle" id="65" DisplayImportance="VeryHigh">
+							<DataPath>ItemKeyList.Title</DataPath>
+							<ContextMenu name="ItemKeyListTitleContextMenu" id="66"/>
+							<ExtendedTooltip name="ItemKeyListTitleExtendedTooltip" id="67"/>
+						</InputField>
+						<InputField name="ItemKeyListInStock" id="70" DisplayImportance="VeryHigh">
+							<DataPath>ItemKeyList.InStock</DataPath>
+							<ContextMenu name="ItemKeyListInStockContextMenu" id="71"/>
+							<ExtendedTooltip name="ItemKeyListInStockExtendedTooltip" id="72"/>
+						</InputField>
+						<InputField name="ItemKeyListUnit" id="124" DisplayImportance="VeryHigh">
+							<DataPath>ItemKeyList.Unit</DataPath>
+							<ContextMenu name="ItemKeyListUnitContextMenu" id="125"/>
+							<ExtendedTooltip name="ItemKeyListUnitExtendedTooltip" id="126"/>
+						</InputField>
+						<InputField name="ItemKeyListInStockReceiver" id="133" DisplayImportance="VeryHigh">
+							<DataPath>ItemKeyList.InStockReceiver</DataPath>
+							<ContextMenu name="ItemKeyListInStockReceiverContextMenu" id="134"/>
+							<ExtendedTooltip name="ItemKeyListInStockReceiverExtendedTooltip" id="135"/>
+						</InputField>
+						<InputField name="ItemKeyListPrice" id="112" DisplayImportance="VeryHigh">
+							<DataPath>ItemKeyList.Price</DataPath>
+							<ContextMenu name="ItemKeyListPriceContextMenu" id="113"/>
+							<ExtendedTooltip name="ItemKeyListPriceExtendedTooltip" id="114"/>
+						</InputField>
+						<InputField name="ItemKeyListPickupOut" id="73" DisplayImportance="VeryHigh">
+							<DataPath>ItemKeyList.PickedOut</DataPath>
+							<HorizontalAlign>Right</HorizontalAlign>
+							<ContextMenu name="ItemKeyListPickupOutContextMenu" id="74"/>
+							<ExtendedTooltip name="ItemKeyListPickupOutExtendedTooltip" id="75"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="GroupPickedOut" id="140">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Ausgewählt</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Seçilen</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Picked out</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Sélectionnés</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подобрано</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<ExtendedTooltip name="GroupPickedOutExtendedTooltip" id="141"/>
+			<ChildItems>
+				<Table name="ItemTableValue" id="78" DisplayImportance="VeryHigh">
+					<Representation>List</Representation>
+					<ChoiceMode>true</ChoiceMode>
+					<Footer>true</Footer>
+					<DataPath>ItemTableValue</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ItemTableValueContextMenu" id="80"/>
+					<AutoCommandBar name="ItemTableValueCommandBar" id="79">
+						<Autofill>false</Autofill>
+					</AutoCommandBar>
+					<ExtendedTooltip name="ItemTableValueExtendedTooltip" id="81"/>
+					<SearchStringAddition name="ItemTableValueSearchString" id="82">
+						<AdditionSource>
+							<Item>ItemTableValue</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ItemTableValueSearchStringContextMenu" id="83"/>
+						<ExtendedTooltip name="ItemTableValueSearchStringExtendedTooltip" id="84"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ItemTableValueViewStatus" id="88">
+						<AdditionSource>
+							<Item>ItemTableValue</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<HorizontalLocation>Left</HorizontalLocation>
+						<ContextMenu name="ItemTableValueViewStatusContextMenu" id="89"/>
+						<ExtendedTooltip name="ItemTableValueViewStatusExtendedTooltip" id="90"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ItemTableValueSearchControl" id="85">
+						<AdditionSource>
+							<Item>ItemTableValue</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ItemTableValueSearchControlContextMenu" id="86"/>
+						<ExtendedTooltip name="ItemTableValueSearchControlExtendedTooltip" id="87"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="OnChange">ItemTableValueOnChange</Event>
+					</Events>
+					<ChildItems>
+						<InputField name="ItemTableValueItem" id="91" DisplayImportance="VeryHigh">
+							<DataPath>ItemTableValue.Item</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<ShowInFooter>false</ShowInFooter>
+							<ContextMenu name="ItemTableValueItemContextMenu" id="92"/>
+							<ExtendedTooltip name="ItemTableValueItemExtendedTooltip" id="93"/>
+						</InputField>
+						<InputField name="ItemTableValueItemKey" id="94" DisplayImportance="VeryHigh">
+							<DataPath>ItemTableValue.ItemKey</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<ShowInFooter>false</ShowInFooter>
+							<ContextMenu name="ItemTableValueItemKeyContextMenu" id="95"/>
+							<ExtendedTooltip name="ItemTableValueItemKeyExtendedTooltip" id="96"/>
+						</InputField>
+						<InputField name="ItemTableValuePrice" id="115" DisplayImportance="VeryHigh">
+							<DataPath>ItemTableValue.Price</DataPath>
+							<ContextMenu name="ItemTableValuePriceContextMenu" id="116"/>
+							<ExtendedTooltip name="ItemTableValuePriceExtendedTooltip" id="117"/>
+							<Events>
+								<Event name="OnChange">ItemTableValuePriceOnChange</Event>
+							</Events>
+						</InputField>
+						<InputField name="ItemTableValueQuantity" id="97" DisplayImportance="VeryHigh">
+							<DataPath>ItemTableValue.Quantity</DataPath>
+							<ShowInFooter>false</ShowInFooter>
+							<ContextMenu name="ItemTableValueQuantityContextMenu" id="98"/>
+							<ExtendedTooltip name="ItemTableValueQuantityExtendedTooltip" id="99"/>
+							<Events>
+								<Event name="OnChange">ItemTableValueQuantityOnChange</Event>
+							</Events>
+						</InputField>
+						<InputField name="ItemTableValueUnit" id="121" DisplayImportance="VeryHigh">
+							<DataPath>ItemTableValue.Unit</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<ContextMenu name="ItemTableValueUnitContextMenu" id="122"/>
+							<ExtendedTooltip name="ItemTableValueUnitExtendedTooltip" id="123"/>
+						</InputField>
+						<InputField name="ItemTableValueAmount" id="118" DisplayImportance="VeryHigh">
+							<DataPath>ItemTableValue.Amount</DataPath>
+							<ContextMenu name="ItemTableValueAmountContextMenu" id="119"/>
+							<ExtendedTooltip name="ItemTableValueAmountExtendedTooltip" id="120"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ItemKeyList" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Artikelvariantenliste</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Varyant listesi</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Item key list</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Liste de clés des articles</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Товары</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ItemKey" id="13">
+					<Title>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Artikelvariante</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Varyant</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Item key</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Clé d'article</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Характеристика</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ItemKeys</v8:Type>
+					</Type>
+				</Column>
+				<Column name="InStock" id="14">
+					<Title>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Auf Lager</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Stokta</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>In stock</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>En stock</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>В наличии</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>15</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Title" id="15">
+					<Title>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Titel</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Başlık</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Title</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Titre</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>50</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="PickedOut" id="16">
+					<Title>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Ausgewählt</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Seçilen</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Picked out</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Sélectionnés</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выбранные документы</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:DefinedType.typeQuantity</v8:TypeSet>
+					</Type>
+				</Column>
+				<Column name="Price" id="20">
+					<Title>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Preis</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Fiyat</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Price</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Prix</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Цена</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:DefinedType.typePrice</v8:TypeSet>
+					</Type>
+				</Column>
+				<Column name="Unit" id="24">
+					<Title>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Einheit</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Birim</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Unit</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Unité</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ед. изм.</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Units</v8:Type>
+					</Type>
+				</Column>
+				<Column name="InStockReceiver" id="28">
+					<Title>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Auf Empfangslager</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Alıcı depodaki</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>In stock receiver</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>En stock dans l'entrepôt destinataire</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>В наличии на складе-получателе</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>15</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="SerialLotNumber" id="33">
+					<Title>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Numéro de série/lot</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Serial lot number</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Seri lot numaraları</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Серия номенклатуры</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.SerialLotNumbers</v8:Type>
+					</Type>
+				</Column>
+				<Column name="UseSerialLotNumber" id="34">
+					<Title>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Utiliser numéro de série/lot</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Use serial lot number</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Seri/lot numaraları kullan</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ведется учет по сериям номенклатуры</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ItemList" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Produktliste</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Malzeme listesi</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Item list</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Liste d'articles</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Товары</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Item" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Produkt</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Malzeme</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Item</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Article</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номенклатура</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Items</v8:Type>
+					</Type>
+				</Column>
+				<Column name="InStock" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Auf Lager</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Stokta</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>In stock</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>En stock</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>В наличии</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>15</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Title" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Name</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Başlık</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Title</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Titre</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>50</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="PickedOut" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Ausgewählt</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Seçilen</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Picked out</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Sélectionnés</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подобрано</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:DefinedType.typeQuantity</v8:TypeSet>
+					</Type>
+				</Column>
+				<Column name="ItemKeyCount" id="17">
+					<Title>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Anzahl von Artikelvarianten</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Varyant sayısı</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Item key count</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Nombre de clés d'article</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество характеристик</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>8</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Price" id="21">
+					<Title>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Preis</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Fiyat</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Price</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Prix</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Цена</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:DefinedType.typePrice</v8:TypeSet>
+					</Type>
+				</Column>
+				<Column name="Unit" id="25">
+					<Title>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Maßeinheit</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Birim</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Unit</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Unité</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ед. изм.</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Units</v8:Type>
+					</Type>
+				</Column>
+				<Column name="InStockReceiver" id="29">
+					<Title>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Auf Empfangslager</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Alıcı depodaki</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>In stock receiver</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>En stock dans l'entrepôt destinataire</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>В наличии на складе-получателе</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>15</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="UseSerialLotNumber" id="35">
+					<Title>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Utiliser numéro de série/lot</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Use serial lot number</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Seri/lot numaraları kullan</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ведется учет по сериям номенклатуры</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="SerialLotNumber" id="36">
+					<Title>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Numéro de série/lot</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Serial lot number</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Seri lot numaraları</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Серия номенклатуры</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.SerialLotNumbers</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ItemTableValue" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Produkttabellenwert</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Malzemeler tablosu değeri</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Item table value</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Valeur de la table des articles</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Значение таблицы номенклатуры</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Item" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Produkt</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Malzeme</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Item</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Article</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номенклатура</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Items</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ItemKey" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Artikelvariante</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Varyant</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Item key</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Clé d'article</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Характеристика</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ItemKeys</v8:Type>
+					</Type>
+					<FunctionalOptions>
+						<Item>FunctionalOption.UseItemKey</Item>
+					</FunctionalOptions>
+				</Column>
+				<Column name="Quantity" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Anzahl</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Miktar</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Quantity</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Quantité</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:DefinedType.typeQuantity</v8:TypeSet>
+					</Type>
+				</Column>
+				<Column name="Price" id="22">
+					<Title>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Preis</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Fiyat</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Price</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Prix</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Цена</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:DefinedType.typePrice</v8:TypeSet>
+					</Type>
+				</Column>
+				<Column name="Amount" id="23">
+					<Title>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Betrag</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Tutar</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Amount</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Montant</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сумма</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:DefinedType.typeAmount</v8:TypeSet>
+					</Type>
+				</Column>
+				<Column name="Unit" id="26">
+					<Title>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Maßeinheit</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Birim</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Unit</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Unité</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ед. изм.</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Units</v8:Type>
+					</Type>
+				</Column>
+				<Column name="SerialLotNumber" id="31">
+					<Title>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Numéro de série/lot</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Serial lot number</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Seri lot numaraları</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Серия номенклатуры</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.SerialLotNumbers</v8:Type>
+					</Type>
+				</Column>
+				<Column name="UseSerialLotNumber" id="32">
+					<Title>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Utiliser numéro de série/lot</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Use serial lot number</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Seri/lot numaraları kullan</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ведется учет по сериям номенклатуры</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ItemType" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Produkttyp</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Malzeme tipi</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Item type</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Type d'article</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид номенклатуры</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ItemTypes</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Stores" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Lager</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Depolar</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Stores</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Entrepôts</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Склады</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription"/>
+		</Attribute>
+		<Attribute name="EndPeriod" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Endperiode</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Son tarih</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>End period</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Fin de période</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Конец периода</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="PriceType" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Preistyp</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Fiyat tipi</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Price type</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Type de prix</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид цены</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.PriceTypes</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="TitleFilter" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Suche nach Namen</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Filtre tanımı</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Title filter</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Filtre par le titre</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поиск по наименованию</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>50</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ReceiverStores" id="30">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Empfangslager</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Alıcı depolar</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Receiver stores</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Entrepôts destinataires</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Склад-получатель</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription"/>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="CommandBack" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Zurück</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Geri</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Back</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Retour</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Назад</v8:content>
+				</v8:item>
+			</Title>
+			<Action>CommandBack</Action>
+		</Command>
+		<Command name="CommandSaveAndClose" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>In Dokument übertragen</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Evraka aktar</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Transfer to document</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Transférer vers le document</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перенести в документ</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>StdPicture.ExecuteTask</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>CommandSaveAndClose</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+	</Commands>
+</Form>

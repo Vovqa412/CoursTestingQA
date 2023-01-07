@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.14">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="FormCommandBar" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="GroupDescriptions" id="26">
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="GroupDescriptionsExtendedTooltip" id="27"/>
+			<ChildItems>
+				<InputField name="Code" id="28">
+					<DataPath>Object.Code</DataPath>
+					<ContextMenu name="CodeContextMenu" id="29"/>
+					<ExtendedTooltip name="CodeExtendedTooltip" id="30"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="StagesOfPayment" id="1">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Object.StagesOfPayment</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="StagesOfPaymentContextMenu" id="2"/>
+			<AutoCommandBar name="StagesOfPaymentCommandBar" id="3"/>
+			<ExtendedTooltip name="StagesOfPaymentExtendedTooltip" id="4"/>
+			<SearchStringAddition name="StagesOfPaymentSearchString" id="5">
+				<AdditionSource>
+					<Item>StagesOfPayment</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="StagesOfPaymentSearchStringContextMenu" id="6"/>
+				<ExtendedTooltip name="StagesOfPaymentSearchStringExtendedTooltip" id="7"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="StagesOfPaymentViewStatus" id="8">
+				<AdditionSource>
+					<Item>StagesOfPayment</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<HorizontalLocation>Left</HorizontalLocation>
+				<ContextMenu name="StagesOfPaymentViewStatusContextMenu" id="9"/>
+				<ExtendedTooltip name="StagesOfPaymentViewStatusExtendedTooltip" id="10"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="StagesOfPaymentSearchControl" id="11">
+				<AdditionSource>
+					<Item>StagesOfPayment</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="StagesOfPaymentSearchControlContextMenu" id="12"/>
+				<ExtendedTooltip name="StagesOfPaymentSearchControlExtendedTooltip" id="13"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="StagesOfPaymentLineNumber" id="14">
+					<DataPath>Object.StagesOfPayment.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="StagesOfPaymentLineNumberContextMenu" id="15"/>
+					<ExtendedTooltip name="StagesOfPaymentLineNumberExtendedTooltip" id="16"/>
+				</LabelField>
+				<InputField name="StagesOfPaymentCalculationType" id="17">
+					<DataPath>Object.StagesOfPayment.CalculationType</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="StagesOfPaymentCalculationTypeContextMenu" id="18"/>
+					<ExtendedTooltip name="StagesOfPaymentCalculationTypeExtendedTooltip" id="19"/>
+				</InputField>
+				<InputField name="StagesOfPaymentProportionOfPayment" id="20">
+					<DataPath>Object.StagesOfPayment.ProportionOfPayment</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="StagesOfPaymentProportionOfPaymentContextMenu" id="21"/>
+					<ExtendedTooltip name="StagesOfPaymentProportionOfPaymentExtendedTooltip" id="22"/>
+				</InputField>
+				<InputField name="StagesOfPaymentDuePeriod" id="23">
+					<DataPath>Object.StagesOfPayment.DuePeriod</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="StagesOfPaymentDuePeriodContextMenu" id="24"/>
+					<ExtendedTooltip name="StagesOfPaymentDuePeriodExtendedTooltip" id="25"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.PaymentSchedules</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

@@ -1,0 +1,1496 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.14">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="FormCommandBar" id="-1">
+		<ChildItems>
+			<Button name="FormShowRowKey" id="418">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ShowRowKey</CommandName>
+				<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+				<ExtendedTooltip name="FormShowRowKeyExtendedTooltip" id="419"/>
+			</Button>
+			<Button name="FormUnlockLinkedRows" id="438">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.UnlockLinkedRows</CommandName>
+				<RepresentationInContextMenu>None</RepresentationInContextMenu>
+				<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+				<ExtendedTooltip name="FormUnlockLinkedRowsExtendedTooltip" id="439"/>
+			</Button>
+			<Button name="FormShowHiddenTables" id="440">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ShowHiddenTables</CommandName>
+				<RepresentationInContextMenu>None</RepresentationInContextMenu>
+				<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+				<ExtendedTooltip name="FormShowHiddenTablesExtendedTooltip" id="441"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="AfterWrite">AfterWrite</Event>
+		<Event name="AfterWriteAtServer">AfterWriteAtServer</Event>
+		<Event name="NotificationProcessing">NotificationProcessing</Event>
+		<Event name="OnReadAtServer">OnReadAtServer</Event>
+		<Event name="OnOpen">OnOpen</Event>
+		<Event name="BeforeWriteAtServer">BeforeWriteAtServer</Event>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+		<Event name="OnWriteAtServer">OnWriteAtServer</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="GroupTitle" id="183">
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<ControlRepresentation>Picture</ControlRepresentation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="GroupTitleExtendedTooltip" id="184"/>
+			<ChildItems>
+				<UsualGroup name="GroupTitleDecorations" id="185">
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="GroupTitleDecorationsExtendedTooltip" id="186"/>
+					<ChildItems>
+						<UsualGroup name="GroupTitleCollapsed" id="187">
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="GroupTitleCollapsedExtendedTooltip" id="188"/>
+							<ChildItems>
+								<PictureDecoration name="DecorationGroupTitleCollapsedPicture" id="189">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>de</v8:lang>
+											<v8:content>Dekoration reduzierbare Formulargruppe</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>tr</v8:lang>
+											<v8:content>Dekorasyon grubu tanım birleşmiş resim</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Decoration group title collapsed picture</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>fr</v8:lang>
+											<v8:content>Décoration Groupe réductible du formulaire</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сворачиваемая группа формы</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<Picture>
+										<xr:Ref>StdPicture.MoveRight</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="DecorationGroupTitleCollapsedPictureContextMenu" id="190"/>
+									<ExtendedTooltip name="DecorationGroupTitleCollapsedPictureExtendedTooltip" id="191"/>
+									<Events>
+										<Event name="Click">DecorationGroupTitleCollapsedPictureClick</Event>
+									</Events>
+								</PictureDecoration>
+								<LabelDecoration name="DecorationGroupTitleCollapsedLabel" id="192">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>100</MaxWidth>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>de</v8:lang>
+											<v8:content>Bitte füllen Sie das Dokument aus</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>tr</v8:lang>
+											<v8:content>Lütfen, evrakı doldurun</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Please, fill the document</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>fr</v8:lang>
+											<v8:content>Veuillez compléter le document</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Пожалуйста, заполните документ</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="DecorationGroupTitleCollapsedLabelContextMenu" id="193"/>
+									<ExtendedTooltip name="DecorationGroupTitleCollapsedLabelExtendedTooltip" id="194"/>
+									<Events>
+										<Event name="Click">DecorationGroupTitleCollapsedLabelClick</Event>
+									</Events>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="GroupTitleUncollapsed" id="195">
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="GroupTitleUncollapsedExtendedTooltip" id="196"/>
+							<ChildItems>
+								<PictureDecoration name="DecorationGroupTitleUncollapsedPicture" id="197">
+									<Hyperlink>true</Hyperlink>
+									<Picture>
+										<xr:Ref>StdPicture.MoveDown</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="DecorationGroupTitleUncollapsedPictureContextMenu" id="198"/>
+									<ExtendedTooltip name="DecorationGroupTitleUncollapsedPictureExtendedTooltip" id="199"/>
+									<Events>
+										<Event name="Click">DecorationGroupTitleUncollapsedPictureClick</Event>
+									</Events>
+								</PictureDecoration>
+								<LabelDecoration name="DecorationGroupTitleUncollapsedLabel" id="200">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>100</MaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>de</v8:lang>
+											<v8:content>Bitte füllen Sie das Dokument aus</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>tr</v8:lang>
+											<v8:content>Lütfen, evrakı doldurun</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Please, fill the document</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>fr</v8:lang>
+											<v8:content>Veuillez compléter le document</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Пожалуйста, заполните документ</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="DecorationGroupTitleUncollapsedLabelContextMenu" id="201"/>
+									<ExtendedTooltip name="DecorationGroupTitleUncollapsedLabelExtendedTooltip" id="202"/>
+									<Events>
+										<Event name="Click">DecorationGroupTitleUncollapsedLabelClick</Event>
+									</Events>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="GroupTitleItems" id="203">
+					<Group>AlwaysHorizontal</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="GroupTitleItemsExtendedTooltip" id="204"/>
+					<ChildItems>
+						<UsualGroup name="GroupTitleLeft" id="205">
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="GroupTitleLeftExtendedTooltip" id="206"/>
+							<ChildItems>
+								<InputField name="Store" id="7">
+									<DataPath>Object.Store</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="StoreContextMenu" id="8"/>
+									<ExtendedTooltip name="StoreExtendedTooltip" id="9"/>
+									<Events>
+										<Event name="OnChange">StoreOnChange</Event>
+									</Events>
+								</InputField>
+								<InputField name="Status" id="345">
+									<DataPath>Object.Status</DataPath>
+									<ContextMenu name="StatusContextMenu" id="346"/>
+									<ExtendedTooltip name="StatusExtendedTooltip" id="347"/>
+								</InputField>
+								<LabelField name="Description" id="13">
+									<DataPath>Description</DataPath>
+									<DefaultItem>true</DefaultItem>
+									<EditMode>EnterOnInput</EditMode>
+									<Hiperlink>true</Hiperlink>
+									<ContextMenu name="DescriptionContextMenu" id="14"/>
+									<ExtendedTooltip name="DescriptionExtendedTooltip" id="15"/>
+									<Events>
+										<Event name="Click">DescriptionClick</Event>
+									</Events>
+								</LabelField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="GroupTitleRight" id="216">
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="GroupTitleRightExtendedTooltip" id="217"/>
+							<ChildItems>
+								<CheckBoxField name="UseResponsiblePersonByRow" id="359">
+									<DataPath>Object.UseResponsiblePersonByRow</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="UseResponsiblePersonByRowContextMenu" id="360"/>
+									<ExtendedTooltip name="UseResponsiblePersonByRowExtendedTooltip" id="361"/>
+									<Events>
+										<Event name="OnChange">UseResponsiblePersonByRowOnChange</Event>
+									</Events>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="GroupMainPages" id="224">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Hauptseiten</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Ana sayfaklar</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Main pages</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Pages principales</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основные страницы</v8:content>
+				</v8:item>
+			</Title>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="GroupMainPagesExtendedTooltip" id="225"/>
+			<ChildItems>
+				<Page name="GroupItemList" id="226">
+					<Title>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Produkte</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Malzemeler</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Items</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Articles</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Товары</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="GroupItemListExtendedTooltip" id="227"/>
+					<ChildItems>
+						<Table name="ItemList" id="245">
+							<Representation>List</Representation>
+							<Footer>true</Footer>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>Object.ItemList</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ItemListContextMenu" id="246"/>
+							<AutoCommandBar name="ItemListCommandBar" id="247">
+								<ChildItems>
+									<Button name="ItemListOpenPickupItems" id="241">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.OpenPickupItems</CommandName>
+										<ExtendedTooltip name="ItemListOpenPickupItemsExtendedTooltip" id="242"/>
+									</Button>
+									<Button name="SearchByBarcode" id="243">
+										<Type>CommandBarButton</Type>
+										<Height>1</Height>
+										<CommandName>Form.Command.SearchByBarcode</CommandName>
+										<ExtendedTooltip name="SearchByBarcodeExtendedTooltip" id="244"/>
+									</Button>
+									<Popup name="GroupFillItemList" id="301">
+										<Title>
+											<v8:item>
+												<v8:lang>en</v8:lang>
+												<v8:content>Fill &amp;&amp; Update</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>tr</v8:lang>
+												<v8:content>Doldur &amp;&amp; Güncelle</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Заполнить и обновить</v8:content>
+											</v8:item>
+										</Title>
+										<ExtendedTooltip name="GroupFillItemListExtendedTooltip" id="302"/>
+										<ChildItems>
+											<Button name="FillExpCount" id="292">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.FillExpCount</CommandName>
+												<ExtendedTooltip name="FillExpCountExtendedTooltip" id="293"/>
+											</Button>
+											<Button name="UpdateExpCount" id="299">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.UpdateExpCount</CommandName>
+												<ExtendedTooltip name="UpdateExpCountExtendedTooltip" id="300"/>
+											</Button>
+											<Button name="UpdatePhysCount" id="357">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.UpdatePhysCount</CommandName>
+												<ExtendedTooltip name="UpdatePhysCountExtendedTooltip" id="358"/>
+											</Button>
+										</ChildItems>
+									</Popup>
+									<Button name="SetResponsiblePerson" id="308">
+										<Type>CommandBarButton</Type>
+										<Visible>false</Visible>
+										<CommandName>Form.Command.SetResponsiblePerson</CommandName>
+										<ExtendedTooltip name="SetResponsiblePersonExtendedTooltip" id="309"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ItemListExtendedTooltip" id="248"/>
+							<SearchStringAddition name="ItemListSearchString" id="249">
+								<AdditionSource>
+									<Item>ItemList</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ItemListSearchStringContextMenu" id="250"/>
+								<ExtendedTooltip name="ItemListSearchStringExtendedTooltip" id="251"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ItemListViewStatus" id="252">
+								<AdditionSource>
+									<Item>ItemList</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<HorizontalLocation>Left</HorizontalLocation>
+								<ContextMenu name="ItemListViewStatusContextMenu" id="253"/>
+								<ExtendedTooltip name="ItemListViewStatusExtendedTooltip" id="254"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ItemListSearchControl" id="255">
+								<AdditionSource>
+									<Item>ItemList</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ItemListSearchControlContextMenu" id="256"/>
+								<ExtendedTooltip name="ItemListSearchControlExtendedTooltip" id="257"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">ItemListSelection</Event>
+								<Event name="BeforeDeleteRow">ItemListBeforeDeleteRow</Event>
+								<Event name="OnStartEdit">ItemListOnStartEdit</Event>
+								<Event name="AfterDeleteRow">ItemListAfterDeleteRow</Event>
+								<Event name="OnChange">ItemListOnChange</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="ItemListKey" id="373">
+									<DataPath>Object.ItemList.Key</DataPath>
+									<Visible>false</Visible>
+									<ContextMenu name="ItemListKeyContextMenu" id="374"/>
+									<ExtendedTooltip name="ItemListKeyExtendedTooltip" id="375"/>
+								</InputField>
+								<LabelField name="ItemListLineNumber" id="258">
+									<DataPath>Object.ItemList.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ItemListLineNumberContextMenu" id="259"/>
+									<ExtendedTooltip name="ItemListLineNumberExtendedTooltip" id="260"/>
+								</LabelField>
+								<PictureField name="ItemListLocked" id="336">
+									<DataPath>Object.ItemList.Locked</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<ValuesPicture>
+										<xr:Ref>CommonPicture.LockedRows</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</ValuesPicture>
+									<ContextMenu name="ItemListLockedContextMenu" id="337"/>
+									<ExtendedTooltip name="ItemListLockedExtendedTooltip" id="338"/>
+								</PictureField>
+								<PictureField name="ItemListIsInternalLinked" id="420">
+									<DataPath>Object.ItemList.IsInternalLinked</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<ValuesPicture>
+										<xr:Ref>StdPicture.GotoURL</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</ValuesPicture>
+									<ContextMenu name="ItemListIsInternalLinkedContextMenu" id="421"/>
+									<ExtendedTooltip name="ItemListIsInternalLinkedExtendedTooltip" id="422"/>
+								</PictureField>
+								<PictureField name="ItemListIsExternalLinked" id="426">
+									<DataPath>Object.ItemList.IsExternalLinked</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<ValuesPicture>
+										<xr:Ref>StdPicture.GotoExternalURL</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</ValuesPicture>
+									<ContextMenu name="ItemListIsExternalLinkedContextMenu" id="427"/>
+									<ExtendedTooltip name="ItemListIsExternalLinkedExtendedTooltip" id="428"/>
+								</PictureField>
+								<InputField name="ItemListInternalLinks" id="429">
+									<DataPath>Object.ItemList.InternalLinks</DataPath>
+									<Visible>false</Visible>
+									<ContextMenu name="ItemListInternalLinksContextMenu" id="430"/>
+									<ExtendedTooltip name="ItemListInternalLinksExtendedTooltip" id="431"/>
+								</InputField>
+								<InputField name="ItemListExternalLinks" id="423">
+									<DataPath>Object.ItemList.ExternalLinks</DataPath>
+									<Visible>false</Visible>
+									<ContextMenu name="ItemListExternalLinksContextMenu" id="424"/>
+									<ExtendedTooltip name="ItemListExternalLinksExtendedTooltip" id="425"/>
+								</InputField>
+								<InputField name="ItemListItem" id="261">
+									<DataPath>Object.ItemList.Item</DataPath>
+									<ContextMenu name="ItemListItemContextMenu" id="262"/>
+									<ExtendedTooltip name="ItemListItemExtendedTooltip" id="263"/>
+									<Events>
+										<Event name="OnChange">ItemListItemOnChange</Event>
+										<Event name="EditTextChange">ItemListItemEditTextChange</Event>
+										<Event name="StartChoice">ItemListItemStartChoice</Event>
+									</Events>
+								</InputField>
+								<InputField name="ItemListItemKey" id="264">
+									<DataPath>Object.ItemList.ItemKey</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ChoiceParameterLinks>
+										<xr:Link>
+											<xr:Name>Filter.Item</xr:Name>
+											<xr:DataPath xsi:type="xs:string">Items.ItemList.CurrentData.Item</xr:DataPath>
+											<xr:ValueChange>Clear</xr:ValueChange>
+										</xr:Link>
+									</ChoiceParameterLinks>
+									<ContextMenu name="ItemListItemKeyContextMenu" id="265"/>
+									<ExtendedTooltip name="ItemListItemKeyExtendedTooltip" id="266"/>
+									<Events>
+										<Event name="OnChange">ItemListItemKeyOnChange</Event>
+									</Events>
+								</InputField>
+								<InputField name="ItemListUnit" id="270">
+									<DataPath>Object.ItemList.Unit</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ChoiceParameterLinks>
+										<xr:Link>
+											<xr:Name>Filter.Item</xr:Name>
+											<xr:DataPath xsi:type="xs:string">Items.ItemList.CurrentData.Item</xr:DataPath>
+											<xr:ValueChange>Clear</xr:ValueChange>
+										</xr:Link>
+									</ChoiceParameterLinks>
+									<ContextMenu name="ItemListUnitContextMenu" id="271"/>
+									<ExtendedTooltip name="ItemListUnitExtendedTooltip" id="272"/>
+								</InputField>
+								<InputField name="ItemListExpCount" id="281">
+									<DataPath>Object.ItemList.ExpCount</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<FooterDataPath>Object.ItemList.TotalExpCount</FooterDataPath>
+									<MarkNegatives>true</MarkNegatives>
+									<ContextMenu name="ItemListExpCountContextMenu" id="282"/>
+									<ExtendedTooltip name="ItemListExpCountExtendedTooltip" id="283"/>
+								</InputField>
+								<InputField name="ItemListPhysCount" id="278">
+									<DataPath>Object.ItemList.PhysCount</DataPath>
+									<FooterDataPath>Object.ItemList.TotalPhysCount</FooterDataPath>
+									<ContextMenu name="ItemListPhysCountContextMenu" id="279"/>
+									<ExtendedTooltip name="ItemListPhysCountExtendedTooltip" id="280"/>
+									<Events>
+										<Event name="OnChange">ItemListPhysCountOnChange</Event>
+									</Events>
+								</InputField>
+								<InputField name="ItemListDifference" id="284">
+									<DataPath>Object.ItemList.Difference</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<FooterDataPath>Object.ItemList.TotalDifference</FooterDataPath>
+									<MarkNegatives>true</MarkNegatives>
+									<ContextMenu name="ItemListDifferenceContextMenu" id="285"/>
+									<ExtendedTooltip name="ItemListDifferenceExtendedTooltip" id="286"/>
+								</InputField>
+								<InputField name="ItemListResponsiblePerson" id="305">
+									<DataPath>Object.ItemList.ResponsiblePerson</DataPath>
+									<Visible>false</Visible>
+									<ContextMenu name="ItemListResponsiblePersonContextMenu" id="306"/>
+									<ExtendedTooltip name="ItemListResponsiblePersonExtendedTooltip" id="307"/>
+								</InputField>
+								<InputField name="ItemListPhysicalCountByLocation" id="339">
+									<DataPath>Object.ItemList.PhysicalCountByLocation</DataPath>
+									<Visible>false</Visible>
+									<ReadOnly>true</ReadOnly>
+									<ContextMenu name="ItemListPhysicalCountByLocationContextMenu" id="340"/>
+									<ExtendedTooltip name="ItemListPhysicalCountByLocationExtendedTooltip" id="341"/>
+								</InputField>
+								<InputField name="ItemListPhysicalCountByLocationPresentation" id="342">
+									<DataPath>Object.ItemList.PhysicalCountByLocationPresentation</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>de</v8:lang>
+											<v8:content>Tatsächliche Anzahl</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>tr</v8:lang>
+											<v8:content>Depo sayım fişi</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Physical count</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>fr</v8:lang>
+											<v8:content>Comptage physique</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Фактически</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ItemListPhysicalCountByLocationPresentationContextMenu" id="343"/>
+									<ExtendedTooltip name="ItemListPhysicalCountByLocationPresentationExtendedTooltip" id="344"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="GroupOther" id="276">
+					<Title>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Sonstiges</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Diğer</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Other</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Autres</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дополнительно</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="GroupOtherExtendedTooltip" id="277"/>
+					<ChildItems>
+						<LabelDecoration name="DecorationStatusHistory" id="354">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>de</v8:lang>
+									<v8:content>Verlauf</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>tr</v8:lang>
+									<v8:content>Geçmiş</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>History</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>fr</v8:lang>
+									<v8:content>Historique</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>История статусов</v8:content>
+								</v8:item>
+							</Title>
+							<Hyperlink>true</Hyperlink>
+							<ContextMenu name="DecorationStatusHistoryContextMenu" id="355"/>
+							<ExtendedTooltip name="DecorationStatusHistoryExtendedTooltip" id="356"/>
+							<Events>
+								<Event name="Click">DecorationStatusHistoryClick</Event>
+							</Events>
+						</LabelDecoration>
+						<InputField name="Number" id="1">
+							<DataPath>Object.Number</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="NumberContextMenu" id="2"/>
+							<ExtendedTooltip name="NumberExtendedTooltip" id="3"/>
+						</InputField>
+						<InputField name="Date" id="4">
+							<DataPath>Object.Date</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="DateContextMenu" id="5"/>
+							<ExtendedTooltip name="DateExtendedTooltip" id="6"/>
+						</InputField>
+						<InputField name="Author" id="294">
+							<DataPath>Object.Author</DataPath>
+							<ContextMenu name="AuthorContextMenu" id="295"/>
+							<ExtendedTooltip name="AuthorExtendedTooltip" id="296"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="GroupPhysicalCountByLocation" id="312">
+					<Title>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Inventurliste</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Lokasyon sayım fişi</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Physical count by location</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Comptage physique dans l'entrepôt</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пересчет товаров</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="GroupPhysicalCountByLocationExtendedTooltip" id="313"/>
+					<ChildItems>
+						<Table name="PhysicalCountByLocationList" id="314">
+							<Header>false</Header>
+							<DataPath>PhysicalCountByLocationList</DataPath>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+							<ContextMenu name="PhysicalCountByLocationListContextMenu" id="316">
+								<Autofill>false</Autofill>
+							</ContextMenu>
+							<AutoCommandBar name="PhysicalCountByLocationListCommandBar" id="315">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="PhysicalCountByLocationListExtendedTooltip" id="317"/>
+							<SearchStringAddition name="PhysicalCountByLocationListSearchString" id="318">
+								<AdditionSource>
+									<Item>PhysicalCountByLocationList</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="PhysicalCountByLocationListSearchStringContextMenu" id="319"/>
+								<ExtendedTooltip name="PhysicalCountByLocationListSearchStringExtendedTooltip" id="320"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="PhysicalCountByLocationListViewStatus" id="324">
+								<AdditionSource>
+									<Item>PhysicalCountByLocationList</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<HorizontalLocation>Left</HorizontalLocation>
+								<ContextMenu name="PhysicalCountByLocationListViewStatusContextMenu" id="325"/>
+								<ExtendedTooltip name="PhysicalCountByLocationListViewStatusExtendedTooltip" id="326"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="PhysicalCountByLocationListSearchControl" id="321">
+								<AdditionSource>
+									<Item>PhysicalCountByLocationList</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="PhysicalCountByLocationListSearchControlContextMenu" id="322"/>
+								<ExtendedTooltip name="PhysicalCountByLocationListSearchControlExtendedTooltip" id="323"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="BeforeAddRow">PhysicalCountByLocationListBeforeAddRow</Event>
+								<Event name="OnChange">PhysicalCountByLocationListOnChange</Event>
+							</Events>
+							<ChildItems>
+								<PictureField name="PhysicalCountByLocationListDefaultPicture" id="330">
+									<DataPath>PhysicalCountByLocationList.DefaultPicture</DataPath>
+									<ContextMenu name="PhysicalCountByLocationListDefaultPictureContextMenu" id="331"/>
+									<ExtendedTooltip name="PhysicalCountByLocationListDefaultPictureExtendedTooltip" id="332"/>
+								</PictureField>
+								<InputField name="PhysicalCountByLocationListRef" id="327">
+									<DataPath>PhysicalCountByLocationList.Ref</DataPath>
+									<ContextMenu name="PhysicalCountByLocationListRefContextMenu" id="328"/>
+									<ExtendedTooltip name="PhysicalCountByLocationListRefExtendedTooltip" id="329"/>
+								</InputField>
+								<InputField name="PhysicalCountByLocationListResponsiblePerson" id="351">
+									<DataPath>PhysicalCountByLocationList.ResponsiblePerson</DataPath>
+									<ContextMenu name="PhysicalCountByLocationListResponsiblePersonContextMenu" id="352"/>
+									<ExtendedTooltip name="PhysicalCountByLocationListResponsiblePersonExtendedTooltip" id="353"/>
+								</InputField>
+								<InputField name="PhysicalCountByLocationListStatus" id="348">
+									<DataPath>PhysicalCountByLocationList.Status</DataPath>
+									<ContextMenu name="PhysicalCountByLocationListStatusContextMenu" id="349"/>
+									<ExtendedTooltip name="PhysicalCountByLocationListStatusExtendedTooltip" id="350"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="GroupRules" id="362">
+					<Title>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Bedingungen</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Kurallar</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Rules</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Conditions</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Правила</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="GroupRulesExtendedTooltip" id="363"/>
+					<ChildItems>
+						<CheckBoxField name="RuleEditQuantity" id="367">
+							<DataPath>Object.RuleEditQuantity</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>User can edit quantity</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>tr</v8:lang>
+									<v8:content>Kullanıcı miktarı düzeltebilir</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Пользователь может устанавливать количество</v8:content>
+								</v8:item>
+							</Title>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="RuleEditQuantityContextMenu" id="368"/>
+							<ExtendedTooltip name="RuleEditQuantityExtendedTooltip" id="369"/>
+						</CheckBoxField>
+					</ChildItems>
+				</Page>
+				<Page name="GroupRowIDInfo" id="376">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Row ID Info</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Satır ID Bilgisi</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Row ID Инфо</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="GroupRowIDInfoExtendedTooltip" id="377"/>
+					<ChildItems>
+						<InputField name="InternalLinkedDocs" id="432">
+							<DataPath>InternalLinkedDocs</DataPath>
+							<Visible>false</Visible>
+							<ContextMenu name="InternalLinkedDocsContextMenu" id="433"/>
+							<ExtendedTooltip name="InternalLinkedDocsExtendedTooltip" id="434"/>
+						</InputField>
+						<InputField name="ExternalLinkedDocs" id="435">
+							<DataPath>ExternalLinkedDocs</DataPath>
+							<Visible>false</Visible>
+							<ContextMenu name="ExternalLinkedDocsContextMenu" id="436"/>
+							<ExtendedTooltip name="ExternalLinkedDocsExtendedTooltip" id="437"/>
+						</InputField>
+						<Table name="RowIDInfo" id="378">
+							<Representation>List</Representation>
+							<Visible>false</Visible>
+							<DataPath>Object.RowIDInfo</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="RowIDInfoContextMenu" id="380"/>
+							<AutoCommandBar name="RowIDInfoCommandBar" id="379"/>
+							<ExtendedTooltip name="RowIDInfoExtendedTooltip" id="381"/>
+							<SearchStringAddition name="RowIDInfoSearchString" id="382">
+								<AdditionSource>
+									<Item>RowIDInfo</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="RowIDInfoSearchStringContextMenu" id="383"/>
+								<ExtendedTooltip name="RowIDInfoSearchStringExtendedTooltip" id="384"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="RowIDInfoViewStatus" id="388">
+								<AdditionSource>
+									<Item>RowIDInfo</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="RowIDInfoViewStatusContextMenu" id="389"/>
+								<ExtendedTooltip name="RowIDInfoViewStatusExtendedTooltip" id="390"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="RowIDInfoSearchControl" id="385">
+								<AdditionSource>
+									<Item>RowIDInfo</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="RowIDInfoSearchControlContextMenu" id="386"/>
+								<ExtendedTooltip name="RowIDInfoSearchControlExtendedTooltip" id="387"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="RowIDInfoLineNumber" id="391">
+									<DataPath>Object.RowIDInfo.LineNumber</DataPath>
+									<ContextMenu name="RowIDInfoLineNumberContextMenu" id="392"/>
+									<ExtendedTooltip name="RowIDInfoLineNumberExtendedTooltip" id="393"/>
+								</InputField>
+								<InputField name="RowIDInfoKey" id="394">
+									<DataPath>Object.RowIDInfo.Key</DataPath>
+									<ContextMenu name="RowIDInfoKeyContextMenu" id="395"/>
+									<ExtendedTooltip name="RowIDInfoKeyExtendedTooltip" id="396"/>
+								</InputField>
+								<InputField name="RowIDInfoRowID" id="397">
+									<DataPath>Object.RowIDInfo.RowID</DataPath>
+									<ContextMenu name="RowIDInfoRowIDContextMenu" id="398"/>
+									<ExtendedTooltip name="RowIDInfoRowIDExtendedTooltip" id="399"/>
+								</InputField>
+								<InputField name="RowIDInfoQuantity" id="400">
+									<DataPath>Object.RowIDInfo.Quantity</DataPath>
+									<ContextMenu name="RowIDInfoQuantityContextMenu" id="401"/>
+									<ExtendedTooltip name="RowIDInfoQuantityExtendedTooltip" id="402"/>
+								</InputField>
+								<InputField name="RowIDInfoBasisKey" id="415">
+									<DataPath>Object.RowIDInfo.BasisKey</DataPath>
+									<ContextMenu name="RowIDInfoBasisKeyContextMenu" id="416"/>
+									<ExtendedTooltip name="RowIDInfoBasisKeyExtendedTooltip" id="417"/>
+								</InputField>
+								<InputField name="RowIDInfoBasis" id="403">
+									<DataPath>Object.RowIDInfo.Basis</DataPath>
+									<ContextMenu name="RowIDInfoBasisContextMenu" id="404"/>
+									<ExtendedTooltip name="RowIDInfoBasisExtendedTooltip" id="405"/>
+								</InputField>
+								<InputField name="RowIDInfoCurrentStep" id="406">
+									<DataPath>Object.RowIDInfo.CurrentStep</DataPath>
+									<ContextMenu name="RowIDInfoCurrentStepContextMenu" id="407"/>
+									<ExtendedTooltip name="RowIDInfoCurrentStepExtendedTooltip" id="408"/>
+								</InputField>
+								<InputField name="RowIDInfoNextStep" id="409">
+									<DataPath>Object.RowIDInfo.NextStep</DataPath>
+									<ContextMenu name="RowIDInfoNextStepContextMenu" id="410"/>
+									<ExtendedTooltip name="RowIDInfoNextStepExtendedTooltip" id="411"/>
+								</InputField>
+								<InputField name="RowIDInfoRowRef" id="412">
+									<DataPath>Object.RowIDInfo.RowRef</DataPath>
+									<ContextMenu name="RowIDInfoRowRefContextMenu" id="413"/>
+									<ExtendedTooltip name="RowIDInfoRowRefExtendedTooltip" id="414"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.PhysicalInventory</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Object.RegisterRecords</Field>
+			</UseAlways>
+			<Columns>
+				<AdditionalColumns table="Object.ItemList">
+					<Column name="Item" id="2">
+						<Title>
+							<v8:item>
+								<v8:lang>de</v8:lang>
+								<v8:content>Produkt</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>tr</v8:lang>
+								<v8:content>Malzeme</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Item</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>fr</v8:lang>
+								<v8:content>Article</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Номенклатура</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>cfg:CatalogRef.Items</v8:Type>
+						</Type>
+					</Column>
+					<Column name="Locked" id="7">
+						<Title>
+							<v8:item>
+								<v8:lang>de</v8:lang>
+								<v8:content>Gesperrt</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>tr</v8:lang>
+								<v8:content>Kilitli</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Locked</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>fr</v8:lang>
+								<v8:content>Verrouillé</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Заблокировано</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+					</Column>
+					<Column name="PhysicalCountByLocation" id="8">
+						<Title>
+							<v8:item>
+								<v8:lang>de</v8:lang>
+								<v8:content>Inventurliste</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>tr</v8:lang>
+								<v8:content>Lokasyon sayım fişi</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Physical count by location</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>fr</v8:lang>
+								<v8:content>Comptage physique dans l'entrepôt</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Пересчет товаров</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>cfg:DocumentRef.PhysicalCountByLocation</v8:Type>
+						</Type>
+					</Column>
+					<Column name="PhysicalCountByLocationPresentation" id="9">
+						<Title>
+							<v8:item>
+								<v8:lang>de</v8:lang>
+								<v8:content>Inventurliste Präsentation</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>tr</v8:lang>
+								<v8:content>Lokasyon bazlı depo sayım fişi görünümü</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Physical count by location presentation</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>fr</v8:lang>
+								<v8:content>Présentation du comptage physique dans l'entrepôt</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Представление пересчетов товаров</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="IsExternalLinked" id="10">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Внешняя ссылка</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Is external linked</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+					</Column>
+					<Column name="IsInternalLinked" id="11">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Внутренняя ссылка</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Is internal linked</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+					</Column>
+					<Column name="ExternalLinks" id="12">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Внешние ссылки</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>External links</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="InternalLinks" id="13">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Внутренние ссылки</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Internal links</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+				</AdditionalColumns>
+			</Columns>
+		</Attribute>
+		<Attribute name="Description" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Beschreibung</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Tanım</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Description</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Description</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Комментарий</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="GroupItems" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Gruppe Elemente</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Grup malzemeler</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Group items</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Groupe Éléments</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа элементов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription"/>
+		</Attribute>
+		<Attribute name="PhysicalCountByLocationList" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Inventurliste</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Lokasyon sayım fiş listesi</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Physical count by location list</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Liste de comptage physique dans l'entrepôt</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пересчеты товаров</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>SELECT
+	PhysicalCountByLocation.Ref,
+	PhysicalCountByLocation.Status,
+	PhysicalCountByLocation.ResponsiblePerson
+FROM
+	Document.PhysicalCountByLocation AS PhysicalCountByLocation
+WHERE
+	PhysicalCountByLocation.PhysicalInventory = &amp;PhysicalInventoryRef
+	AND
+	NOT PhysicalCountByLocation.DeletionMark</QueryText>
+				<MainTable>Document.PhysicalCountByLocation</MainTable>
+				<ListSettings/>
+			</Settings>
+		</Attribute>
+		<Attribute name="ExternalLinkedDocs" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документы, связанные с внешними ссылками</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>External linked docs</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription"/>
+		</Attribute>
+		<Attribute name="InternalLinkedDocs" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документы, связанные с внутренними ссылками</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Internal linked docs</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription"/>
+		</Attribute>
+		<Attribute name="LockedFields" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заблокированные поля</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Locked fields</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription"/>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ItemListLocked</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ItemListLineNumber</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ItemListItem</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ItemListItemKey</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ItemListUnit</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ItemListExpCount</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ItemListPhysCount</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ItemListDifference</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ItemListResponsiblePerson</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ItemListPhysicalCountByLocationPresentation</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ItemListPhysicalCountByLocation</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Object.ItemList.Locked</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ReadOnly</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="OpenPickupItems" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Auswahl</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Seç</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Pickup</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Sélection</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подбор товара</v8:content>
+				</v8:item>
+			</Title>
+			<Action>OpenPickupItems</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
+			<AssociatedTableElementId xsi:type="xs:string">ItemList</AssociatedTableElementId>
+		</Command>
+		<Command name="SearchByBarcode" id="2">
+			<Picture>
+				<xr:Ref>CommonPicture.Barcode</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>SearchByBarcode</Action>
+			<Representation>Picture</Representation>
+			<ModifiesSavedData>true</ModifiesSavedData>
+		</Command>
+		<Command name="FillExpCount" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Erwartete Anzahl eingeben</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Stok adetleri doldur</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Fill exp. count</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Compléter le nombre attendu</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить учетное количество</v8:content>
+				</v8:item>
+			</Title>
+			<Action>FillExpCount</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
+		</Command>
+		<Command name="UpdateExpCount" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Erwartete Anzahl aktualisieren</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Stok adetleri güncelle</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Update exp. count</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Mettre à jour le nombre attendu</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить учетное количество</v8:content>
+				</v8:item>
+			</Title>
+			<Action>UpdateExpCount</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
+		</Command>
+		<Command name="SetResponsiblePerson" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Verantwortliche Person festlegen</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Sorumlu kişi berlirle</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Set responsible person</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Définir une personne responsable</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Назначить ответственных</v8:content>
+				</v8:item>
+			</Title>
+			<Action>SetResponsiblePerson</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
+		</Command>
+		<Command name="UpdatePhysCount" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Tatsächliche Anzahl aktualisieren</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Sayılan adetleri güncelle</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Update phys. count</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Mettre à jour le nombre réel</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить фактическое количество</v8:content>
+				</v8:item>
+			</Title>
+			<Action>UpdatePhysCount</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
+		</Command>
+		<Command name="ShowRowKey" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Show row key</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Satır anahtar göster</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать row key</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>StdPicture.GetURL</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ShowRowKey</Action>
+		</Command>
+		<Command name="UnlockLinkedRows" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разблокировать связанные строки</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Unlock linked rows</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>CommonPicture.Unlock</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>FromUnlockLinkedRows</Action>
+		</Command>
+		<Command name="ShowHiddenTables" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать скрытые таблицы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Show hidden tables</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>StdPicture.ShowData</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ShowHiddenTables</Action>
+		</Command>
+	</Commands>
+</Form>

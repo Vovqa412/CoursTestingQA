@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.14">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="FormCommandBar" id="-1"/>
+	<Events>
+		<Event name="AfterWrite">AfterWrite</Event>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="GroupDescriptions" id="30">
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="GroupDescriptionsExtendedTooltip" id="31"/>
+			<ChildItems>
+				<InputField name="Code" id="32">
+					<DataPath>Object.Code</DataPath>
+					<ContextMenu name="CodeContextMenu" id="33"/>
+					<ExtendedTooltip name="CodeExtendedTooltip" id="34"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<LabelField name="PredefinedDataName" id="1">
+			<DataPath>Object.PredefinedDataName</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="PredefinedDataNameContextMenu" id="2"/>
+			<ExtendedTooltip name="PredefinedDataNameExtendedTooltip" id="3"/>
+		</LabelField>
+		<Table name="IDInfoTypes" id="6">
+			<Representation>List</Representation>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Object.IDInfoTypes</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="IDInfoTypesContextMenu" id="8"/>
+			<AutoCommandBar name="IDInfoTypesCommandBar" id="7">
+				<ChildItems>
+					<Button name="IDInfoTypesSetCondition" id="25">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.SetCondition</CommandName>
+						<ExtendedTooltip name="IDInfoTypesSetConditionExtendedTooltip" id="26"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="IDInfoTypesExtendedTooltip" id="9"/>
+			<SearchStringAddition name="IDInfoTypesSearchString" id="10">
+				<AdditionSource>
+					<Item>IDInfoTypes</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="IDInfoTypesSearchStringContextMenu" id="11"/>
+				<ExtendedTooltip name="IDInfoTypesSearchStringExtendedTooltip" id="12"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="IDInfoTypesViewStatus" id="16">
+				<AdditionSource>
+					<Item>IDInfoTypes</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<HorizontalLocation>Left</HorizontalLocation>
+				<ContextMenu name="IDInfoTypesViewStatusContextMenu" id="17"/>
+				<ExtendedTooltip name="IDInfoTypesViewStatusExtendedTooltip" id="18"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="IDInfoTypesSearchControl" id="13">
+				<AdditionSource>
+					<Item>IDInfoTypes</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="IDInfoTypesSearchControlContextMenu" id="14"/>
+				<ExtendedTooltip name="IDInfoTypesSearchControlExtendedTooltip" id="15"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="IDInfoTypesLineNumber" id="19">
+					<DataPath>Object.IDInfoTypes.LineNumber</DataPath>
+					<ContextMenu name="IDInfoTypesLineNumberContextMenu" id="20"/>
+					<ExtendedTooltip name="IDInfoTypesLineNumberExtendedTooltip" id="21"/>
+				</InputField>
+				<InputField name="IDInfoTypesIDInfoType" id="22">
+					<DataPath>Object.IDInfoTypes.IDInfoType</DataPath>
+					<ContextMenu name="IDInfoTypesIDInfoTypeContextMenu" id="23"/>
+					<ExtendedTooltip name="IDInfoTypesIDInfoTypeExtendedTooltip" id="24"/>
+				</InputField>
+				<PictureField name="IDInfoTypesIsConditionSet" id="27">
+					<DataPath>Object.IDInfoTypes.IsConditionSet</DataPath>
+					<ValuesPicture>
+						<xr:Ref>CommonPicture.RadioButton</xr:Ref>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</ValuesPicture>
+					<FileDragMode>AsFile</FileDragMode>
+					<ContextMenu name="IDInfoTypesIsConditionSetContextMenu" id="28"/>
+					<ExtendedTooltip name="IDInfoTypesIsConditionSetExtendedTooltip" id="29"/>
+				</PictureField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.IDInfoSets</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="SetCondition" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Bedingung festlegen</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Koşul belirle</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Set condition</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Définir une condition</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить условие</v8:content>
+				</v8:item>
+			</Title>
+			<Action>SetConditionCommand</Action>
+		</Command>
+	</Commands>
+</Form>

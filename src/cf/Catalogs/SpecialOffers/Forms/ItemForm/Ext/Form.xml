@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.14">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="FormCommandBar" id="-1"/>
+	<Events>
+		<Event name="NotificationProcessing">NotificationProcessing</Event>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+		<Event name="BeforeWriteAtServer">BeforeWriteAtServer</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="GroupDescriptions" id="45">
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="GroupDescriptionsExtendedTooltip" id="46"/>
+			<ChildItems>
+				<InputField name="Code" id="53">
+					<DataPath>Object.Code</DataPath>
+					<ContextMenu name="CodeContextMenu" id="54"/>
+					<ExtendedTooltip name="CodeExtendedTooltip" id="55"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<CheckBoxField name="Launch" id="37">
+			<DataPath>Object.Launch</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="LaunchContextMenu" id="38"/>
+			<ExtendedTooltip name="LaunchExtendedTooltip" id="39"/>
+		</CheckBoxField>
+		<InputField name="SpecialOfferType" id="3">
+			<DataPath>Object.SpecialOfferType</DataPath>
+			<ChoiceParameters>
+				<app:item name="Filter.GroupTypes">
+					<app:value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation/>
+						<Value xsi:type="xs:boolean">false</Value>
+					</app:value>
+				</app:item>
+			</ChoiceParameters>
+			<ContextMenu name="SpecialOfferTypeContextMenu" id="4"/>
+			<ExtendedTooltip name="SpecialOfferTypeExtendedTooltip" id="5"/>
+		</InputField>
+		<InputField name="Priority" id="6">
+			<DataPath>Object.Priority</DataPath>
+			<ContextMenu name="PriorityContextMenu" id="7"/>
+			<ExtendedTooltip name="PriorityExtendedTooltip" id="8"/>
+		</InputField>
+		<InputField name="StartOf" id="31">
+			<DataPath>Object.StartOf</DataPath>
+			<ContextMenu name="StartOfContextMenu" id="32"/>
+			<ExtendedTooltip name="StartOfExtendedTooltip" id="33"/>
+		</InputField>
+		<InputField name="EndOf" id="34">
+			<DataPath>Object.EndOf</DataPath>
+			<ContextMenu name="EndOfContextMenu" id="35"/>
+			<ExtendedTooltip name="EndOfExtendedTooltip" id="36"/>
+		</InputField>
+		<RadioButtonField name="Type" id="47">
+			<DataPath>Object.Type</DataPath>
+			<RadioButtonType>Tumbler</RadioButtonType>
+			<ChoiceList>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>de</v8:lang>
+								<v8:content>Für Dokument</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>tr</v8:lang>
+								<v8:content>Evraka uygula</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>For document</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>fr</v8:lang>
+								<v8:content>Pour le document</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>На документ</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xr:DesignTimeRef">Enum.SpecialOfferTypes.EnumValue.ForDocument</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>de</v8:lang>
+								<v8:content>Für Zeile</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>tr</v8:lang>
+								<v8:content>Satıra uygula</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>For row</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>fr</v8:lang>
+								<v8:content>Pour la ligne</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>На строки</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xr:DesignTimeRef">Enum.SpecialOfferTypes.EnumValue.ForRow</Value>
+					</xr:Value>
+				</xr:Item>
+			</ChoiceList>
+			<ContextMenu name="TypeContextMenu" id="48"/>
+			<ExtendedTooltip name="TypeExtendedTooltip" id="49"/>
+		</RadioButtonField>
+		<InputField name="DocumentType" id="50">
+			<DataPath>Object.DocumentType</DataPath>
+			<ContextMenu name="DocumentTypeContextMenu" id="51"/>
+			<ExtendedTooltip name="DocumentTypeExtendedTooltip" id="52"/>
+		</InputField>
+		<UsualGroup name="Group1" id="40">
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Group1ExtendedTooltip" id="41"/>
+			<ChildItems>
+				<CheckBoxField name="Manually" id="9">
+					<DataPath>Object.Manually</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ManuallyContextMenu" id="10"/>
+					<ExtendedTooltip name="ManuallyExtendedTooltip" id="11"/>
+				</CheckBoxField>
+				<CheckBoxField name="ManualInputValue" id="42">
+					<DataPath>Object.ManualInputValue</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ManualInputValueContextMenu" id="43"/>
+					<ExtendedTooltip name="ManualInputValueExtendedTooltip" id="44"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="Rules" id="12">
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Object.Rules</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="RulesContextMenu" id="13"/>
+			<AutoCommandBar name="RulesCommandBar" id="14"/>
+			<ExtendedTooltip name="RulesExtendedTooltip" id="15"/>
+			<SearchStringAddition name="RulesSearchString" id="16">
+				<AdditionSource>
+					<Item>Rules</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="RulesSearchStringContextMenu" id="17"/>
+				<ExtendedTooltip name="RulesSearchStringExtendedTooltip" id="18"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="RulesViewStatus" id="19">
+				<AdditionSource>
+					<Item>Rules</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<HorizontalLocation>Left</HorizontalLocation>
+				<ContextMenu name="RulesViewStatusContextMenu" id="20"/>
+				<ExtendedTooltip name="RulesViewStatusExtendedTooltip" id="21"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="RulesSearchControl" id="22">
+				<AdditionSource>
+					<Item>Rules</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="RulesSearchControlContextMenu" id="23"/>
+				<ExtendedTooltip name="RulesSearchControlExtendedTooltip" id="24"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="RulesLineNumber" id="25">
+					<DataPath>Object.Rules.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="RulesLineNumberContextMenu" id="26"/>
+					<ExtendedTooltip name="RulesLineNumberExtendedTooltip" id="27"/>
+				</LabelField>
+				<InputField name="RulesRule" id="28">
+					<DataPath>Object.Rules.Rule</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="RulesRuleContextMenu" id="29"/>
+					<ExtendedTooltip name="RulesRuleExtendedTooltip" id="30"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.SpecialOffers</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.14">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="FormCommandBar" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Code" id="13">
+			<DataPath>Object.Code</DataPath>
+			<ContextMenu name="CodeContextMenu" id="14"/>
+			<ExtendedTooltip name="CodeExtendedTooltip" id="15"/>
+		</InputField>
+		<InputField name="Description" id="1">
+			<DataPath>Object.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="DescriptionContextMenu" id="2"/>
+			<ExtendedTooltip name="DescriptionExtendedTooltip" id="3"/>
+		</InputField>
+		<InputField name="FilesType" id="4">
+			<DataPath>Object.FilesType</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="FilesTypeContextMenu" id="5"/>
+			<ExtendedTooltip name="FilesTypeExtendedTooltip" id="6"/>
+		</InputField>
+		<InputField name="POSTIntegrationSettings" id="7">
+			<DataPath>Object.POSTIntegrationSettings</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="POSTIntegrationSettingsContextMenu" id="8"/>
+			<ExtendedTooltip name="POSTIntegrationSettingsExtendedTooltip" id="9"/>
+		</InputField>
+		<InputField name="GETIntegrationSettings" id="10">
+			<DataPath>Object.GETIntegrationSettings</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="GETIntegrationSettingsContextMenu" id="11"/>
+			<ExtendedTooltip name="GETIntegrationSettingsExtendedTooltip" id="12"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.FileStorageVolumes</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

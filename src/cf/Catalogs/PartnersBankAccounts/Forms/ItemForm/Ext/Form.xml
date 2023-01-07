@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.14">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="FormCommandBar" id="-1"/>
+	<Events>
+		<Event name="NotificationProcessing">NotificationProcessing</Event>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+		<Event name="BeforeWriteAtServer">BeforeWriteAtServer</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="GroupDescriptions" id="19">
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="GroupDescriptionsExtendedTooltip" id="20"/>
+		</UsualGroup>
+		<UsualGroup name="GroupMain" id="29">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Gruppe Haupt</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Ana grubu</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Group main</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Groupe Principal</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основное</v8:content>
+				</v8:item>
+			</Title>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<United>false</United>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="GroupMainExtendedTooltip" id="30"/>
+			<ChildItems>
+				<UsualGroup name="GroupNumber" id="27">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Group number</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Grup numara</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа номер</v8:content>
+						</v8:item>
+					</Title>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="GroupNumberExtendedTooltip" id="28"/>
+					<ChildItems>
+						<InputField name="Number" id="10">
+							<DataPath>Object.Number</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>25</Width>
+							<ContextMenu name="NumberContextMenu" id="11"/>
+							<ExtendedTooltip name="NumberExtendedTooltip" id="12"/>
+						</InputField>
+						<InputField name="Currency" id="16">
+							<DataPath>Object.Currency</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>10</Width>
+							<InputHint>
+								<v8:item>
+									<v8:lang>de</v8:lang>
+									<v8:content>Währung</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>tr</v8:lang>
+									<v8:content>Döviz</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Currency</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>fr</v8:lang>
+									<v8:content>Devise</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Валюта</v8:content>
+								</v8:item>
+							</InputHint>
+							<ContextMenu name="CurrencyContextMenu" id="17"/>
+							<ExtendedTooltip name="CurrencyExtendedTooltip" id="18"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<InputField name="Partner" id="24">
+					<DataPath>Object.Partner</DataPath>
+					<ContextMenu name="PartnerContextMenu" id="25"/>
+					<ExtendedTooltip name="PartnerExtendedTooltip" id="26"/>
+					<Events>
+						<Event name="OnChange">PartnerOnChange</Event>
+					</Events>
+				</InputField>
+				<InputField name="LegalEntity" id="31">
+					<DataPath>Object.LegalEntity</DataPath>
+					<ContextMenu name="LegalEntityContextMenu" id="32"/>
+					<ExtendedTooltip name="LegalEntityExtendedTooltip" id="33"/>
+					<Events>
+						<Event name="StartChoice">LegalEntityStartChoice</Event>
+					</Events>
+				</InputField>
+				<InputField name="BankName" id="4">
+					<DataPath>Object.BankName</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="BankNameContextMenu" id="5"/>
+					<ExtendedTooltip name="BankNameExtendedTooltip" id="6"/>
+				</InputField>
+				<InputField name="Branch" id="13">
+					<DataPath>Object.Branch</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="BranchContextMenu" id="14"/>
+					<ExtendedTooltip name="BranchExtendedTooltip" id="15"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.PartnersBankAccounts</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

@@ -1,0 +1,499 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.14">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="FormCommandBar" id="-1">
+		<ChildItems>
+			<Button name="FormSettings" id="25">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Settings</CommandName>
+				<ExtendedTooltip name="FormSettingsExtendedTooltip" id="26"/>
+			</Button>
+			<Button name="SetPassword" id="17">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.SetPassword</CommandName>
+				<ExtendedTooltip name="SetPasswordExtendedTooltip" id="18"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">NotificationProcessing</Event>
+		<Event name="OnReadAtServer">OnReadAtServer</Event>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+		<Event name="BeforeWriteAtServer">BeforeWriteAtServer</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="GroupMain" id="36">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Gruppe Haupt</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Ana grubu</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Group main</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Groupe Principal</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основное</v8:content>
+				</v8:item>
+			</Title>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="GroupMainExtendedTooltip" id="37"/>
+			<ChildItems>
+				<Page name="GroupSettings" id="38">
+					<Title>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Einstellungen</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Ayarlar</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Settings</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Paramètres</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="GroupSettingsExtendedTooltip" id="39"/>
+					<ChildItems>
+						<InputField name="Code" id="33">
+							<DataPath>Object.Code</DataPath>
+							<Visible>false</Visible>
+							<ContextMenu name="CodeContextMenu" id="34"/>
+							<ExtendedTooltip name="CodeExtendedTooltip" id="35"/>
+						</InputField>
+						<InputField name="Description" id="1">
+							<DataPath>Object.Description</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>de</v8:lang>
+									<v8:content>Anmelden</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>tr</v8:lang>
+									<v8:content>Login</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Login</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>fr</v8:lang>
+									<v8:content>Login</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Логин</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="DescriptionContextMenu" id="2"/>
+							<ExtendedTooltip name="DescriptionExtendedTooltip" id="3"/>
+						</InputField>
+						<UsualGroup name="GroupDescriptions" id="13">
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="GroupDescriptionsExtendedTooltip" id="14"/>
+						</UsualGroup>
+						<LabelField name="InfobaseUserID" id="4">
+							<DataPath>Object.InfobaseUserID</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="InfobaseUserIDContextMenu" id="5"/>
+							<ExtendedTooltip name="InfobaseUserIDExtendedTooltip" id="6"/>
+						</LabelField>
+						<CheckBoxField name="ShowInList" id="19">
+							<DataPath>Object.ShowInList</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ShowInListContextMenu" id="20"/>
+							<ExtendedTooltip name="ShowInListExtendedTooltip" id="21"/>
+						</CheckBoxField>
+						<InputField name="FormScaleVariant" id="30">
+							<DataPath>Object.FormScaleVariant</DataPath>
+							<ListChoiceMode>true</ListChoiceMode>
+							<TextEdit>false</TextEdit>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>de</v8:lang>
+												<v8:content>Auto</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>tr</v8:lang>
+												<v8:content>Otomatik</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>en</v8:lang>
+												<v8:content>Auto</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>fr</v8:lang>
+												<v8:content>Auto</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Авто</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">Auto</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>de</v8:lang>
+												<v8:content>Kompakt</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>tr</v8:lang>
+												<v8:content>Küçük yazılar</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>en</v8:lang>
+												<v8:content>Compact</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>fr</v8:lang>
+												<v8:content>Compacte</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Компактный</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">Compact</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>de</v8:lang>
+												<v8:content>Normal</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>tr</v8:lang>
+												<v8:content>Normal</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>en</v8:lang>
+												<v8:content>Normal</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>fr</v8:lang>
+												<v8:content>Normale</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Нормальный</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">Normal</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<ContextMenu name="FormScaleVariantContextMenu" id="31"/>
+							<ExtendedTooltip name="FormScaleVariantExtendedTooltip" id="32"/>
+						</InputField>
+						<InputField name="LocalizationCode" id="10">
+							<DataPath>Object.LocalizationCode</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Data localization</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>tr</v8:lang>
+									<v8:content>Veri görüntüleme dili</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Язык представления данных</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<ListChoiceMode>true</ListChoiceMode>
+							<ContextMenu name="LocalizationCodeContextMenu" id="11"/>
+							<ExtendedTooltip name="LocalizationCodeExtendedTooltip" id="12"/>
+						</InputField>
+						<InputField name="InterfaceLocalizationCode" id="27">
+							<DataPath>Object.InterfaceLocalizationCode</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Interface localization</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>tr</v8:lang>
+									<v8:content>Arayüz görüntüleme dili</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Язык интерфейса</v8:content>
+								</v8:item>
+							</Title>
+							<ListChoiceMode>true</ListChoiceMode>
+							<ContextMenu name="InterfaceLocalizationCodeContextMenu" id="28"/>
+							<ExtendedTooltip name="InterfaceLocalizationCodeExtendedTooltip" id="29"/>
+						</InputField>
+						<UsualGroup name="GroupDefaultSettings" id="40">
+							<Title>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Default settings</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>tr</v8:lang>
+									<v8:content>Varsayılan ayarlar</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Настройки по умолчанию</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<ExtendedTooltip name="GroupDefaultSettingsExtendedTooltip" id="41"/>
+							<ChildItems>
+								<InputField name="Partner" id="7">
+									<DataPath>Object.Partner</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="PartnerContextMenu" id="8"/>
+									<ExtendedTooltip name="PartnerExtendedTooltip" id="9"/>
+								</InputField>
+								<InputField name="UserGroup" id="22">
+									<DataPath>Object.UserGroup</DataPath>
+									<ContextMenu name="UserGroupContextMenu" id="23"/>
+									<ExtendedTooltip name="UserGroupExtendedTooltip" id="24"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="GroupRoles" id="42">
+					<Title>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Rollen</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Roller</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Roles</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Rôles</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Роли доступа</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="GroupRolesExtendedTooltip" id="43"/>
+					<ChildItems>
+						<Table name="RoleList" id="47">
+							<Representation>List</Representation>
+							<ReadOnly>true</ReadOnly>
+							<Header>false</Header>
+							<DataPath>RoleList</DataPath>
+							<ContextMenu name="RoleListContextMenu" id="49"/>
+							<AutoCommandBar name="RoleListCommandBar" id="48">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="RoleListExtendedTooltip" id="50"/>
+							<SearchStringAddition name="RoleListSearchString" id="51">
+								<AdditionSource>
+									<Item>RoleList</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="RoleListSearchStringContextMenu" id="52"/>
+								<ExtendedTooltip name="RoleListSearchStringExtendedTooltip" id="53"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="RoleListViewStatus" id="57">
+								<AdditionSource>
+									<Item>RoleList</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="RoleListViewStatusContextMenu" id="58"/>
+								<ExtendedTooltip name="RoleListViewStatusExtendedTooltip" id="59"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="RoleListSearchControl" id="54">
+								<AdditionSource>
+									<Item>RoleList</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="RoleListSearchControlContextMenu" id="55"/>
+								<ExtendedTooltip name="RoleListSearchControlExtendedTooltip" id="56"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="RoleListValue" id="60">
+									<DataPath>RoleList.Value</DataPath>
+									<ContextMenu name="RoleListValueContextMenu" id="61"/>
+									<ExtendedTooltip name="RoleListValueExtendedTooltip" id="62"/>
+								</InputField>
+								<InputField name="RoleListPresentation" id="63">
+									<DataPath>RoleList.Presentation</DataPath>
+									<ContextMenu name="RoleListPresentationContextMenu" id="64"/>
+									<ExtendedTooltip name="RoleListPresentationExtendedTooltip" id="65"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Users</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="Password" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Kennwort</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Parola</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Password</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Mot de passe</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пароль</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="RoleList" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Role list</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Rol listesi</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список ролей</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription"/>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="SetPassword" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Kennwort festlegen</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Parola tanımla</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Set password</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Définir un mot de passe</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить пароль</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>StdPicture.UserWithAuthentication</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>SetPassword</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="Settings" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Einstellungen</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Ayarlar</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Settings</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Paramètres</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>StdPicture.SettingsStorage</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Settings</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+	</Commands>
+</Form>

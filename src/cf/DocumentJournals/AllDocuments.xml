@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.14">
+	<DocumentJournal uuid="241b7692-bd98-4193-ad7d-03e037af6bd3">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentJournalSelection.AllDocuments" category="Selection">
+				<xr:TypeId>9eb77aa4-126d-4817-8231-5d5643d13055</xr:TypeId>
+				<xr:ValueId>2ef41452-9d60-45a9-984a-33747d6f8f9a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentJournalList.AllDocuments" category="List">
+				<xr:TypeId>092bfc69-3df0-4994-ac25-9b4e6a19ffcf</xr:TypeId>
+				<xr:ValueId>643a84de-5775-4e61-99bc-e3148c811821</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentJournalManager.AllDocuments" category="Manager">
+				<xr:TypeId>99ff6f68-269b-497f-81ef-079326cb670d</xr:TypeId>
+				<xr:ValueId>892332e2-9a10-42f3-a5cc-2806dd977a20</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>AllDocuments</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>All documents</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Tüm evraklar</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Все документы</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<DefaultForm>DocumentJournal.AllDocuments.Form.ListForm</DefaultForm>
+			<AuxiliaryForm/>
+			<UseStandardCommands>true</UseStandardCommands>
+			<RegisteredDocuments>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.BankPayment</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.BankReceipt</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.Bundling</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.CashExpense</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.CashPayment</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.CashReceipt</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.CashRevenue</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.CashTransferOrder</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.GoodsReceipt</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.IncomingPaymentOrder</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.InternalSupplyRequest</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.InventoryTransfer</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.InventoryTransferOrder</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.InvoiceMatch</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.Labeling</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.OpeningEntry</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.OutgoingPaymentOrder</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.PhysicalCountByLocation</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.PhysicalInventory</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.PriceList</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.PurchaseInvoice</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.PurchaseOrder</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.PurchaseReturn</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.PurchaseReturnOrder</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ReconciliationStatement</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.SalesInvoice</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.SalesOrder</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.SalesReturn</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.SalesReturnOrder</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.StockAdjustmentAsSurplus</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ShipmentConfirmation</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.StockAdjustmentAsWriteOff</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.Unbundling</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.RetailSalesReceipt</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.RetailReturnReceipt</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.CreditNote</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.DebitNote</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.CashStatement</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ItemStockAdjustment</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ManualRegisterEntry</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.SalesOrderClosing</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.PlannedReceiptReservation</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.PurchaseOrderClosing</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.VendorsAdvancesClosing</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.CustomersAdvancesClosing</xr:Item>
+			</RegisteredDocuments>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Column uuid="ef19537f-48b5-437d-a57d-75551c5c6d62">
+				<Properties>
+					<Name>Company</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Organisation</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Şirket</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Company</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Entreprise</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Организация</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.BankPayment.Attribute.Company</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.BankReceipt.Attribute.Company</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.CashExpense.Attribute.Company</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.Bundling.Attribute.Company</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.CashPayment.Attribute.Company</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.CashReceipt.Attribute.Company</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.CashRevenue.Attribute.Company</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.CashStatement.Attribute.Company</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.CashTransferOrder.Attribute.Company</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.CreditNote.Attribute.Company</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.DebitNote.Attribute.Company</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.GoodsReceipt.Attribute.Company</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.IncomingPaymentOrder.Attribute.Company</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.InternalSupplyRequest.Attribute.Company</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.InventoryTransfer.Attribute.Company</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.InventoryTransferOrder.Attribute.Company</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.InvoiceMatch.Attribute.Company</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ItemStockAdjustment.Attribute.Company</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ManualRegisterEntry.Attribute.Company</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.OutgoingPaymentOrder.Attribute.Company</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.OpeningEntry.Attribute.Company</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.PlannedReceiptReservation.Attribute.Company</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.PurchaseInvoice.Attribute.Company</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.PurchaseOrder.Attribute.Company</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.PurchaseOrderClosing.Attribute.Company</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.PurchaseReturn.Attribute.Company</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.PurchaseReturnOrder.Attribute.Company</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ReconciliationStatement.Attribute.Company</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.RetailReturnReceipt.Attribute.Company</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.RetailSalesReceipt.Attribute.Company</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.SalesInvoice.Attribute.Company</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.SalesOrder.Attribute.Company</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.SalesOrderClosing.Attribute.Company</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.SalesReturn.Attribute.Company</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.SalesReturnOrder.Attribute.Company</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ShipmentConfirmation.Attribute.Company</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.StockAdjustmentAsSurplus.Attribute.Company</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.StockAdjustmentAsWriteOff.Attribute.Company</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.Unbundling.Attribute.Company</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.VendorsAdvancesClosing.Attribute.Company</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.CustomersAdvancesClosing.Attribute.Company</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Form>ListForm</Form>
+		</ChildObjects>
+	</DocumentJournal>
+</MetaDataObject>

@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.14">
+	<FunctionalOption uuid="d03c1fd8-ca72-4887-a70f-942bec1c6dc5">
+		<Properties>
+			<Name>UseCompanies</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Organisationen verwenden</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Birden fazla şirket kullanmak</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Use companies</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Utiliser les entreprises</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использовать организации</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<Location>Constant.UseCompanies</Location>
+			<PrivilegedGetMode>true</PrivilegedGetMode>
+			<Content>
+				<xr:Object>Document.Bundling.Attribute.Company</xr:Object>
+				<xr:Object>Document.InventoryTransfer.Attribute.Company</xr:Object>
+				<xr:Object>Document.PurchaseReturn.Attribute.Company</xr:Object>
+				<xr:Object>Document.InvoiceMatch.Attribute.Company</xr:Object>
+				<xr:Object>Document.PurchaseOrder.Attribute.Company</xr:Object>
+				<xr:Object>Document.ReconciliationStatement.Attribute.Company</xr:Object>
+				<xr:Object>Document.OutgoingPaymentOrder.Attribute.Company</xr:Object>
+				<xr:Object>Document.BankPayment.Attribute.Company</xr:Object>
+				<xr:Object>Document.OpeningEntry.Attribute.Company</xr:Object>
+				<xr:Object>Document.StockAdjustmentAsSurplus.Attribute.Company</xr:Object>
+				<xr:Object>Document.BankReceipt.Attribute.Company</xr:Object>
+				<xr:Object>Document.SalesReturn.Attribute.LegalName</xr:Object>
+				<xr:Object>Document.PurchaseReturn.Attribute.LegalName</xr:Object>
+				<xr:Object>Document.CashPayment.TabularSection.PaymentList.Attribute.Payee</xr:Object>
+				<xr:Object>Document.CashTransferOrder.Attribute.Company</xr:Object>
+				<xr:Object>Document.StockAdjustmentAsWriteOff.Attribute.Company</xr:Object>
+				<xr:Object>Document.SalesOrder.Attribute.LegalName</xr:Object>
+				<xr:Object>Document.SalesReturnOrder.Attribute.LegalName</xr:Object>
+				<xr:Object>Document.InvoiceMatch.Attribute.LegalName</xr:Object>
+				<xr:Object>Document.CashExpense.Attribute.Company</xr:Object>
+				<xr:Object>Document.SalesOrder.Attribute.Company</xr:Object>
+				<xr:Object>Document.InternalSupplyRequest.Attribute.Company</xr:Object>
+				<xr:Object>Document.ShipmentConfirmation.Attribute.Company</xr:Object>
+				<xr:Object>Document.InventoryTransferOrder.Attribute.Company</xr:Object>
+				<xr:Object>Document.PurchaseOrder.Attribute.LegalName</xr:Object>
+				<xr:Object>Document.PurchaseReturnOrder.Attribute.Company</xr:Object>
+				<xr:Object>Document.CashRevenue.Attribute.Company</xr:Object>
+				<xr:Object>Document.SalesInvoice.Attribute.LegalName</xr:Object>
+				<xr:Object>Document.Unbundling.Attribute.Company</xr:Object>
+				<xr:Object>Document.BankPayment.TabularSection.PaymentList.Attribute.Payee</xr:Object>
+				<xr:Object>Document.IncomingPaymentOrder.Attribute.Company</xr:Object>
+				<xr:Object>Document.SalesReturnOrder.Attribute.Company</xr:Object>
+				<xr:Object>Document.CashReceipt.TabularSection.PaymentList.Attribute.Payer</xr:Object>
+				<xr:Object>Document.ReconciliationStatement.Attribute.LegalName</xr:Object>
+				<xr:Object>Document.PurchaseReturnOrder.Attribute.LegalName</xr:Object>
+				<xr:Object>Document.SalesReturn.Attribute.Company</xr:Object>
+				<xr:Object>Document.CashPayment.Attribute.Company</xr:Object>
+				<xr:Object>Document.BankReceipt.TabularSection.PaymentList.Attribute.Payer</xr:Object>
+				<xr:Object>Document.SalesInvoice.Attribute.Company</xr:Object>
+				<xr:Object>Document.GoodsReceipt.Attribute.Company</xr:Object>
+				<xr:Object>Document.CashReceipt.Attribute.Company</xr:Object>
+				<xr:Object>Document.GoodsReceipt.Attribute.LegalName</xr:Object>
+				<xr:Object>Document.ShipmentConfirmation.Attribute.LegalName</xr:Object>
+				<xr:Object>Catalog.Companies.Command.OpenCompanyList</xr:Object>
+			</Content>
+		</Properties>
+	</FunctionalOption>
+</MetaDataObject>

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.14">
+	<DefinedType uuid="154c4582-29f8-4e98-9177-9736e8a03a0d">
+		<InternalInfo>
+			<xr:GeneratedType name="DefinedType.typeShipmentBasis" category="DefinedType">
+				<xr:TypeId>adbe734d-0982-4eaf-a8b4-15a22a62eb17</xr:TypeId>
+				<xr:ValueId>196b1e28-45c7-4ac2-9a9d-533c312197a4</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>typeShipmentBasis</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Typ Versandbasis</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Tip sevkiyat kaynak evrakı</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Type shipment basis</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Type Base de livraison</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип основание отгрузки</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<Type>
+				<v8:Type>cfg:DocumentRef.PurchaseReturn</v8:Type>
+				<v8:Type>cfg:DocumentRef.ShipmentConfirmation</v8:Type>
+				<v8:Type>cfg:DocumentRef.Unbundling</v8:Type>
+				<v8:Type>cfg:DocumentRef.SalesOrder</v8:Type>
+				<v8:Type>cfg:DocumentRef.Bundling</v8:Type>
+				<v8:Type>cfg:DocumentRef.InventoryTransfer</v8:Type>
+				<v8:Type>cfg:DocumentRef.SalesInvoice</v8:Type>
+			</Type>
+		</Properties>
+	</DefinedType>
+</MetaDataObject>

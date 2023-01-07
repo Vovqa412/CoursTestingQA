@@ -1,0 +1,608 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.14">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="FormCommandBar" id="-1"/>
+	<Events>
+		<Event name="NotificationProcessing">NotificationProcessing</Event>
+		<Event name="OnOpen">OnOpen</Event>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+		<Event name="BeforeWriteAtServer">BeforeWriteAtServer</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="GroupMain" id="80">
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="GroupMainExtendedTooltip" id="81"/>
+			<ChildItems>
+				<UsualGroup name="GroupAttributesMain" id="82">
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="GroupAttributesMainExtendedTooltip" id="83"/>
+					<ChildItems>
+						<InputField name="Code" id="101">
+							<DataPath>Object.Code</DataPath>
+							<ContextMenu name="CodeContextMenu" id="102"/>
+							<ExtendedTooltip name="CodeExtendedTooltip" id="103"/>
+						</InputField>
+						<InputField name="Item" id="1">
+							<DataPath>Object.Item</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ItemContextMenu" id="2"/>
+							<ExtendedTooltip name="ItemExtendedTooltip" id="3"/>
+							<Events>
+								<Event name="OnChange">ItemOnChange</Event>
+							</Events>
+						</InputField>
+						<LabelField name="ItemType" id="9">
+							<DataPath>ItemType</DataPath>
+							<Hiperlink>true</Hiperlink>
+							<ContextMenu name="ItemTypeContextMenu" id="10"/>
+							<ExtendedTooltip name="ItemTypeExtendedTooltip" id="11"/>
+						</LabelField>
+						<InputField name="ItemKeyID" id="95">
+							<DataPath>Object.ItemKeyID</DataPath>
+							<ContextMenu name="ContextMenu" id="96"/>
+							<ExtendedTooltip name="ExtendedTooltip" id="97"/>
+						</InputField>
+						<UsualGroup name="GroupSwitching" id="38">
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="GroupSwitchingExtendedTooltip" id="39"/>
+							<ChildItems>
+								<UsualGroup name="GroupUnit" id="25">
+									<Group>AlwaysHorizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="GroupUnitExtendedTooltip" id="26"/>
+									<ChildItems>
+										<LabelField name="InheritUnit" id="18">
+											<DataPath>InheritUnit</DataPath>
+											<Visible>false</Visible>
+											<Hiperlink>true</Hiperlink>
+											<ContextMenu name="InheritUnitContextMenu" id="19"/>
+											<ExtendedTooltip name="InheritUnitExtendedTooltip" id="20"/>
+										</LabelField>
+										<InputField name="OwnUnit" id="6">
+											<DataPath>Object.Unit</DataPath>
+											<ChoiceParameters>
+												<app:item name="Filter.Quantity">
+													<app:value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xs:decimal">1</Value>
+													</app:value>
+												</app:item>
+											</ChoiceParameters>
+											<ContextMenu name="OwnUnitContextMenu" id="7"/>
+											<ExtendedTooltip name="OwnUnitExtendedTooltip" id="8"/>
+										</InputField>
+										<RadioButtonField name="UnitMode" id="27">
+											<DataPath>UnitMode</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<RadioButtonType>Tumbler</RadioButtonType>
+											<ChoiceList>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>de</v8:lang>
+																<v8:content>Eigen</v8:content>
+															</v8:item>
+															<v8:item>
+																<v8:lang>tr</v8:lang>
+																<v8:content>Kendi çekimiz</v8:content>
+															</v8:item>
+															<v8:item>
+																<v8:lang>en</v8:lang>
+																<v8:content>Own</v8:content>
+															</v8:item>
+															<v8:item>
+																<v8:lang>fr</v8:lang>
+																<v8:content>Propre</v8:content>
+															</v8:item>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Собственные</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">Own</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>de</v8:lang>
+																<v8:content>Erben</v8:content>
+															</v8:item>
+															<v8:item>
+																<v8:lang>tr</v8:lang>
+																<v8:content>Üst öğeden al</v8:content>
+															</v8:item>
+															<v8:item>
+																<v8:lang>en</v8:lang>
+																<v8:content>Inherit</v8:content>
+															</v8:item>
+															<v8:item>
+																<v8:lang>fr</v8:lang>
+																<v8:content>Héritée</v8:content>
+															</v8:item>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Унаследованная</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">Inherit</Value>
+													</xr:Value>
+												</xr:Item>
+											</ChoiceList>
+											<ContextMenu name="UnitModeContextMenu" id="28"/>
+											<ExtendedTooltip name="UnitModeExtendedTooltip" id="29"/>
+											<Events>
+												<Event name="OnChange">UnitModeOnChange</Event>
+											</Events>
+										</RadioButtonField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="GroupSpecification" id="45">
+									<Group>AlwaysHorizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="GroupSpecificationExtendedTooltip" id="46"/>
+									<ChildItems>
+										<CheckBoxField name="SpecificationMode" id="47">
+											<DataPath>SpecificationMode</DataPath>
+											<CheckBoxType>CheckBox</CheckBoxType>
+											<ContextMenu name="SpecificationModeContextMenu" id="48"/>
+											<ExtendedTooltip name="SpecificationModeExtendedTooltip" id="49"/>
+											<Events>
+												<Event name="OnChange">SpecificationModeOnChange</Event>
+											</Events>
+										</CheckBoxField>
+										<InputField name="Specification" id="50">
+											<DataPath>Object.Specification</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<ChoiceParameterLinks>
+												<xr:Link>
+													<xr:Name>Filter.CustomFilterByItem</xr:Name>
+													<xr:DataPath xsi:type="xs:string">Object.Item</xr:DataPath>
+													<xr:ValueChange>Clear</xr:ValueChange>
+												</xr:Link>
+											</ChoiceParameterLinks>
+											<ContextMenu name="SpecificationContextMenu" id="51"/>
+											<ExtendedTooltip name="SpecificationExtendedTooltip" id="52"/>
+											<Events>
+												<Event name="OnChange">SpecificationOnChange</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="GroupDimensions" id="104">
+							<Title>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Dimensions</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>tr</v8:lang>
+									<v8:content>Boyutlar</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Измерения</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Collapsible</Behavior>
+							<CollapsedRepresentationTitle>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Dimensions</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>tr</v8:lang>
+									<v8:content>Boyutlar</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Измерения</v8:content>
+								</v8:item>
+							</CollapsedRepresentationTitle>
+							<Collapsed>true</Collapsed>
+							<ExtendedTooltip name="GroupDimensionsExtendedTooltip" id="105"/>
+							<ChildItems>
+								<InputField name="Length" id="106">
+									<DataPath>Object.Length</DataPath>
+									<ContextMenu name="LengthContextMenu" id="107"/>
+									<ExtendedTooltip name="LengthExtendedTooltip" id="108"/>
+									<Events>
+										<Event name="OnChange">SizeOnChange</Event>
+									</Events>
+								</InputField>
+								<InputField name="Width" id="109">
+									<DataPath>Object.Width</DataPath>
+									<ContextMenu name="WidthContextMenu" id="110"/>
+									<ExtendedTooltip name="WidthExtendedTooltip" id="111"/>
+									<Events>
+										<Event name="OnChange">SizeOnChange</Event>
+									</Events>
+								</InputField>
+								<InputField name="Height" id="112">
+									<DataPath>Object.Height</DataPath>
+									<ContextMenu name="HeightContextMenu" id="113"/>
+									<ExtendedTooltip name="HeightExtendedTooltip" id="114"/>
+									<Events>
+										<Event name="OnChange">SizeOnChange</Event>
+									</Events>
+								</InputField>
+								<InputField name="Volume" id="120">
+									<DataPath>Object.Volume</DataPath>
+									<ContextMenu name="VolumeContextMenu" id="121"/>
+									<ExtendedTooltip name="VolumeExtendedTooltip" id="122"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="GroupWeightInformation" id="115">
+							<Title>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Weight information</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>tr</v8:lang>
+									<v8:content>Ağırlık bilgisi</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Информация о весе</v8:content>
+								</v8:item>
+							</Title>
+							<Behavior>Collapsible</Behavior>
+							<CollapsedRepresentationTitle>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Weight information</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>tr</v8:lang>
+									<v8:content>Ağırlık bilgisi</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Информация о весе</v8:content>
+								</v8:item>
+							</CollapsedRepresentationTitle>
+							<Collapsed>true</Collapsed>
+							<ExtendedTooltip name="GroupWeightInformationExtendedTooltip" id="116"/>
+							<ChildItems>
+								<InputField name="Weight" id="117">
+									<DataPath>Object.Weight</DataPath>
+									<ContextMenu name="WeightContextMenu" id="118"/>
+									<ExtendedTooltip name="WeightExtendedTooltip" id="119"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="GroupAttributes" id="4">
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="GroupAttributesExtendedTooltip" id="5"/>
+						</UsualGroup>
+						<LabelDecoration name="Decoration1" id="98">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ContextMenu name="Decoration1ContextMenu" id="99"/>
+							<ExtendedTooltip name="Decoration1ExtendedTooltip" id="100"/>
+						</LabelDecoration>
+						<UsualGroup name="GroupAffectPricingMD5" id="78">
+							<Title>
+								<v8:item>
+									<v8:lang>de</v8:lang>
+									<v8:content>Beeinflusst Preise MD5</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>tr</v8:lang>
+									<v8:content>Fiyatları etkileyen MD5</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Affect pricing MD5</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>fr</v8:lang>
+									<v8:content>MD5 de l'impact sur le prix</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>MD5 влияния на цену</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Collapsible</Behavior>
+							<Collapsed>true</Collapsed>
+							<ExtendedTooltip name="GroupAffectPricingMD5ExtendedTooltip" id="79"/>
+							<ChildItems>
+								<InputField name="UniqueMD5" id="92">
+									<DataPath>Object.UniqueMD5</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<ContextMenu name="UniqueMD5ContextMenu" id="93"/>
+									<ExtendedTooltip name="UniqueMD5ExtendedTooltip" id="94"/>
+								</InputField>
+								<InputField name="AffectPricingMD5" id="53">
+									<DataPath>Object.AffectPricingMD5</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<ContextMenu name="AffectPricingMD5ContextMenu" id="54"/>
+									<ExtendedTooltip name="AffectPricingMD5ExtendedTooltip" id="55"/>
+								</InputField>
+								<Table name="SpecificationAffectPricingMD5" id="56">
+									<ReadOnly>true</ReadOnly>
+									<DataPath>Object.SpecificationAffectPricingMD5</DataPath>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="SpecificationAffectPricingMD5ContextMenu" id="58"/>
+									<AutoCommandBar name="SpecificationAffectPricingMD5CommandBar" id="57">
+										<Autofill>false</Autofill>
+									</AutoCommandBar>
+									<ExtendedTooltip name="SpecificationAffectPricingMD5ExtendedTooltip" id="59"/>
+									<SearchStringAddition name="SpecificationAffectPricingMD5SearchString" id="60">
+										<AdditionSource>
+											<Item>SpecificationAffectPricingMD5</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="SpecificationAffectPricingMD5SearchStringContextMenu" id="61"/>
+										<ExtendedTooltip name="SpecificationAffectPricingMD5SearchStringExtendedTooltip" id="62"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="SpecificationAffectPricingMD5ViewStatus" id="66">
+										<AdditionSource>
+											<Item>SpecificationAffectPricingMD5</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<HorizontalLocation>Left</HorizontalLocation>
+										<ContextMenu name="SpecificationAffectPricingMD5ViewStatusContextMenu" id="67"/>
+										<ExtendedTooltip name="SpecificationAffectPricingMD5ViewStatusExtendedTooltip" id="68"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="SpecificationAffectPricingMD5SearchControl" id="63">
+										<AdditionSource>
+											<Item>SpecificationAffectPricingMD5</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="SpecificationAffectPricingMD5SearchControlContextMenu" id="64"/>
+										<ExtendedTooltip name="SpecificationAffectPricingMD5SearchControlExtendedTooltip" id="65"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<InputField name="SpecificationAffectPricingMD5LineNumber" id="69">
+											<DataPath>Object.SpecificationAffectPricingMD5.LineNumber</DataPath>
+											<ContextMenu name="SpecificationAffectPricingMD5LineNumberContextMenu" id="70"/>
+											<ExtendedTooltip name="SpecificationAffectPricingMD5LineNumberExtendedTooltip" id="71"/>
+										</InputField>
+										<LabelField name="SpecificationAffectPricingMD5Key" id="72">
+											<DataPath>Object.SpecificationAffectPricingMD5.Key</DataPath>
+											<ContextMenu name="SpecificationAffectPricingMD5KeyContextMenu" id="73"/>
+											<ExtendedTooltip name="SpecificationAffectPricingMD5KeyExtendedTooltip" id="74"/>
+										</LabelField>
+										<InputField name="SpecificationAffectPricingMD5AffectPricingMD5" id="75">
+											<DataPath>Object.SpecificationAffectPricingMD5.AffectPricingMD5</DataPath>
+											<ContextMenu name="SpecificationAffectPricingMD5AffectPricingMD5ContextMenu" id="76"/>
+											<ExtendedTooltip name="SpecificationAffectPricingMD5AffectPricingMD5ExtendedTooltip" id="77"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="GroupHTML" id="84">
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="GroupHTMLExtendedTooltip" id="85"/>
+					<ChildItems>
+						<HTMLDocumentField name="PictureViewHTML" id="86">
+							<DataPath>PictureViewHTML</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<Width>40</Width>
+							<BorderColor>style:FormBackColor</BorderColor>
+							<ContextMenu name="PictureViewHTMLContextMenu" id="87"/>
+							<ExtendedTooltip name="PictureViewHTMLExtendedTooltip" id="88"/>
+							<Events>
+								<Event name="DocumentComplete">PictureViewHTMLDocumentComplete</Event>
+								<Event name="OnClick">PictureViewHTMLOnClick</Event>
+							</Events>
+						</HTMLDocumentField>
+						<HTMLDocumentField name="AddAttributeViewHTML" id="89">
+							<DataPath>AddAttributeViewHTML</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<Width>20</Width>
+							<MaxWidth>30</MaxWidth>
+							<MaxHeight>10</MaxHeight>
+							<BorderColor>style:FormBackColor</BorderColor>
+							<ContextMenu name="AddAttributeViewHTMLContextMenu" id="90"/>
+							<ExtendedTooltip name="AddAttributeViewHTMLExtendedTooltip" id="91"/>
+							<Events>
+								<Event name="DocumentComplete">AddAttributesHTMLDocumentComplete</Event>
+							</Events>
+						</HTMLDocumentField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ItemKeys</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="UnitMode" id="2">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="SpecificationMode" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Spezifikation</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Ürün reçetesi</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Specification</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Spécification</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Спецификация товара</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ItemType" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Produkttyp</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Malzeme tipi</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Item type</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Type d'article</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид номенклатуры</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ItemTypes</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="InheritUnit" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Geerbte Maßeinheit</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Bağlı birim</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Inherit unit</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Unité héritée</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Унаследованная единица измерения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Units</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="PictureViewHTML" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>HTML-Bilder anzeigen</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Resim HTML önizleme</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Picture view HTML</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Afficher l’image HTML</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Просмотр изображений HTML</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="AddAttributeViewHTML" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Zusatzattribut in HTML anzeigen</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Ek özellik görünümü HTML</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Additional attribute view HTML</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Afficher l'attribut supplémentaire en HTML</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отображение дополнительного реквизита в HTML поле</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+</Form>

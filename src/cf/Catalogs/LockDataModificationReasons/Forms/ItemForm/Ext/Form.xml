@@ -1,0 +1,422 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.14">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="FormCommandBar" id="-1"/>
+	<Events>
+		<Event name="NotificationProcessing">NotificationProcessing</Event>
+		<Event name="OnOpen">OnOpen</Event>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+		<Event name="BeforeWriteAtServer">BeforeWriteAtServer</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="GroupDescriptions" id="1">
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="GroupDescriptionsExtendedTooltip" id="2"/>
+		</UsualGroup>
+		<UsualGroup name="GroupTop" id="86">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Group top</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Grup üst</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа верхние уровень</v8:content>
+				</v8:item>
+			</Title>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="GroupTopExtendedTooltip" id="87"/>
+			<ChildItems>
+				<CheckBoxField name="ForAllUsers" id="88">
+					<DataPath>Object.ForAllUsers</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ForAllUsersContextMenu" id="89"/>
+					<ExtendedTooltip name="ForAllUsersExtendedTooltip" id="90"/>
+					<Events>
+						<Event name="OnChange">ForAllUsersOnChange</Event>
+					</Events>
+				</CheckBoxField>
+				<CheckBoxField name="SetOneRuleForAllObjects" id="94">
+					<DataPath>Object.SetOneRuleForAllObjects</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="SetOneRuleForAllObjectsContextMenu" id="95"/>
+					<ExtendedTooltip name="SetOneRuleForAllObjectsExtendedTooltip" id="96"/>
+					<Events>
+						<Event name="OnChange">SetOneRuleForAllObjectsOnChange</Event>
+					</Events>
+				</CheckBoxField>
+				<LabelDecoration name="Decoration1" id="111">
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<HorizontalStretch>true</HorizontalStretch>
+					<ContextMenu name="Decoration1ContextMenu" id="112"/>
+					<ExtendedTooltip name="Decoration1ExtendedTooltip" id="113"/>
+				</LabelDecoration>
+				<UsualGroup name="GroupDisableRule" id="114">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Group disable rule</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Grup kuralı devre dışı bırak</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа отключить правило</v8:content>
+						</v8:item>
+					</Title>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<BackColor>web:Pink</BackColor>
+					<ExtendedTooltip name="GroupDisableRuleExtendedTooltip" id="115"/>
+					<ChildItems>
+						<CheckBoxField name="DisableRule" id="91">
+							<DataPath>Object.DisableRule</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="DisableRuleContextMenu" id="92"/>
+							<ExtendedTooltip name="DisableRuleExtendedTooltip" id="93"/>
+						</CheckBoxField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="GroupRuleSettings" id="97">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Rule settings</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Kural ayarları</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки правила</v8:content>
+				</v8:item>
+			</Title>
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ExtendedTooltip name="GroupRuleSettingsExtendedTooltip" id="98"/>
+			<ChildItems>
+				<InputField name="Attribute" id="99">
+					<DataPath>Object.Attribute</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ListChoiceMode>true</ListChoiceMode>
+					<ContextMenu name="AttributeContextMenu" id="100"/>
+					<ExtendedTooltip name="AttributeExtendedTooltip" id="101"/>
+					<Events>
+						<Event name="StartChoice">AttributeStartChoice</Event>
+					</Events>
+				</InputField>
+				<InputField name="ComparisonType" id="102">
+					<DataPath>Object.ComparisonType</DataPath>
+					<Width>10</Width>
+					<ListChoiceMode>true</ListChoiceMode>
+					<ContextMenu name="ComparisonTypeContextMenu" id="103"/>
+					<ExtendedTooltip name="ComparisonTypeExtendedTooltip" id="104"/>
+				</InputField>
+				<InputField name="Value" id="105">
+					<DataPath>Object.Value</DataPath>
+					<ContextMenu name="ValueContextMenu" id="106"/>
+					<ExtendedTooltip name="ValueExtendedTooltip" id="107"/>
+					<Events>
+						<Event name="StartChoice">ValueStartChoice</Event>
+					</Events>
+				</InputField>
+				<CheckBoxField name="SetValueAsCode" id="108">
+					<DataPath>Object.SetValueAsCode</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="SetValueAsCodeContextMenu" id="109"/>
+					<ExtendedTooltip name="SetValueAsCodeExtendedTooltip" id="110"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="PagesMain" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Pages main</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Sayfalar genel</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы основные</v8:content>
+				</v8:item>
+			</Title>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="PagesMainExtendedTooltip" id="4"/>
+			<ChildItems>
+				<Page name="GroupRules" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Bedingungen</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Kurallar</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Rules</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Conditions</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Правила</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="GroupRulesExtendedTooltip" id="6"/>
+					<ChildItems>
+						<Table name="RuleList" id="7">
+							<Representation>List</Representation>
+							<DataPath>Object.RuleList</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="RuleListContextMenu" id="9"/>
+							<AutoCommandBar name="RuleListCommandBar" id="8"/>
+							<ExtendedTooltip name="RuleListExtendedTooltip" id="10"/>
+							<SearchStringAddition name="RuleListSearchString" id="11">
+								<AdditionSource>
+									<Item>RuleList</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="RuleListSearchStringContextMenu" id="12"/>
+								<ExtendedTooltip name="RuleListSearchStringExtendedTooltip" id="13"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="RuleListViewStatus" id="17">
+								<AdditionSource>
+									<Item>RuleList</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="RuleListViewStatusContextMenu" id="18"/>
+								<ExtendedTooltip name="RuleListViewStatusExtendedTooltip" id="19"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="RuleListSearchControl" id="14">
+								<AdditionSource>
+									<Item>RuleList</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="RuleListSearchControlContextMenu" id="15"/>
+								<ExtendedTooltip name="RuleListSearchControlExtendedTooltip" id="16"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="RuleListLineNumber" id="20">
+									<DataPath>Object.RuleList.LineNumber</DataPath>
+									<ContextMenu name="RuleListLineNumberContextMenu" id="21"/>
+									<ExtendedTooltip name="RuleListLineNumberExtendedTooltip" id="22"/>
+								</InputField>
+								<InputField name="RuleListType" id="23">
+									<DataPath>Object.RuleList.Type</DataPath>
+									<ListChoiceMode>true</ListChoiceMode>
+									<ChooseType>false</ChooseType>
+									<ContextMenu name="RuleListTypeContextMenu" id="24"/>
+									<ExtendedTooltip name="RuleListTypeExtendedTooltip" id="25"/>
+								</InputField>
+								<InputField name="RuleListAttribute" id="26">
+									<DataPath>Object.RuleList.Attribute</DataPath>
+									<ListChoiceMode>true</ListChoiceMode>
+									<ChooseType>false</ChooseType>
+									<EditTextUpdate>DontUse</EditTextUpdate>
+									<ContextMenu name="RuleListAttributeContextMenu" id="27"/>
+									<ExtendedTooltip name="RuleListAttributeExtendedTooltip" id="28"/>
+									<Events>
+										<Event name="StartChoice">RuleListAttributeStartChoice</Event>
+									</Events>
+								</InputField>
+								<InputField name="RuleListComparisonType" id="29">
+									<DataPath>Object.RuleList.ComparisonType</DataPath>
+									<ListChoiceMode>true</ListChoiceMode>
+									<ContextMenu name="RuleListComparisonTypeContextMenu" id="30"/>
+									<ExtendedTooltip name="RuleListComparisonTypeExtendedTooltip" id="31"/>
+								</InputField>
+								<InputField name="RuleListValue" id="32">
+									<DataPath>Object.RuleList.Value</DataPath>
+									<ContextMenu name="RuleListValueContextMenu" id="33"/>
+									<ExtendedTooltip name="RuleListValueExtendedTooltip" id="34"/>
+									<Events>
+										<Event name="StartChoice">RuleListValueStartChoice</Event>
+									</Events>
+								</InputField>
+								<CheckBoxField name="RuleListDisableRule" id="35">
+									<DataPath>Object.RuleList.DisableRule</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="RuleListDisableRuleContextMenu" id="36"/>
+									<ExtendedTooltip name="RuleListDisableRuleExtendedTooltip" id="37"/>
+								</CheckBoxField>
+								<CheckBoxField name="RuleListSetValueAsCode" id="41">
+									<DataPath>Object.RuleList.SetValueAsCode</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="RuleListSetValueAsCodeContextMenu" id="42"/>
+									<ExtendedTooltip name="RuleListSetValueAsCodeExtendedTooltip" id="43"/>
+								</CheckBoxField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="GroupUsers" id="44">
+					<Title>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Benutzer</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Kullanıcılar</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Users</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Utilisateurs</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пользователи</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="GroupUsersExtendedTooltip" id="45"/>
+					<ChildItems>
+						<Table name="UserList" id="46">
+							<Representation>List</Representation>
+							<DataPath>Object.UserList</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="UserListContextMenu" id="48"/>
+							<AutoCommandBar name="UserListCommandBar" id="47"/>
+							<ExtendedTooltip name="UserListExtendedTooltip" id="49"/>
+							<SearchStringAddition name="UserListSearchString" id="50">
+								<AdditionSource>
+									<Item>UserList</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="UserListSearchStringContextMenu" id="51"/>
+								<ExtendedTooltip name="UserListSearchStringExtendedTooltip" id="52"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="UserListViewStatus" id="56">
+								<AdditionSource>
+									<Item>UserList</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="UserListViewStatusContextMenu" id="57"/>
+								<ExtendedTooltip name="UserListViewStatusExtendedTooltip" id="58"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="UserListSearchControl" id="53">
+								<AdditionSource>
+									<Item>UserList</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="UserListSearchControlContextMenu" id="54"/>
+								<ExtendedTooltip name="UserListSearchControlExtendedTooltip" id="55"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="UserListLineNumber" id="59">
+									<DataPath>Object.UserList.LineNumber</DataPath>
+									<ContextMenu name="UserListLineNumberContextMenu" id="60"/>
+									<ExtendedTooltip name="UserListLineNumberExtendedTooltip" id="61"/>
+								</InputField>
+								<InputField name="UserListUser" id="62">
+									<DataPath>Object.UserList.User</DataPath>
+									<ContextMenu name="UserListUserContextMenu" id="63"/>
+									<ExtendedTooltip name="UserListUserExtendedTooltip" id="64"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="GroupAccessGroups" id="65">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Access groups</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Erişim grupları</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группы доступа</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="GroupAccessGroupsExtendedTooltip" id="66"/>
+					<ChildItems>
+						<Table name="AccessGroupList" id="67">
+							<Representation>List</Representation>
+							<DataPath>Object.AccessGroupList</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="AccessGroupListContextMenu" id="69"/>
+							<AutoCommandBar name="AccessGroupListCommandBar" id="68"/>
+							<ExtendedTooltip name="AccessGroupListExtendedTooltip" id="70"/>
+							<SearchStringAddition name="AccessGroupListSearchString" id="71">
+								<AdditionSource>
+									<Item>AccessGroupList</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="AccessGroupListSearchStringContextMenu" id="72"/>
+								<ExtendedTooltip name="AccessGroupListSearchStringExtendedTooltip" id="73"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="AccessGroupListViewStatus" id="77">
+								<AdditionSource>
+									<Item>AccessGroupList</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="AccessGroupListViewStatusContextMenu" id="78"/>
+								<ExtendedTooltip name="AccessGroupListViewStatusExtendedTooltip" id="79"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="AccessGroupListSearchControl" id="74">
+								<AdditionSource>
+									<Item>AccessGroupList</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="AccessGroupListSearchControlContextMenu" id="75"/>
+								<ExtendedTooltip name="AccessGroupListSearchControlExtendedTooltip" id="76"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="AccessGroupListLineNumber" id="80">
+									<DataPath>Object.AccessGroupList.LineNumber</DataPath>
+									<ContextMenu name="AccessGroupListLineNumberContextMenu" id="81"/>
+									<ExtendedTooltip name="AccessGroupListLineNumberExtendedTooltip" id="82"/>
+								</InputField>
+								<InputField name="AccessGroupListAccessGroup" id="83">
+									<DataPath>Object.AccessGroupList.AccessGroup</DataPath>
+									<ContextMenu name="AccessGroupListAccessGroupContextMenu" id="84"/>
+									<ExtendedTooltip name="AccessGroupListAccessGroupExtendedTooltip" id="85"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.LockDataModificationReasons</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.14">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="FormCommandBar" id="-1"/>
+	<ChildItems>
+		<InputField name="Period" id="1">
+			<DataPath>Record.Period</DataPath>
+			<ContextMenu name="PeriodContextMenu" id="2"/>
+			<ExtendedTooltip name="PeriodExtendedTooltip" id="3"/>
+		</InputField>
+		<InputField name="Company" id="4">
+			<DataPath>Record.Company</DataPath>
+			<ContextMenu name="CompanyContextMenu" id="5"/>
+			<ExtendedTooltip name="CompanyExtendedTooltip" id="6"/>
+		</InputField>
+		<InputField name="Tax" id="7">
+			<DataPath>Record.Tax</DataPath>
+			<ContextMenu name="TaxContextMenu" id="8"/>
+			<ExtendedTooltip name="TaxExtendedTooltip" id="9"/>
+		</InputField>
+		<UsualGroup name="Group" id="16">
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="GroupExtendedTooltip" id="17"/>
+			<ChildItems>
+				<CheckBoxField name="Use" id="10">
+					<DataPath>Record.Use</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="UseContextMenu" id="11"/>
+					<ExtendedTooltip name="UseExtendedTooltip" id="12"/>
+				</CheckBoxField>
+				<InputField name="Priority" id="13">
+					<DataPath>Record.Priority</DataPath>
+					<ContextMenu name="PriorityContextMenu" id="14"/>
+					<ExtendedTooltip name="PriorityExtendedTooltip" id="15"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Record" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.Taxes</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.14">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="FormCommandBar" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Code" id="1">
+			<DataPath>Object.Code</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="CodeContextMenu" id="2"/>
+			<ExtendedTooltip name="CodeExtendedTooltip" id="3"/>
+		</InputField>
+		<InputField name="Description" id="4">
+			<DataPath>Object.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="DescriptionContextMenu" id="5"/>
+			<ExtendedTooltip name="DescriptionExtendedTooltip" id="6"/>
+		</InputField>
+		<InputField name="DataAreaStatus" id="7">
+			<DataPath>Object.DataAreaStatus</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="DataAreaStatusContextMenu" id="8"/>
+			<ExtendedTooltip name="DataAreaStatusExtendedTooltip" id="9"/>
+		</InputField>
+		<UsualGroup name="GroupAdmin" id="33">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Administrator</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Admin</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Admin</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Administrateur</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Админ</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>StrongSeparation</Representation>
+			<ExtendedTooltip name="GroupAdminExtendedTooltip" id="34"/>
+			<ChildItems>
+				<InputField name="AdminLogin" id="16">
+					<DataPath>Object.AdminLogin</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="AdminLoginContextMenu" id="17"/>
+					<ExtendedTooltip name="AdminLoginExtendedTooltip" id="18"/>
+				</InputField>
+				<InputField name="AdminPassword" id="19">
+					<DataPath>Object.AdminPassword</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="AdminPasswordContextMenu" id="20"/>
+					<ExtendedTooltip name="AdminPasswordExtendedTooltip" id="21"/>
+				</InputField>
+				<InputField name="AdminLocalization" id="22">
+					<DataPath>Object.AdminLocalization</DataPath>
+					<ListChoiceMode>true</ListChoiceMode>
+					<ContextMenu name="AdminLocalizationContextMenu" id="23"/>
+					<ExtendedTooltip name="AdminLocalizationExtendedTooltip" id="24"/>
+				</InputField>
+				<InputField name="InterfaceLocalizationCode" id="35">
+					<DataPath>Object.InterfaceLocalizationCode</DataPath>
+					<ListChoiceMode>true</ListChoiceMode>
+					<ContextMenu name="InterfaceLocalizationCodeContextMenu" id="36"/>
+					<ExtendedTooltip name="InterfaceLocalizationCodeExtendedTooltip" id="37"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="GroupCompany" id="31">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Organisation</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Şirket</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Company</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Entreprise</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Организация</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>StrongSeparation</Representation>
+			<ExtendedTooltip name="GroupCompanyExtendedTooltip" id="32"/>
+			<ChildItems>
+				<InputField name="CompanyName" id="25">
+					<DataPath>Object.CompanyName</DataPath>
+					<ContextMenu name="CompanyNameContextMenu" id="26"/>
+					<ExtendedTooltip name="CompanyNameExtendedTooltip" id="27"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.DataAreas</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

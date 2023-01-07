@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.14">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="FormCommandBar" id="-1"/>
+	<Events>
+		<Event name="AfterWriteAtServer">AfterWriteAtServer</Event>
+		<Event name="NotificationProcessing">NotificationProcessing</Event>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+		<Event name="BeforeWriteAtServer">BeforeWriteAtServer</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="GroupPages" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Gruppe Seiten</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Sayfalar grubu</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Group pages</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Groupe Pages</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страниц</v8:content>
+				</v8:item>
+			</Title>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="GroupPagesExtendedTooltip" id="15"/>
+			<ChildItems>
+				<Page name="GroupInfo" id="16">
+					<Title>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Information</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Bilgi</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Info</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Informations</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Контактная информация</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="GroupInfoExtendedTooltip" id="17"/>
+					<ChildItems>
+						<UsualGroup name="GroupDescriptions" id="20">
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="GroupDescriptionsExtendedTooltip" id="21"/>
+							<ChildItems>
+								<InputField name="Code" id="22">
+									<DataPath>Object.Code</DataPath>
+									<ContextMenu name="CodeContextMenu" id="23"/>
+									<ExtendedTooltip name="CodeExtendedTooltip" id="24"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<CheckBoxField name="UseGoodsReceipt" id="5">
+							<DataPath>Object.UseGoodsReceipt</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="UseGoodsReceiptContextMenu" id="6"/>
+							<ExtendedTooltip name="UseGoodsReceiptExtendedTooltip" id="7"/>
+							<Events>
+								<Event name="OnChange">UseGoodsReceiptOnChange</Event>
+							</Events>
+						</CheckBoxField>
+						<CheckBoxField name="UseShipmentConfirmation" id="8">
+							<DataPath>Object.UseShipmentConfirmation</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="UseShipmentConfirmationContextMenu" id="9"/>
+							<ExtendedTooltip name="UseShipmentConfirmationExtendedTooltip" id="10"/>
+							<Events>
+								<Event name="OnChange">UseShipmentConfirmationOnChange</Event>
+							</Events>
+						</CheckBoxField>
+						<CheckBoxField name="Transit" id="11">
+							<DataPath>Object.Transit</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="TransitContextMenu" id="12"/>
+							<ExtendedTooltip name="TransitExtendedTooltip" id="13"/>
+						</CheckBoxField>
+						<CheckBoxField name="NegativeStockControl" id="25">
+							<DataPath>Object.NegativeStockControl</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="NegativeStockControlContextMenu" id="26"/>
+							<ExtendedTooltip name="NegativeStockControlExtendedTooltip" id="27"/>
+						</CheckBoxField>
+					</ChildItems>
+				</Page>
+				<Page name="GroupContactInformation" id="18">
+					<Title>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Kontaktinformationen</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>İletişim bilgileri</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Contact information</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Informations de contact</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Контактная информация</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="GroupContactInformationExtendedTooltip" id="19"/>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Stores</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

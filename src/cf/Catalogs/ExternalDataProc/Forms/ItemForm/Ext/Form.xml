@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.14">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="FormCommandBar" id="-1">
+		<ChildItems>
+			<Button name="FormAddExtDataProc" id="12">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.AddExtDataProc</CommandName>
+				<RepresentationInContextMenu>None</RepresentationInContextMenu>
+				<ExtendedTooltip name="FormAddExtDataProcExtendedTooltip" id="13"/>
+			</Button>
+			<Button name="FormExportExtDataProc" id="14">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ExportExtDataProc</CommandName>
+				<ExtendedTooltip name="FormExportExtDataProcExtendedTooltip" id="15"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+		<Event name="BeforeWriteAtServer">BeforeWriteAtServer</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="GroupDescriptions" id="16">
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="GroupDescriptionsExtendedTooltip" id="17"/>
+			<ChildItems>
+				<InputField name="Code" id="21">
+					<DataPath>Object.Code</DataPath>
+					<ContextMenu name="CodeContextMenu" id="22"/>
+					<ExtendedTooltip name="CodeExtendedTooltip" id="23"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Parent" id="1">
+			<DataPath>Object.Parent</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ParentContextMenu" id="2"/>
+			<ExtendedTooltip name="ParentExtendedTooltip" id="3"/>
+		</InputField>
+		<InputField name="PathToExtDataProcForTest" id="4">
+			<DataPath>Object.PathToExtDataProcForTest</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="PathToExtDataProcForTestContextMenu" id="5"/>
+			<ExtendedTooltip name="PathToExtDataProcForTestExtendedTooltip" id="6"/>
+		</InputField>
+		<InputField name="Name" id="7">
+			<DataPath>Object.Name</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="NameContextMenu" id="8"/>
+			<ExtendedTooltip name="NameExtendedTooltip" id="9"/>
+		</InputField>
+		<CheckBoxField name="UnsafeMode" id="18">
+			<DataPath>Object.UnsafeMode</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="UnsafeModeContextMenu" id="19"/>
+			<ExtendedTooltip name="UnsafeModeExtendedTooltip" id="20"/>
+		</CheckBoxField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ExternalDataProc</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="DataProcStorageAddress" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Plug-In-Speicheradresse</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Veri işlemci depolama adresi</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Data proc storage address</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Adresse du stockage du plug-in</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес хранения внешней обработки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="AddExtDataProc" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Plug-In hinzufügen</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Eklenti ekle</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Add plugin</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Ajouter un plug-in</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить внешнюю обработку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Plug-In hinzufügen</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Eklenti ekle</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Add plugin</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Ajouter un plug-in</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить внешнюю обработку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>AddExtDataProc</Action>
+		</Command>
+		<Command name="ExportExtDataProc" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Plug-in exportieren</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Eklentiyi dışa aktar</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Export plugin</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Exporter le plug-in</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Экспорт внешней обработки</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ExportExtDataProc</Action>
+		</Command>
+	</Commands>
+</Form>

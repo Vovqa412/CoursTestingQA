@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.14">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="FormCommandBar" id="-1"/>
+	<Events>
+		<Event name="NotificationProcessing">NotificationProcessing</Event>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+		<Event name="BeforeWriteAtServer">BeforeWriteAtServer</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="GroupDescriptions" id="38">
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="GroupDescriptionsExtendedTooltip" id="39"/>
+			<ChildItems>
+				<InputField name="Code" id="46">
+					<DataPath>Object.Code</DataPath>
+					<ContextMenu name="CodeContextMenu" id="47"/>
+					<ExtendedTooltip name="CodeExtendedTooltip" id="48"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Account" id="1">
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="AccountContextMenu" id="2"/>
+			<ExtendedTooltip name="AccountExtendedTooltip" id="3"/>
+		</InputField>
+		<InputField name="Percent" id="4">
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="PercentContextMenu" id="5"/>
+			<ExtendedTooltip name="PercentExtendedTooltip" id="6"/>
+		</InputField>
+		<Table name="PaymentTypes" id="19">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Object.PaymentTypes</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="PaymentTypesContextMenu" id="20"/>
+			<AutoCommandBar name="PaymentTypesCommandBar" id="21"/>
+			<ExtendedTooltip name="PaymentTypesExtendedTooltip" id="22"/>
+			<SearchStringAddition name="PaymentTypesSearchString" id="23">
+				<AdditionSource>
+					<Item>PaymentTypes</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="PaymentTypesSearchStringContextMenu" id="24"/>
+				<ExtendedTooltip name="PaymentTypesSearchStringExtendedTooltip" id="25"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="PaymentTypesViewStatus" id="26">
+				<AdditionSource>
+					<Item>PaymentTypes</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<HorizontalLocation>Left</HorizontalLocation>
+				<ContextMenu name="PaymentTypesViewStatusContextMenu" id="27"/>
+				<ExtendedTooltip name="PaymentTypesViewStatusExtendedTooltip" id="28"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="PaymentTypesSearchControl" id="29">
+				<AdditionSource>
+					<Item>PaymentTypes</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="PaymentTypesSearchControlContextMenu" id="30"/>
+				<ExtendedTooltip name="PaymentTypesSearchControlExtendedTooltip" id="31"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="PaymentTypesLineNumber" id="32">
+					<DataPath>Object.PaymentTypes.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="PaymentTypesLineNumberContextMenu" id="33"/>
+					<ExtendedTooltip name="PaymentTypesLineNumberExtendedTooltip" id="34"/>
+				</LabelField>
+				<InputField name="PaymentTypesPaymentType" id="35">
+					<DataPath>Object.PaymentTypes.PaymentType</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="PaymentTypesPaymentTypeContextMenu" id="36"/>
+					<ExtendedTooltip name="PaymentTypesPaymentTypeExtendedTooltip" id="37"/>
+				</InputField>
+				<InputField name="PaymentTypesAccount" id="40">
+					<DataPath>Object.PaymentTypes.Account</DataPath>
+					<ContextMenu name="PaymentTypesAccountContextMenu" id="41"/>
+					<ExtendedTooltip name="PaymentTypesAccountExtendedTooltip" id="42"/>
+				</InputField>
+				<InputField name="PaymentTypesPercent" id="43">
+					<DataPath>Object.PaymentTypes.Percent</DataPath>
+					<ContextMenu name="PaymentTypesPercentContextMenu" id="44"/>
+					<ExtendedTooltip name="PaymentTypesPercentExtendedTooltip" id="45"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.BankTerms</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

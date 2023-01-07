@@ -1,0 +1,639 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.14">
+	<AutoCommandBar name="FormCommandBar" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="FormDone" id="130">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Done</CommandName>
+				<ExtendedTooltip name="FormDoneExtendedTooltip" id="131"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">NotificationProcessing</Event>
+		<Event name="OnOpen">OnOpen</Event>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Basis" id="1">
+			<DataPath>Object.Basis</DataPath>
+			<Visible>false</Visible>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="BasisContextMenu" id="2"/>
+			<ExtendedTooltip name="BasisExtendedTooltip" id="3"/>
+		</InputField>
+		<Pages name="MainPages" id="41">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Main Pages</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Grup sayfalar</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основные страницы</v8:content>
+				</v8:item>
+			</Title>
+			<PagesRepresentation>Swipe</PagesRepresentation>
+			<ExtendedTooltip name="MainPagesExtendedTooltip" id="42"/>
+			<Events>
+				<Event name="OnCurrentPageChange">MainPagesOnCurrentPageChange</Event>
+			</Events>
+			<ChildItems>
+				<Page name="PageItemList" id="43">
+					<Title>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Produktliste</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Malzeme listesi</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Item list</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Liste d'articles</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Товары</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="PageItemListExtendedTooltip" id="44"/>
+					<ChildItems>
+						<Table name="ItemList" id="4">
+							<Representation>List</Representation>
+							<ChoiceMode>true</ChoiceMode>
+							<Header>false</Header>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Object.ItemList</DataPath>
+							<RefreshRequest>PullFromTop</RefreshRequest>
+							<CurrentRowUse>SelectionPresentation</CurrentRowUse>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ItemListContextMenu" id="5">
+								<Autofill>false</Autofill>
+								<ChildItems>
+									<Button name="ItemListContextMenuChange" id="136">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Item.ItemList.StandardCommand.Change</CommandName>
+										<ExtendedTooltip name="ItemListContextMenuChangeExtendedTooltip" id="137"/>
+									</Button>
+								</ChildItems>
+							</ContextMenu>
+							<AutoCommandBar name="ItemListCommandBar" id="6">
+								<Autofill>false</Autofill>
+								<ChildItems>
+									<Button name="SearchByBarcode" id="132">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.SearchByBarcode</CommandName>
+										<ExtendedTooltip name="SearchByBarcodeExtendedTooltip" id="133"/>
+									</Button>
+									<Button name="ItemListEnterCountOnScan" id="134">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.EnterCountOnScan</CommandName>
+										<ExtendedTooltip name="ItemListEnterCountOnScanExtendedTooltip" id="135"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ItemListExtendedTooltip" id="7"/>
+							<SearchStringAddition name="ItemListSearchString" id="8">
+								<AdditionSource>
+									<Item>ItemList</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ItemListSearchStringContextMenu" id="9"/>
+								<ExtendedTooltip name="ItemListSearchStringExtendedTooltip" id="10"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ItemListViewStatus" id="11">
+								<AdditionSource>
+									<Item>ItemList</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ItemListViewStatusContextMenu" id="12"/>
+								<ExtendedTooltip name="ItemListViewStatusExtendedTooltip" id="13"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ItemListSearchControl" id="14">
+								<AdditionSource>
+									<Item>ItemList</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ItemListSearchControlContextMenu" id="15"/>
+								<ExtendedTooltip name="ItemListSearchControlExtendedTooltip" id="16"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnChange">ItemListOnChange</Event>
+								<Event name="RefreshRequestProcessing">ItemListRefreshRequestProcessing</Event>
+							</Events>
+							<ChildItems>
+								<ColumnGroup name="ItemListGroupItem" id="37">
+									<Title>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Group Item</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>tr</v8:lang>
+											<v8:content>Grup malzeme</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа номенклатура</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ItemListGroupItemExtendedTooltip" id="38"/>
+									<ChildItems>
+										<InputField name="ItemListItem" id="20" DisplayImportance="VeryHigh">
+											<DataPath>Object.ItemList.Item</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoCellHeight>true</AutoCellHeight>
+											<ContextMenu name="ItemListItemContextMenu" id="21"/>
+											<ExtendedTooltip name="ItemListItemExtendedTooltip" id="22"/>
+										</InputField>
+										<ColumnGroup name="ItemListGroupSecondRow" id="121">
+											<ExtendedTooltip name="ItemListGroupSecondRowExtendedTooltip" id="122"/>
+											<ChildItems>
+												<ColumnGroup name="ItemListGroupItemKey" id="39">
+													<Title>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Group Item Key</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>tr</v8:lang>
+															<v8:content>Grup varyant</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа характеристика</v8:content>
+														</v8:item>
+													</Title>
+													<Group>Horizontal</Group>
+													<ExtendedTooltip name="ItemListGroupItemKeyExtendedTooltip" id="40"/>
+													<ChildItems>
+														<LabelField name="ItemListLineNumber" id="17" DisplayImportance="VeryHigh">
+															<DataPath>Object.ItemList.LineNumber</DataPath>
+															<HorizontalAlign>Center</HorizontalAlign>
+															<EditMode>EnterOnInput</EditMode>
+															<Width>5</Width>
+															<ContextMenu name="ItemListLineNumberContextMenu" id="18"/>
+															<ExtendedTooltip name="ItemListLineNumberExtendedTooltip" id="19"/>
+														</LabelField>
+														<InputField name="ItemListItemKey" id="23" DisplayImportance="VeryHigh">
+															<DataPath>Object.ItemList.ItemKey</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<HorizontalStretch>true</HorizontalStretch>
+															<ContextMenu name="ItemListItemKeyContextMenu" id="24"/>
+															<ExtendedTooltip name="ItemListItemKeyExtendedTooltip" id="25"/>
+														</InputField>
+														<InputField name="ItemListUnit" id="26" DisplayImportance="VeryHigh">
+															<DataPath>Object.ItemList.Unit</DataPath>
+															<HorizontalAlign>Right</HorizontalAlign>
+															<EditMode>EnterOnInput</EditMode>
+															<Width>5</Width>
+															<ContextMenu name="ItemListUnitContextMenu" id="27"/>
+															<ExtendedTooltip name="ItemListUnitExtendedTooltip" id="28"/>
+														</InputField>
+													</ChildItems>
+												</ColumnGroup>
+												<ColumnGroup name="ItemListGroupQuantity" id="119">
+													<Group>Horizontal</Group>
+													<ExtendedTooltip name="ItemListGroupQuantityExtendedTooltip" id="120"/>
+													<ChildItems>
+														<InputField name="ItemListQuantity" id="29" DisplayImportance="VeryHigh">
+															<DataPath>Object.ItemList.Quantity</DataPath>
+															<ReadOnly>true</ReadOnly>
+															<EditMode>EnterOnInput</EditMode>
+															<Width>1</Width>
+															<HorizontalStretch>true</HorizontalStretch>
+															<BackColor>style:FieldAlternativeBackColor</BackColor>
+															<Font faceName="" height="8" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+															<ContextMenu name="ItemListQuantityContextMenu" id="30"/>
+															<ExtendedTooltip name="ItemListQuantityExtendedTooltip" id="31"/>
+														</InputField>
+														<InputField name="ItemListScannedQuantity" id="32" DisplayImportance="VeryHigh">
+															<DataPath>Object.ItemList.ScannedQuantity</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<Width>1</Width>
+															<HorizontalStretch>true</HorizontalStretch>
+															<Font faceName="" height="8" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+															<ContextMenu name="ItemListScannedQuantityContextMenu" id="33"/>
+															<ExtendedTooltip name="ItemListScannedQuantityExtendedTooltip" id="34"/>
+														</InputField>
+													</ChildItems>
+												</ColumnGroup>
+											</ChildItems>
+										</ColumnGroup>
+									</ChildItems>
+								</ColumnGroup>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="PageHistory" id="45">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Page History</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Sayfa tarihçe</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница история</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="PageHistoryExtendedTooltip" id="46"/>
+					<ChildItems>
+						<CommandBar name="CommandBarForHistory" id="117">
+							<ExtendedTooltip name="CommandBarForHistoryExtendedTooltip" id="118"/>
+							<ChildItems>
+								<Button name="SetFilterOnlyMy" id="115">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.SetFilterOnlyMy</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Only my</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>tr</v8:lang>
+											<v8:content>Sadece benim</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Только мое</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="SetFilterOnlyMyExtendedTooltip" id="116"/>
+								</Button>
+							</ChildItems>
+						</CommandBar>
+						<Table name="ScanHistory" id="84">
+							<ChoiceMode>true</ChoiceMode>
+							<Header>false</Header>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<DataPath>ScanHistory</DataPath>
+							<RefreshRequest>PullFromTop</RefreshRequest>
+							<CurrentRowUse>SelectionPresentation</CurrentRowUse>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+							<ContextMenu name="ScanHistoryContextMenu" id="86"/>
+							<AutoCommandBar name="ScanHistoryCommandBar" id="85">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ScanHistoryExtendedTooltip" id="87"/>
+							<SearchStringAddition name="ScanHistorySearchString" id="88">
+								<AdditionSource>
+									<Item>ScanHistory</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ScanHistorySearchStringContextMenu" id="89"/>
+								<ExtendedTooltip name="ScanHistorySearchStringExtendedTooltip" id="90"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ScanHistoryViewStatus" id="94">
+								<AdditionSource>
+									<Item>ScanHistory</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ScanHistoryViewStatusContextMenu" id="95"/>
+								<ExtendedTooltip name="ScanHistoryViewStatusExtendedTooltip" id="96"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ScanHistorySearchControl" id="91">
+								<AdditionSource>
+									<Item>ScanHistory</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ScanHistorySearchControlContextMenu" id="92"/>
+								<ExtendedTooltip name="ScanHistorySearchControlExtendedTooltip" id="93"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnChange">ScanHistoryOnChange</Event>
+								<Event name="RefreshRequestProcessing">ScanHistoryRefreshRequestProcessing</Event>
+							</Events>
+							<ChildItems>
+								<ColumnGroup name="ScanHistoryGroupBarcode" id="126">
+									<Title>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Scan history group1</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>tr</v8:lang>
+											<v8:content>Grup okutma geçmişi</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа сканирования истории</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Horizontal</Group>
+									<ExtendedTooltip name="ScanHistoryGroupBarcodeExtendedTooltip" id="127"/>
+									<ChildItems>
+										<InputField name="ScanHistoryBarcode" id="103" DisplayImportance="VeryHigh">
+											<DataPath>ScanHistory.Barcode</DataPath>
+											<ContextMenu name="ScanHistoryBarcodeContextMenu" id="104"/>
+											<ExtendedTooltip name="ScanHistoryBarcodeExtendedTooltip" id="105"/>
+										</InputField>
+										<InputField name="ScanHistoryCount" id="109" DisplayImportance="VeryHigh">
+											<DataPath>ScanHistory.Count</DataPath>
+											<Width>10</Width>
+											<Font faceName="" height="8" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+											<ContextMenu name="ScanHistoryCountContextMenu" id="110"/>
+											<ExtendedTooltip name="ScanHistoryCountExtendedTooltip" id="111"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="ScanHistoryGroupSecondRow" id="128">
+									<Title>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Scan history group1</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>tr</v8:lang>
+											<v8:content>Grup okutma geçmişi</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа сканирования истории</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ScanHistoryGroupSecondRowExtendedTooltip" id="129"/>
+									<ChildItems>
+										<InputField name="ScanHistoryPeriod" id="112">
+											<DataPath>ScanHistory.Period</DataPath>
+											<ContextMenu name="ScanHistoryPeriodContextMenu" id="113"/>
+											<ExtendedTooltip name="ScanHistoryPeriodExtendedTooltip" id="114"/>
+										</InputField>
+										<InputField name="ScanHistoryUser" id="106">
+											<DataPath>ScanHistory.User</DataPath>
+											<ContextMenu name="ScanHistoryUserContextMenu" id="107"/>
+											<ExtendedTooltip name="ScanHistoryUserExtendedTooltip" id="108"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ScanBarcode</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ScanHistory" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Scan history</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Okutma geçmişi</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>История сканирования</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>SELECT
+	T1010S_ScannedBarcode.Period,
+	T1010S_ScannedBarcode.Basis,
+	T1010S_ScannedBarcode.InfoID,
+	T1010S_ScannedBarcode.Barcode,
+	T1010S_ScannedBarcode.User,
+	T1010S_ScannedBarcode.Count
+FROM
+	InformationRegister.T1010S_ScannedBarcode AS T1010S_ScannedBarcode
+WHERE
+	T1010S_ScannedBarcode.Basis = &amp;Basis
+	AND CASE
+		WHEN &amp;OnlyMy
+			THEN T1010S_ScannedBarcode.User = &amp;User
+		ELSE True
+	END</QueryText>
+				<MainTable>InformationRegister.T1010S_ScannedBarcode</MainTable>
+				<ListSettings>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Period</dcsset:field>
+							<dcsset:orderType>Desc</dcsset:orderType>
+						</dcsset:item>
+					</dcsset:order>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="OnlyMy" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Only my</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Sadece benim</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Только мое</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ByOneScan" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>By one scan</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Tek tek okutma</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сканирование по одному</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ItemListScannedQuantity</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Object.ItemList.Quantity</dcsset:left>
+						<dcsset:comparisonType>Greater</dcsset:comparisonType>
+						<dcsset:right xsi:type="dcscor:Field">Object.ItemList.ScannedQuantity</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>BackColor</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:NavigationColor</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ItemListScannedQuantity</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Object.ItemList.Quantity</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="dcscor:Field">Object.ItemList.ScannedQuantity</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>BackColor</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:GreenYellow</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ItemListScannedQuantity</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Object.ItemList.Quantity</dcsset:left>
+						<dcsset:comparisonType>Less</dcsset:comparisonType>
+						<dcsset:right xsi:type="dcscor:Field">Object.ItemList.ScannedQuantity</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>BackColor</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:Salmon</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="SearchByBarcode" id="1">
+			<Picture>
+				<xr:Ref>CommonPicture.Barcode</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>SearchByBarcode</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="SetFilterOnlyMy" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Set filter only my</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Sadece benim filtreyi uygula</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить отбор только мое</v8:content>
+				</v8:item>
+			</Title>
+			<Action>SetFilterOnlyMy</Action>
+		</Command>
+		<Command name="Done" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Fertig</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Tamamlandı</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Done</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Terminé</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Завершено</v8:content>
+				</v8:item>
+			</Title>
+			<Action>Done</Action>
+		</Command>
+		<Command name="EnterCountOnScan" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>+1</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>+1</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>+1</v8:content>
+				</v8:item>
+			</Title>
+			<Action>EnterCountOnScan</Action>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="Basis">
+			<Type>
+				<v8:TypeSet>cfg:DocumentRef</v8:TypeSet>
+			</Type>
+			<KeyParameter>true</KeyParameter>
+		</Parameter>
+	</Parameters>
+</Form>

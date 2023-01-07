@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.14">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="FormCommandBar" id="-1"/>
+	<ChildItems>
+		<Pages name="GroupPages" id="64">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Gruppe Seiten</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Grup sayfalar</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Group pages</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Groupe Pages</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</Title>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="GroupPagesExtendedTooltip" id="65"/>
+			<ChildItems>
+				<Page name="GroupMainPage" id="66">
+					<Title>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Haupt</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Genel</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Main</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Principal</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основной</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="GroupMainPageExtendedTooltip" id="67"/>
+					<ChildItems>
+						<InputField name="Code" id="1">
+							<DataPath>Object.Code</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="CodeContextMenu" id="2"/>
+							<ExtendedTooltip name="CodeExtendedTooltip" id="3"/>
+						</InputField>
+						<InputField name="Description" id="4">
+							<DataPath>Object.Description</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="DescriptionContextMenu" id="5"/>
+							<ExtendedTooltip name="DescriptionExtendedTooltip" id="6"/>
+						</InputField>
+						<InputField name="RowID" id="40">
+							<DataPath>Object.RowID</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="RowIDContextMenu" id="41"/>
+							<ExtendedTooltip name="RowIDExtendedTooltip" id="42"/>
+						</InputField>
+						<InputField name="Company" id="10">
+							<DataPath>Object.Company</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="CompanyContextMenu" id="11"/>
+							<ExtendedTooltip name="CompanyExtendedTooltip" id="12"/>
+						</InputField>
+						<InputField name="Branch" id="34">
+							<DataPath>Object.Branch</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="BranchContextMenu" id="35"/>
+							<ExtendedTooltip name="BranchExtendedTooltip" id="36"/>
+						</InputField>
+						<InputField name="Basis" id="37">
+							<DataPath>Object.Basis</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="BasisContextMenu" id="38"/>
+							<ExtendedTooltip name="BasisExtendedTooltip" id="39"/>
+						</InputField>
+						<InputField name="Unit" id="28">
+							<DataPath>Object.Unit</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="UnitContextMenu" id="29"/>
+							<ExtendedTooltip name="UnitExtendedTooltip" id="30"/>
+						</InputField>
+						<InputField name="ItemKey" id="31">
+							<DataPath>Object.ItemKey</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ItemKeyContextMenu" id="32"/>
+							<ExtendedTooltip name="ItemKeyExtendedTooltip" id="33"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="GroupStores" id="68">
+					<Title>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Lager</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Depolar</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Stores</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Entrepôts</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Склады</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="GroupStoresExtendedTooltip" id="69"/>
+					<ChildItems>
+						<InputField name="Store" id="25">
+							<DataPath>Object.Store</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="StoreContextMenu" id="26"/>
+							<ExtendedTooltip name="StoreExtendedTooltip" id="27"/>
+						</InputField>
+						<InputField name="StoreSender" id="46">
+							<DataPath>Object.StoreSender</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="StoreSenderContextMenu" id="47"/>
+							<ExtendedTooltip name="StoreSenderExtendedTooltip" id="48"/>
+						</InputField>
+						<InputField name="StoreReceiver" id="49">
+							<DataPath>Object.StoreReceiver</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="StoreReceiverContextMenu" id="50"/>
+							<ExtendedTooltip name="StoreReceiverExtendedTooltip" id="51"/>
+						</InputField>
+						<InputField name="ProcurementMethod" id="43">
+							<DataPath>Object.ProcurementMethod</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ProcurementMethodContextMenu" id="44"/>
+							<ExtendedTooltip name="ProcurementMethodExtendedTooltip" id="45"/>
+						</InputField>
+						<InputField name="TransactionTypeSC" id="52">
+							<DataPath>Object.TransactionTypeSC</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="TransactionTypeSCContextMenu" id="53"/>
+							<ExtendedTooltip name="TransactionTypeSCExtendedTooltip" id="54"/>
+						</InputField>
+						<InputField name="TransactionTypeGR" id="55">
+							<DataPath>Object.TransactionTypeGR</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="TransactionTypeGRContextMenu" id="56"/>
+							<ExtendedTooltip name="TransactionTypeGRExtendedTooltip" id="57"/>
+						</InputField>
+						<InputField name="TransactionType" id="58">
+							<DataPath>Object.TransactionType</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="TransactionTypeContextMenu" id="59"/>
+							<ExtendedTooltip name="TransactionTypeExtendedTooltip" id="60"/>
+						</InputField>
+						<InputField name="Requester" id="61">
+							<DataPath>Object.Requester</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="RequesterContextMenu" id="62"/>
+							<ExtendedTooltip name="RequesterExtendedTooltip" id="63"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="GroupSales" id="70">
+					<Title>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Verkauf</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Satış</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Sales</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Ventes</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Продажа</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="GroupSalesExtendedTooltip" id="71"/>
+					<ChildItems>
+						<InputField name="PartnerSales" id="77">
+							<DataPath>Object.PartnerSales</DataPath>
+							<ContextMenu name="PartnerSalesContextMenu" id="78"/>
+							<ExtendedTooltip name="PartnerSalesExtendedTooltip" id="79"/>
+						</InputField>
+						<InputField name="LegalNameSales" id="80">
+							<DataPath>Object.LegalNameSales</DataPath>
+							<ContextMenu name="LegalNameSalesContextMenu" id="81"/>
+							<ExtendedTooltip name="LegalNameSalesExtendedTooltip" id="82"/>
+						</InputField>
+						<InputField name="AgreementSales" id="74">
+							<DataPath>Object.AgreementSales</DataPath>
+							<ContextMenu name="AgreementSalesContextMenu" id="75"/>
+							<ExtendedTooltip name="AgreementSalesExtendedTooltip" id="76"/>
+						</InputField>
+						<InputField name="CurrencySales" id="86">
+							<DataPath>Object.CurrencySales</DataPath>
+							<ContextMenu name="CurrencySalesContextMenu" id="87"/>
+							<ExtendedTooltip name="CurrencySalesExtendedTooltip" id="88"/>
+						</InputField>
+						<CheckBoxField name="PriceIncludeTaxSales" id="83">
+							<DataPath>Object.PriceIncludeTaxSales</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="PriceIncludeTaxSalesContextMenu" id="84"/>
+							<ExtendedTooltip name="PriceIncludeTaxSalesExtendedTooltip" id="85"/>
+						</CheckBoxField>
+					</ChildItems>
+				</Page>
+				<Page name="GroupPurchases" id="72">
+					<Title>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Einkauf</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Alımlar</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Purchases</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>fr</v8:lang>
+							<v8:content>Achats</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Закупки</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="GroupPurchasesExtendedTooltip" id="73"/>
+					<ChildItems>
+						<InputField name="PartnerPurchases" id="89">
+							<DataPath>Object.PartnerPurchases</DataPath>
+							<ContextMenu name="PartnerPurchasesContextMenu" id="90"/>
+							<ExtendedTooltip name="PartnerPurchasesExtendedTooltip" id="91"/>
+						</InputField>
+						<InputField name="LegalNamePurchases" id="92">
+							<DataPath>Object.LegalNamePurchases</DataPath>
+							<ContextMenu name="LegalNamePurchasesContextMenu" id="93"/>
+							<ExtendedTooltip name="LegalNamePurchasesExtendedTooltip" id="94"/>
+						</InputField>
+						<InputField name="AgreementPurchases" id="95">
+							<DataPath>Object.AgreementPurchases</DataPath>
+							<ContextMenu name="AgreementPurchasesContextMenu" id="96"/>
+							<ExtendedTooltip name="AgreementPurchasesExtendedTooltip" id="97"/>
+						</InputField>
+						<InputField name="CurrencyPurchases" id="98">
+							<DataPath>Object.CurrencyPurchases</DataPath>
+							<ContextMenu name="CurrencyPurchasesContextMenu" id="99"/>
+							<ExtendedTooltip name="CurrencyPurchasesExtendedTooltip" id="100"/>
+						</InputField>
+						<CheckBoxField name="PriceIncludeTaxPurchases" id="101">
+							<DataPath>Object.PriceIncludeTaxPurchases</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="PriceIncludeTaxPurchasesContextMenu" id="102"/>
+							<ExtendedTooltip name="PriceIncludeTaxPurchasesExtendedTooltip" id="103"/>
+						</CheckBoxField>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.RowIDs</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

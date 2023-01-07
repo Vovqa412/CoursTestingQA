@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.14">
+	<DocumentJournal uuid="4d96db09-be9d-45f0-949c-cfff80bfcb2f">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentJournalSelection.DocumentsForOutgoingPayment" category="Selection">
+				<xr:TypeId>adc04f3e-c9f4-4c45-8f82-e399d0d61c41</xr:TypeId>
+				<xr:ValueId>e7fd2b5c-2ec8-4d24-9bb2-ae72d8fc753c</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentJournalList.DocumentsForOutgoingPayment" category="List">
+				<xr:TypeId>dc0dea6d-7044-4108-8308-3e817f277682</xr:TypeId>
+				<xr:ValueId>9b8f2dff-47c4-41bd-bc91-74df057504fa</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentJournalManager.DocumentsForOutgoingPayment" category="Manager">
+				<xr:TypeId>cfeacbc0-a7f5-4e6f-aa2c-5da6bc15a839</xr:TypeId>
+				<xr:ValueId>c7ce51e3-b57d-4ee9-b9cc-820c35e89efe</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>DocumentsForOutgoingPayment</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Dokumente für Geldausgang</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Çıkan ödeme evrakları</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Documents for outgoing payment</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Documents pour les sorties d'argent</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документы исходящих платежей</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<DefaultForm/>
+			<AuxiliaryForm/>
+			<UseStandardCommands>true</UseStandardCommands>
+			<RegisteredDocuments>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.PurchaseInvoice</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.SalesReturn</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.CreditNote</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.OpeningEntry</xr:Item>
+			</RegisteredDocuments>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Form>ChoiceForm</Form>
+		</ChildObjects>
+	</DocumentJournal>
+</MetaDataObject>

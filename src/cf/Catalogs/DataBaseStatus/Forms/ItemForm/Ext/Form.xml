@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.14">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="FormCommandBar" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="GroupDescriptions" id="19">
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="GroupDescriptionsExtendedTooltip" id="20"/>
+		</UsualGroup>
+		<CheckBoxField name="isProduction" id="4">
+			<DataPath>Object.isProduction</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="isProductionContextMenu" id="5"/>
+			<ExtendedTooltip name="isProductionExtendedTooltip" id="6"/>
+		</CheckBoxField>
+		<InputField name="SelectedStyle" id="52">
+			<DataPath>Object.SelectedStyle</DataPath>
+			<ListChoiceMode>true</ListChoiceMode>
+			<TextEdit>false</TextEdit>
+			<ContextMenu name="SelectedStyleContextMenu" id="53"/>
+			<ExtendedTooltip name="SelectedStyleExtendedTooltip" id="54"/>
+		</InputField>
+		<Table name="ConnectionSettings" id="24">
+			<Representation>List</Representation>
+			<DataPath>Object.ConnectionSettings</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ConnectionSettingsContextMenu" id="26"/>
+			<AutoCommandBar name="ConnectionSettingsCommandBar" id="25"/>
+			<ExtendedTooltip name="ConnectionSettingsExtendedTooltip" id="27"/>
+			<SearchStringAddition name="ConnectionSettingsSearchString" id="28">
+				<AdditionSource>
+					<Item>ConnectionSettings</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ConnectionSettingsSearchStringContextMenu" id="29"/>
+				<ExtendedTooltip name="ConnectionSettingsSearchStringExtendedTooltip" id="30"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ConnectionSettingsViewStatus" id="34">
+				<AdditionSource>
+					<Item>ConnectionSettings</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ConnectionSettingsViewStatusContextMenu" id="35"/>
+				<ExtendedTooltip name="ConnectionSettingsViewStatusExtendedTooltip" id="36"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ConnectionSettingsSearchControl" id="31">
+				<AdditionSource>
+					<Item>ConnectionSettings</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ConnectionSettingsSearchControlContextMenu" id="32"/>
+				<ExtendedTooltip name="ConnectionSettingsSearchControlExtendedTooltip" id="33"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="ConnectionSettingsLineNumber" id="37">
+					<DataPath>Object.ConnectionSettings.LineNumber</DataPath>
+					<ContextMenu name="ConnectionSettingsLineNumberContextMenu" id="38"/>
+					<ExtendedTooltip name="ConnectionSettingsLineNumberExtendedTooltip" id="39"/>
+				</InputField>
+				<InputField name="ConnectionSettingsComputer" id="40">
+					<DataPath>Object.ConnectionSettings.Computer</DataPath>
+					<ContextMenu name="ConnectionSettingsComputerContextMenu" id="41"/>
+					<ExtendedTooltip name="ConnectionSettingsComputerExtendedTooltip" id="42"/>
+				</InputField>
+				<InputField name="ConnectionSettingsConnectionString" id="43">
+					<DataPath>Object.ConnectionSettings.ConnectionString</DataPath>
+					<ContextMenu name="ConnectionSettingsConnectionStringContextMenu" id="44"/>
+					<ExtendedTooltip name="ConnectionSettingsConnectionStringExtendedTooltip" id="45"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.DataBaseStatus</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

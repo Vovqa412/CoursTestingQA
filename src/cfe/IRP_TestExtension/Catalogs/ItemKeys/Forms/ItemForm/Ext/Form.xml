@@ -1,0 +1,486 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.14">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="FormCommandBar" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer" callType="After">IRPTE_OnCreateAtServerAfter</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="GroupMain" id="80">
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="GroupMainExtendedTooltip" id="81"/>
+			<ChildItems>
+				<UsualGroup name="GroupAttributesMain" id="82">
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="GroupAttributesMainExtendedTooltip" id="83"/>
+					<ChildItems>
+						<InputField name="Code" id="101">
+							<ContextMenu name="CodeContextMenu" id="102"/>
+							<ExtendedTooltip name="CodeExtendedTooltip" id="103"/>
+						</InputField>
+						<InputField name="Item" id="1">
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ItemContextMenu" id="2"/>
+							<ExtendedTooltip name="ItemExtendedTooltip" id="3"/>
+						</InputField>
+						<LabelField name="ItemType" id="9">
+							<Hiperlink>true</Hiperlink>
+							<ContextMenu name="ItemTypeContextMenu" id="10"/>
+							<ExtendedTooltip name="ItemTypeExtendedTooltip" id="11"/>
+						</LabelField>
+						<InputField name="ItemKeyID" id="95">
+							<ContextMenu name="ContextMenu" id="96"/>
+							<ExtendedTooltip name="ExtendedTooltip" id="97"/>
+						</InputField>
+						<UsualGroup name="GroupSwitching" id="38">
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="GroupSwitchingExtendedTooltip" id="39"/>
+							<ChildItems>
+								<UsualGroup name="GroupUnit" id="25">
+									<Group>AlwaysHorizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="GroupUnitExtendedTooltip" id="26"/>
+									<ChildItems>
+										<LabelField name="InheritUnit" id="18">
+											<Visible>false</Visible>
+											<Hiperlink>true</Hiperlink>
+											<ContextMenu name="InheritUnitContextMenu" id="19"/>
+											<ExtendedTooltip name="InheritUnitExtendedTooltip" id="20"/>
+										</LabelField>
+										<InputField name="OwnUnit" id="6">
+											<ContextMenu name="OwnUnitContextMenu" id="7"/>
+											<ExtendedTooltip name="OwnUnitExtendedTooltip" id="8"/>
+										</InputField>
+										<RadioButtonField name="UnitMode" id="27">
+											<TitleLocation>None</TitleLocation>
+											<RadioButtonType>Tumbler</RadioButtonType>
+											<ChoiceList>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>en</v8:lang>
+																<v8:content>Own</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">Own</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>en</v8:lang>
+																<v8:content>Inherit</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">Inherit</Value>
+													</xr:Value>
+												</xr:Item>
+											</ChoiceList>
+											<ContextMenu name="UnitModeContextMenu" id="28"/>
+											<ExtendedTooltip name="UnitModeExtendedTooltip" id="29"/>
+										</RadioButtonField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="GroupSpecification" id="45">
+									<Group>AlwaysHorizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="GroupSpecificationExtendedTooltip" id="46"/>
+									<ChildItems>
+										<CheckBoxField name="SpecificationMode" id="47">
+											<CheckBoxType>CheckBox</CheckBoxType>
+											<ContextMenu name="SpecificationModeContextMenu" id="48"/>
+											<ExtendedTooltip name="SpecificationModeExtendedTooltip" id="49"/>
+										</CheckBoxField>
+										<InputField name="Specification" id="50">
+											<TitleLocation>None</TitleLocation>
+											<ChoiceParameterLinks>
+												<xr:Link>
+													<xr:Name>Filter.CustomFilterByItem</xr:Name>
+													<xr:DataPath xsi:type="xs:string">1/0:159521d8-46cd-4ebc-b45f-957e87d54836</xr:DataPath>
+													<xr:ValueChange>Clear</xr:ValueChange>
+												</xr:Link>
+											</ChoiceParameterLinks>
+											<ContextMenu name="SpecificationContextMenu" id="51"/>
+											<ExtendedTooltip name="SpecificationExtendedTooltip" id="52"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="GroupAttributes" id="4">
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="GroupAttributesExtendedTooltip" id="5"/>
+						</UsualGroup>
+						<LabelDecoration name="Decoration1" id="98">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ContextMenu name="Decoration1ContextMenu" id="99"/>
+							<ExtendedTooltip name="Decoration1ExtendedTooltip" id="100"/>
+						</LabelDecoration>
+						<UsualGroup name="GroupAffectPricingMD5" id="78">
+							<Title>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Affect pricing MD5</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Collapsible</Behavior>
+							<Collapsed>true</Collapsed>
+							<ExtendedTooltip name="GroupAffectPricingMD5ExtendedTooltip" id="79"/>
+							<ChildItems>
+								<InputField name="UniqueMD5" id="92">
+									<ReadOnly>true</ReadOnly>
+									<ContextMenu name="UniqueMD5ContextMenu" id="93"/>
+									<ExtendedTooltip name="UniqueMD5ExtendedTooltip" id="94"/>
+								</InputField>
+								<InputField name="AffectPricingMD5" id="53">
+									<ReadOnly>true</ReadOnly>
+									<ContextMenu name="AffectPricingMD5ContextMenu" id="54"/>
+									<ExtendedTooltip name="AffectPricingMD5ExtendedTooltip" id="55"/>
+								</InputField>
+								<Table name="SpecificationAffectPricingMD5" id="56">
+									<ReadOnly>true</ReadOnly>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="SpecificationAffectPricingMD5ContextMenu" id="58"/>
+									<AutoCommandBar name="SpecificationAffectPricingMD5CommandBar" id="57">
+										<Autofill>false</Autofill>
+									</AutoCommandBar>
+									<ExtendedTooltip name="SpecificationAffectPricingMD5ExtendedTooltip" id="59"/>
+									<SearchStringAddition name="SpecificationAffectPricingMD5SearchString" id="60">
+										<AdditionSource>
+											<Item>SpecificationAffectPricingMD5</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="SpecificationAffectPricingMD5SearchStringContextMenu" id="61"/>
+										<ExtendedTooltip name="SpecificationAffectPricingMD5SearchStringExtendedTooltip" id="62"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="SpecificationAffectPricingMD5ViewStatus" id="66">
+										<AdditionSource>
+											<Item>SpecificationAffectPricingMD5</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<HorizontalLocation>Left</HorizontalLocation>
+										<ContextMenu name="SpecificationAffectPricingMD5ViewStatusContextMenu" id="67"/>
+										<ExtendedTooltip name="SpecificationAffectPricingMD5ViewStatusExtendedTooltip" id="68"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="SpecificationAffectPricingMD5SearchControl" id="63">
+										<AdditionSource>
+											<Item>SpecificationAffectPricingMD5</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="SpecificationAffectPricingMD5SearchControlContextMenu" id="64"/>
+										<ExtendedTooltip name="SpecificationAffectPricingMD5SearchControlExtendedTooltip" id="65"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<InputField name="SpecificationAffectPricingMD5LineNumber" id="69">
+											<ContextMenu name="SpecificationAffectPricingMD5LineNumberContextMenu" id="70"/>
+											<ExtendedTooltip name="SpecificationAffectPricingMD5LineNumberExtendedTooltip" id="71"/>
+										</InputField>
+										<LabelField name="SpecificationAffectPricingMD5Key" id="72">
+											<ContextMenu name="SpecificationAffectPricingMD5KeyContextMenu" id="73"/>
+											<ExtendedTooltip name="SpecificationAffectPricingMD5KeyExtendedTooltip" id="74"/>
+										</LabelField>
+										<InputField name="SpecificationAffectPricingMD5AffectPricingMD5" id="75">
+											<ContextMenu name="SpecificationAffectPricingMD5AffectPricingMD5ContextMenu" id="76"/>
+											<ExtendedTooltip name="SpecificationAffectPricingMD5AffectPricingMD5ExtendedTooltip" id="77"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="GroupHTML" id="84">
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="GroupHTMLExtendedTooltip" id="85"/>
+					<ChildItems>
+						<HTMLDocumentField name="PictureViewHTML" id="86">
+							<TitleLocation>None</TitleLocation>
+							<Width>40</Width>
+							<BorderColor>style:FormBackColor</BorderColor>
+							<ContextMenu name="PictureViewHTMLContextMenu" id="87"/>
+							<ExtendedTooltip name="PictureViewHTMLExtendedTooltip" id="88"/>
+						</HTMLDocumentField>
+						<HTMLDocumentField name="AddAttributeViewHTML" id="89">
+							<TitleLocation>None</TitleLocation>
+							<Width>20</Width>
+							<MaxWidth>30</MaxWidth>
+							<MaxHeight>10</MaxHeight>
+							<BorderColor>style:FormBackColor</BorderColor>
+							<ContextMenu name="AddAttributeViewHTMLContextMenu" id="90"/>
+							<ExtendedTooltip name="AddAttributeViewHTMLExtendedTooltip" id="91"/>
+						</HTMLDocumentField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes/>
+	<BaseForm version="2.14">
+		<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+		<AutoCommandBar name="FormCommandBar" id="-1"/>
+		<ChildItems>
+			<UsualGroup name="GroupMain" id="80">
+				<Group>AlwaysHorizontal</Group>
+				<Behavior>Usual</Behavior>
+				<Representation>None</Representation>
+				<ShowTitle>false</ShowTitle>
+				<ExtendedTooltip name="GroupMainExtendedTooltip" id="81"/>
+				<ChildItems>
+					<UsualGroup name="GroupAttributesMain" id="82">
+						<Group>Vertical</Group>
+						<Behavior>Usual</Behavior>
+						<Representation>None</Representation>
+						<ShowTitle>false</ShowTitle>
+						<ExtendedTooltip name="GroupAttributesMainExtendedTooltip" id="83"/>
+						<ChildItems>
+							<InputField name="Code" id="101">
+								<ContextMenu name="CodeContextMenu" id="102"/>
+								<ExtendedTooltip name="CodeExtendedTooltip" id="103"/>
+							</InputField>
+							<InputField name="Item" id="1">
+								<EditMode>EnterOnInput</EditMode>
+								<ContextMenu name="ItemContextMenu" id="2"/>
+								<ExtendedTooltip name="ItemExtendedTooltip" id="3"/>
+							</InputField>
+							<LabelField name="ItemType" id="9">
+								<Hiperlink>true</Hiperlink>
+								<ContextMenu name="ItemTypeContextMenu" id="10"/>
+								<ExtendedTooltip name="ItemTypeExtendedTooltip" id="11"/>
+							</LabelField>
+							<InputField name="ItemKeyID" id="95">
+								<ContextMenu name="ContextMenu" id="96"/>
+								<ExtendedTooltip name="ExtendedTooltip" id="97"/>
+							</InputField>
+							<UsualGroup name="GroupSwitching" id="38">
+								<Group>Vertical</Group>
+								<Behavior>Usual</Behavior>
+								<Representation>None</Representation>
+								<ShowTitle>false</ShowTitle>
+								<ExtendedTooltip name="GroupSwitchingExtendedTooltip" id="39"/>
+								<ChildItems>
+									<UsualGroup name="GroupUnit" id="25">
+										<Group>AlwaysHorizontal</Group>
+										<Behavior>Usual</Behavior>
+										<Representation>None</Representation>
+										<ShowTitle>false</ShowTitle>
+										<ExtendedTooltip name="GroupUnitExtendedTooltip" id="26"/>
+										<ChildItems>
+											<LabelField name="InheritUnit" id="18">
+												<Visible>false</Visible>
+												<Hiperlink>true</Hiperlink>
+												<ContextMenu name="InheritUnitContextMenu" id="19"/>
+												<ExtendedTooltip name="InheritUnitExtendedTooltip" id="20"/>
+											</LabelField>
+											<InputField name="OwnUnit" id="6">
+												<ContextMenu name="OwnUnitContextMenu" id="7"/>
+												<ExtendedTooltip name="OwnUnitExtendedTooltip" id="8"/>
+											</InputField>
+											<RadioButtonField name="UnitMode" id="27">
+												<TitleLocation>None</TitleLocation>
+												<RadioButtonType>Tumbler</RadioButtonType>
+												<ChoiceList>
+													<xr:Item>
+														<xr:Presentation/>
+														<xr:CheckState>0</xr:CheckState>
+														<xr:Value xsi:type="FormChoiceListDesTimeValue">
+															<Presentation>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Own</v8:content>
+																</v8:item>
+															</Presentation>
+															<Value xsi:type="xs:string">Own</Value>
+														</xr:Value>
+													</xr:Item>
+													<xr:Item>
+														<xr:Presentation/>
+														<xr:CheckState>0</xr:CheckState>
+														<xr:Value xsi:type="FormChoiceListDesTimeValue">
+															<Presentation>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Inherit</v8:content>
+																</v8:item>
+															</Presentation>
+															<Value xsi:type="xs:string">Inherit</Value>
+														</xr:Value>
+													</xr:Item>
+												</ChoiceList>
+												<ContextMenu name="UnitModeContextMenu" id="28"/>
+												<ExtendedTooltip name="UnitModeExtendedTooltip" id="29"/>
+											</RadioButtonField>
+										</ChildItems>
+									</UsualGroup>
+									<UsualGroup name="GroupSpecification" id="45">
+										<Group>AlwaysHorizontal</Group>
+										<Behavior>Usual</Behavior>
+										<Representation>None</Representation>
+										<ShowTitle>false</ShowTitle>
+										<ExtendedTooltip name="GroupSpecificationExtendedTooltip" id="46"/>
+										<ChildItems>
+											<CheckBoxField name="SpecificationMode" id="47">
+												<CheckBoxType>CheckBox</CheckBoxType>
+												<ContextMenu name="SpecificationModeContextMenu" id="48"/>
+												<ExtendedTooltip name="SpecificationModeExtendedTooltip" id="49"/>
+											</CheckBoxField>
+											<InputField name="Specification" id="50">
+												<TitleLocation>None</TitleLocation>
+												<ChoiceParameterLinks>
+													<xr:Link>
+														<xr:Name>Filter.CustomFilterByItem</xr:Name>
+														<xr:DataPath xsi:type="xs:string">1/0:159521d8-46cd-4ebc-b45f-957e87d54836</xr:DataPath>
+														<xr:ValueChange>Clear</xr:ValueChange>
+													</xr:Link>
+												</ChoiceParameterLinks>
+												<ContextMenu name="SpecificationContextMenu" id="51"/>
+												<ExtendedTooltip name="SpecificationExtendedTooltip" id="52"/>
+											</InputField>
+										</ChildItems>
+									</UsualGroup>
+								</ChildItems>
+							</UsualGroup>
+							<UsualGroup name="GroupAttributes" id="4">
+								<Group>Vertical</Group>
+								<Behavior>Usual</Behavior>
+								<Representation>None</Representation>
+								<ShowTitle>false</ShowTitle>
+								<ExtendedTooltip name="GroupAttributesExtendedTooltip" id="5"/>
+							</UsualGroup>
+							<LabelDecoration name="Decoration1" id="98">
+								<AutoMaxWidth>false</AutoMaxWidth>
+								<HorizontalStretch>true</HorizontalStretch>
+								<ContextMenu name="Decoration1ContextMenu" id="99"/>
+								<ExtendedTooltip name="Decoration1ExtendedTooltip" id="100"/>
+							</LabelDecoration>
+							<UsualGroup name="GroupAffectPricingMD5" id="78">
+								<Title>
+									<v8:item>
+										<v8:lang>en</v8:lang>
+										<v8:content>Affect pricing MD5</v8:content>
+									</v8:item>
+								</Title>
+								<Group>Vertical</Group>
+								<Behavior>Collapsible</Behavior>
+								<Collapsed>true</Collapsed>
+								<ExtendedTooltip name="GroupAffectPricingMD5ExtendedTooltip" id="79"/>
+								<ChildItems>
+									<InputField name="UniqueMD5" id="92">
+										<ReadOnly>true</ReadOnly>
+										<ContextMenu name="UniqueMD5ContextMenu" id="93"/>
+										<ExtendedTooltip name="UniqueMD5ExtendedTooltip" id="94"/>
+									</InputField>
+									<InputField name="AffectPricingMD5" id="53">
+										<ReadOnly>true</ReadOnly>
+										<ContextMenu name="AffectPricingMD5ContextMenu" id="54"/>
+										<ExtendedTooltip name="AffectPricingMD5ExtendedTooltip" id="55"/>
+									</InputField>
+									<Table name="SpecificationAffectPricingMD5" id="56">
+										<ReadOnly>true</ReadOnly>
+										<RowFilter xsi:nil="true"/>
+										<ContextMenu name="SpecificationAffectPricingMD5ContextMenu" id="58"/>
+										<AutoCommandBar name="SpecificationAffectPricingMD5CommandBar" id="57">
+											<Autofill>false</Autofill>
+										</AutoCommandBar>
+										<ExtendedTooltip name="SpecificationAffectPricingMD5ExtendedTooltip" id="59"/>
+										<SearchStringAddition name="SpecificationAffectPricingMD5SearchString" id="60">
+											<AdditionSource>
+												<Item>SpecificationAffectPricingMD5</Item>
+												<Type>SearchStringRepresentation</Type>
+											</AdditionSource>
+											<ContextMenu name="SpecificationAffectPricingMD5SearchStringContextMenu" id="61"/>
+											<ExtendedTooltip name="SpecificationAffectPricingMD5SearchStringExtendedTooltip" id="62"/>
+										</SearchStringAddition>
+										<ViewStatusAddition name="SpecificationAffectPricingMD5ViewStatus" id="66">
+											<AdditionSource>
+												<Item>SpecificationAffectPricingMD5</Item>
+												<Type>ViewStatusRepresentation</Type>
+											</AdditionSource>
+											<HorizontalLocation>Left</HorizontalLocation>
+											<ContextMenu name="SpecificationAffectPricingMD5ViewStatusContextMenu" id="67"/>
+											<ExtendedTooltip name="SpecificationAffectPricingMD5ViewStatusExtendedTooltip" id="68"/>
+										</ViewStatusAddition>
+										<SearchControlAddition name="SpecificationAffectPricingMD5SearchControl" id="63">
+											<AdditionSource>
+												<Item>SpecificationAffectPricingMD5</Item>
+												<Type>SearchControl</Type>
+											</AdditionSource>
+											<ContextMenu name="SpecificationAffectPricingMD5SearchControlContextMenu" id="64"/>
+											<ExtendedTooltip name="SpecificationAffectPricingMD5SearchControlExtendedTooltip" id="65"/>
+										</SearchControlAddition>
+										<ChildItems>
+											<InputField name="SpecificationAffectPricingMD5LineNumber" id="69">
+												<ContextMenu name="SpecificationAffectPricingMD5LineNumberContextMenu" id="70"/>
+												<ExtendedTooltip name="SpecificationAffectPricingMD5LineNumberExtendedTooltip" id="71"/>
+											</InputField>
+											<LabelField name="SpecificationAffectPricingMD5Key" id="72">
+												<ContextMenu name="SpecificationAffectPricingMD5KeyContextMenu" id="73"/>
+												<ExtendedTooltip name="SpecificationAffectPricingMD5KeyExtendedTooltip" id="74"/>
+											</LabelField>
+											<InputField name="SpecificationAffectPricingMD5AffectPricingMD5" id="75">
+												<ContextMenu name="SpecificationAffectPricingMD5AffectPricingMD5ContextMenu" id="76"/>
+												<ExtendedTooltip name="SpecificationAffectPricingMD5AffectPricingMD5ExtendedTooltip" id="77"/>
+											</InputField>
+										</ChildItems>
+									</Table>
+								</ChildItems>
+							</UsualGroup>
+						</ChildItems>
+					</UsualGroup>
+					<UsualGroup name="GroupHTML" id="84">
+						<Group>Vertical</Group>
+						<Behavior>Usual</Behavior>
+						<Representation>None</Representation>
+						<ShowTitle>false</ShowTitle>
+						<ExtendedTooltip name="GroupHTMLExtendedTooltip" id="85"/>
+						<ChildItems>
+							<HTMLDocumentField name="PictureViewHTML" id="86">
+								<TitleLocation>None</TitleLocation>
+								<Width>40</Width>
+								<BorderColor>style:FormBackColor</BorderColor>
+								<ContextMenu name="PictureViewHTMLContextMenu" id="87"/>
+								<ExtendedTooltip name="PictureViewHTMLExtendedTooltip" id="88"/>
+							</HTMLDocumentField>
+							<HTMLDocumentField name="AddAttributeViewHTML" id="89">
+								<TitleLocation>None</TitleLocation>
+								<Width>20</Width>
+								<MaxWidth>30</MaxWidth>
+								<MaxHeight>10</MaxHeight>
+								<BorderColor>style:FormBackColor</BorderColor>
+								<ContextMenu name="AddAttributeViewHTMLContextMenu" id="90"/>
+								<ExtendedTooltip name="AddAttributeViewHTMLExtendedTooltip" id="91"/>
+							</HTMLDocumentField>
+						</ChildItems>
+					</UsualGroup>
+				</ChildItems>
+			</UsualGroup>
+		</ChildItems>
+		<Attributes/>
+	</BaseForm>
+</Form>

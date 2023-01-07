@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.14">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="FormCommandBar" id="-1">
+		<ChildItems>
+			<Button name="FormUpload" id="22">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Upload</CommandName>
+				<ExtendedTooltip name="FormUploadExtendedTooltip" id="23"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="AfterWrite">AfterWrite</Event>
+		<Event name="NotificationProcessing">NotificationProcessing</Event>
+		<Event name="OnOpen">OnOpen</Event>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+		<Event name="BeforeWriteAtServer">BeforeWriteAtServer</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Group1" id="58">
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Group1ExtendedTooltip" id="59"/>
+			<ChildItems>
+				<UsualGroup name="Group2" id="63">
+					<Behavior>Usual</Behavior>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Group2ExtendedTooltip" id="64"/>
+					<ChildItems>
+						<InputField name="Code" id="67">
+							<DataPath>Object.Code</DataPath>
+							<ContextMenu name="CodeContextMenu" id="68"/>
+							<ExtendedTooltip name="CodeExtendedTooltip" id="69"/>
+						</InputField>
+						<InputField name="Volume" id="4">
+							<DataPath>Object.Volume</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="VolumeContextMenu" id="5"/>
+							<ExtendedTooltip name="VolumeExtendedTooltip" id="6"/>
+							<Events>
+								<Event name="OnChange">VolumeOnChange</Event>
+							</Events>
+						</InputField>
+						<InputField name="Description" id="1">
+							<DataPath>Object.Description</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="DescriptionContextMenu" id="2"/>
+							<ExtendedTooltip name="DescriptionExtendedTooltip" id="3"/>
+						</InputField>
+						<InputField name="URI" id="7">
+							<DataPath>Object.URI</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="URIContextMenu" id="8"/>
+							<ExtendedTooltip name="URIExtendedTooltip" id="9"/>
+						</InputField>
+						<InputField name="FileID" id="24">
+							<DataPath>Object.FileID</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<ContextMenu name="FileIDContextMenu" id="25"/>
+							<ExtendedTooltip name="FileIDExtendedTooltip" id="26"/>
+						</InputField>
+						<InputField name="MD5" id="55">
+							<DataPath>Object.MD5</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<ContextMenu name="MD5ContextMenu" id="56"/>
+							<ExtendedTooltip name="MD5ExtendedTooltip" id="57"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Group3" id="65">
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<BackColor>style:ToolTipBackColor</BackColor>
+					<ExtendedTooltip name="Group3ExtendedTooltip" id="66"/>
+					<ChildItems>
+						<PictureField name="Preview" id="60">
+							<DataPath>Preview</DataPath>
+							<Width>15</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<VerticalStretch>false</VerticalStretch>
+							<PictureSize>Proportionally</PictureSize>
+							<ContextMenu name="PreviewContextMenu" id="61"/>
+							<ExtendedTooltip name="PreviewExtendedTooltip" id="62"/>
+						</PictureField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="GroupPicture" id="30">
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="GroupPictureExtendedTooltip" id="31"/>
+			<ChildItems>
+				<HTMLDocumentField name="Picture" id="36">
+					<DataPath>PictureViewHTML</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<MaxWidth>19</MaxWidth>
+					<ContextMenu name="PictureContextMenu" id="37"/>
+					<ExtendedTooltip name="PictureExtendedTooltip" id="38"/>
+				</HTMLDocumentField>
+				<UsualGroup name="GroupPictureInfo" id="32">
+					<Group>AlwaysHorizontal</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="GroupPictureInfoExtendedTooltip" id="33"/>
+					<ChildItems>
+						<InputField name="Extension" id="27">
+							<DataPath>Object.Extension</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<ContextMenu name="ExtensionContextMenu" id="28"/>
+							<ExtendedTooltip name="ExtensionExtendedTooltip" id="29"/>
+						</InputField>
+						<InputField name="Height" id="10">
+							<DataPath>Object.Height</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="HeightContextMenu" id="11"/>
+							<ExtendedTooltip name="HeightExtendedTooltip" id="12"/>
+						</InputField>
+						<InputField name="Width" id="13">
+							<DataPath>Object.Width</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="WidthContextMenu" id="14"/>
+							<ExtendedTooltip name="WidthExtendedTooltip" id="15"/>
+						</InputField>
+						<InputField name="SizeBytes" id="16">
+							<DataPath>Object.SizeBytes</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="SizeBytesContextMenu" id="17"/>
+							<ExtendedTooltip name="SizeBytesExtendedTooltip" id="18"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Files</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="PictureViewHTML" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>HTML-Bilder anzeigen</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Resim HTML önizleme</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Picture view HTML</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Afficher l’image HTML</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Просмотр изображений HTML</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="PictureViewRegular" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Standardbildansicht</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Resim normal önizleme</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Picture view regular</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Affichage normal de l'image</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обычный просмотр картинки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Preview" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Vorschau</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Önizleme</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Preview</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Aperçu</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Предварительный просмотр</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Upload" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Hochladen</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Yükle</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Upload</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>fr</v8:lang>
+					<v8:content>Charger</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>StdPicture.MoveUp</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Upload</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+	</Commands>
+</Form>
